@@ -44,12 +44,12 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/holder.js"></script>
-<script src="js/jasny-bootstrap.js"></script>
+<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/bootstrap.min.js"></script>
+<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/jquery-ui.js"></script>
+<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/holder.js"></script>
+<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/jasny-bootstrap.js"></script>
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/jquery.ui.touch-punch.min.js"></script>
 
 <script>
 	$('#slider-loan-max .ui-slider-handle').draggable();

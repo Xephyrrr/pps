@@ -278,7 +278,7 @@
 					<li>Lorem Ipsim dolor</li>
 				</ul>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-xs-6 col">
 				<ul>
 					<li>Lorem Ipsim dolor</li>
 					<li>Lorem Ipsim dolor sit amet</li>

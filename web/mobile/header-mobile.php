@@ -140,7 +140,7 @@
 
 				<div class="navbar navbar-default navbar-fixed-top">
 
-					<a href=""><img src="img/pp-logo.jpg" class="logo" alt=""></a>
+					<a href=""><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/pp-logo.jpg" class="logo" alt=""></a>
 
 					<a href=""><i class="fa fa-search fa-lg"></i></a>
 
