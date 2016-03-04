@@ -31,7 +31,7 @@
 		<div class="row">
 			<div class="col sm-12">
 				<div class="col-sm-5">
-					<h2 class="pull-right">INTEREST RATE</h2>
+					<h2>INTEREST RATE</h2>
 					<div class="row">
 
 						<div class="col-sm-9 pull-right">
@@ -189,16 +189,20 @@
 				</div>
 				<div class="col-sm-7 howtoredeempawn">
 					<p>1) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. </p>
+					tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.  </p>
 					<br>
 					<p>2) Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in </p>
+					consequat. Duis aute irure dolor inLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.  </p>
 					<br>
 					<p>3) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. </p>
+					tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.  </p>
 					<br>
 					<p>4) Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in </p>
+					consequat. Duis aute irure dolor inLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.  </p>
 					
 				</div>
 			</div>
@@ -239,11 +243,11 @@
 <div id="scroll7" class="terms-and-conditions">
 	<div class="container">
 		<div class="row ">
-			<div class="col-sm-12 ">
+			<div class="col-sm-12">
 				<h2>TERMS AND CONDITIONS</h2>
+				<div class="row ">
 				
-				
-				<div class="col-sm-12 howtoredeempawn">
+				<div class="howtoredeempawn">
 					<p>1) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. </p>
 					<br>
@@ -260,7 +264,7 @@
 					tempor incididunt ut labore et dolore magna aliqua. </p>
 					<p class="carret col-sm-5 col-sm-offset-4">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
 				</div>
-
+			</div>
 			</div>
 		</div>
 	</div>

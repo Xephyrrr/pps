@@ -3,8 +3,8 @@
 <div class="top-margin"></div>
 
 <!-- <div class="remittance-hero"></div> -->
-<img class="hero-image desktop"src="http://pps.searchoptmedia.com/mobile/img/remittance-hero.jpg" alt="">
-<img class="hero-image mobile" src="http://pps.searchoptmedia.com/mobile/img/remittance-hero-mobile.jpg" alt="">
+<img class="hero-image desktop"src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/remittance-hero.jpg" alt="">
+<img class="hero-image mobile" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/remittance-hero-mobile.jpg" alt="">
 
 
 
@@ -14,10 +14,10 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<h2>Pera Padala</h2>
-				<img class="img-responsive" src="http://pps.searchoptmedia.com/mobile/img/remittance-motto.png" alt="">
+				<img class="img-responsive" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/remittance-motto.png" alt="">
 			</div>
 			<div class="col-sm-12">
-				
+
 				<p> With over 1000 branches nationwide and growing numbers of remittance partners and agents, including LBC and SM Malls, Palawan Express Pera Padala is one of the country's leading money remittance companies today.</p>
 				<a href="" class="btn btn-danger">HOW TO SEND</a>
 			</div>
@@ -26,14 +26,14 @@
 				<h3>Claim your remittances from our partners abroad at any of our branches </h3>
 			</div>
 			<div class="col-sm-8 col-sm-offset-2 international">
-				<img src="http://pps.searchoptmedia.com/mobile/img/tml.jpg" alt="">
-				<img src="http://pps.searchoptmedia.com/mobile/img/wilmon.jpg" alt="">
-				<img src="http://pps.searchoptmedia.com/mobile/img/citi.jpg" alt="">
-				<img src="http://pps.searchoptmedia.com/mobile/img/aub.jpg" alt="">
-				<img src="http://pps.searchoptmedia.com/mobile/img/transfast.jpg" alt="">
-				<img src="http://pps.searchoptmedia.com/mobile/img/myremit.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/tml.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/wilmon.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/citi.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/aub.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/transfast.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/myremit.jpg" alt="">
 			</div>
-			
+
 			<div class="col-sm-8 col-sm-offset-2 international">
 				<a href="" class="btn btn-danger">VIEW ALL PARTNERS</a>
 			</div>
@@ -48,7 +48,7 @@
 				<div class="col-md-6">
 					<h3>Mura Na, Mabilis Pa!</h3>
 					<p>Palawan Express Pera Padala (PEPP) is undeniably the quickest and cheapest way of sending money within the Philippines.</p>
-					
+
 				</div>
 				<div class="col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2">
 					<div class="col-md-5  col-md-1 loan-widget">
@@ -95,10 +95,10 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="col-xs-6 loanValueText"><label>REMITTANCE</label>
-									<input class="padalaValue remittance" placeholder="50000" type ="number" readonly>		
+									<input class="padalaValue remittance" placeholder="50000" type ="number" readonly>
 								</div>
 								<div class="col-xs-6 loanValueText"><div class="feelabel">REMITTANCE FEE</div>
-									<input class="feeValue feeholder" placeholder="345" type ="number" readonly>		
+									<input class="feeValue feeholder" placeholder="345" type ="number" readonly>
 								</div>
 							</div>
 						</div>
@@ -123,15 +123,15 @@
 				<h2>Remittance Options:</h2>
 				<div class="col-sm-12">
 					<h3 class="remittanceheader">Branch-to-Branch</h3>
-					<img class="img-responsive" src="http://pps.searchoptmedia.com/mobile/img/branch-to-branch.png" alt="">
+					<img class="img-responsive" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/branch-to-branch.png" alt="">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					
+
 					<h3 class="remittanceheader">Branch-to-Card</h3>
-					<img class="img-responsive" src="http://pps.searchoptmedia.com/mobile/img/branch-to-card.png" alt="">
+					<img class="img-responsive" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/branch-to-card.png" alt="">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 				<div class="col-sm-12">
-					<a href="" class="btn btn-danger rightbtn">LEARN MORE</a>	
+					<a href="" class="btn btn-danger rightbtn">LEARN MORE</a>
 				</div>
 			</div>
 		</div>
@@ -143,56 +143,56 @@
 		<div class="row ">
 			<div class="col-sm-12 acceptedidmargin">
 				<h2>Accepted IDs</h2>
-				<img class="ids"src="http://pps.searchoptmedia.com/mobile/img/available-ids.png" alt="">
+				<img class="ids"src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/available-ids.png" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a href="" class="btn btn-danger btnregular">VIEW ALL</a>
-				</div>
-			
+				<a href="" class="btn btn-danger btnregular">VIEW ALL</a>
 			</div>
+
 		</div>
 	</div>
+</div>
 
 <div class="container testimonials">
 	<div class="row">
 		<h2>Testimonials</h2>
 		<div class="col-sm-12">
-		<!-- Carousel -->
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
+			<!-- Carousel -->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
 				<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			</ol>
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
 
 
-		
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-		
-					
-						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
-							<p>-Lorem Ipsum</p>
-			
-				</div>
-				<div class="item">
-					
-				
-						
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+
+
 						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
 						<p>-Lorem Ipsum</p>
-				
-				</div>
-				<div class="item">
-					
-				
+
+					</div>
+					<div class="item">
+
+
+
 						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
 						<p>-Lorem Ipsum</p>
-				
-				</div>
+
+					</div>
+					<div class="item">
+
+
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
+						<p>-Lorem Ipsum</p>
+
+					</div>
 				</div>
 
 			</div>
@@ -208,17 +208,17 @@
 			<div class="col-sm-12">
 				<h2>Industry Related News</h2>
 				<div class="col-sm-4">
-					<img src="http://pps.searchoptmedia.com/mobile/img/news-1.jpg" class="img-responsive" alt="">
+					<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/news-1.jpg" class="img-responsive" alt="">
 					<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="http://pps.searchoptmedia.com/mobile/img/news-1.jpg" class="img-responsive" alt="">
+					<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/news-1.jpg" class="img-responsive" alt="">
 					<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="http://pps.searchoptmedia.com/mobile/img/news-1.jpg" class="img-responsive" alt="">
+					<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/news-1.jpg" class="img-responsive" alt="">
 					<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
 					<a href="" class="btn btn-danger pull-right rightbtn">VIEW ALL NEWS</a>

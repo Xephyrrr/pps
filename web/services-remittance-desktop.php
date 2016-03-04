@@ -175,7 +175,7 @@
 <div id="sscroll4" class="services-accepted-ids">
 	<div class="container">
 		<div class="row ">
-			<div class="col-sm-11 col-sm-offset-1">
+			<div class="col-sm-12">
 				<h2>ACCEPTED IDs</h2>
 				
 				
@@ -209,12 +209,12 @@
 <div id="sscroll5" class="services-authorized-agents">
 	<div class="container">
 		<div class="row ">
-			<div class="col-sm-10 col-sm-offset-1">
+			<div class="col-sm-12">
 				<h2>AUTHORIZED AGENTS</h2>
 				
 				
 				<div class="col-sm-12">
-					<div class="col-sm-7">
+					<div class="col-sm-6">
 					<ul>
 						<li>Lorem Ipsim dolor</li>
 						<li>Lorem Ipsim dolor sit amet</li>
@@ -237,7 +237,7 @@
 					</ul>
 					
 				</div>
-				<div class="col-sm-5">
+				<div class="col-sm-6">
 					<li>Lorem Ipsim dolor</li>
 						<li>Lorem Ipsim dolor sit amet</li>
 						<li>Lorem Ipsim </li>
@@ -267,7 +267,7 @@
 <div id="sscroll6" class="services-international-partners">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
+			<div class="col-sm-12">
 				<h2>INTERNATIONAL PARTNERS</h2>
 			</div>
 			<div class="col-sm-12">
@@ -306,25 +306,30 @@
 <div class="terms-and-conditions2">
 	<div class="container">
 		<div class="row ">
-			<div class="col-sm-8 col-sm-offset-2">
+			<div class="col-sm-12">
 				<h2>TERMS AND CONDITIONS</h2>
 				
 				
 				<div class="col-sm-12 howtoredeempawn">
 					<p>1) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. </p>
+					tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.  </p>
 					<br>
 					<p>2) Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in </p>
+					consequat. Duis aute irure dolor inLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.  </p>
 					<br>
 					<p>3) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. </p>
+					tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.  </p>
 					<br>
 					<p>4) Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in </p>
+					consequat. Duis aute irure dolor inLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.  </p>
 					<br>
 					<p>5) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. </p>
+					tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.  </p>
 					<p class="carret col-sm-5 col-sm-offset-4">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
 				</div>
 
