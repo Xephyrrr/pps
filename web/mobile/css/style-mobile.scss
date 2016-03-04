@@ -1117,7 +1117,7 @@ input[type="radio"]:checked + label span{
 	}
 
 	.form-control {
-		background: none;
+		background: #fff;
 		box-shadow: none;
 		height: auto;
 		padding-top: 0;
@@ -1455,6 +1455,9 @@ SERVICES PAWNING
 
 .loan-widget-bg{
 	background-color: #EBEBEB !important;
+	.form-control {
+		background: #fff;
+	}
 }
 
 .desktopNav2 {

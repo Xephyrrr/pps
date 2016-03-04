@@ -780,7 +780,7 @@ WIDGET
   .loan-widget a:hover {
     text-decoration: none; }
   .loan-widget .form-control {
-    background: none;
+    background: #fff;
     box-shadow: none;
     height: auto;
     padding-top: 0;
@@ -1010,6 +1010,8 @@ SERVICES PAWNING
 
 .loan-widget-bg {
   background-color: #EBEBEB !important; }
+  .loan-widget-bg .form-control {
+    background: #fff; }
 
 .desktopNav2 {
   height: 54px;
