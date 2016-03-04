@@ -34,7 +34,7 @@
 						    </button>
 							
 							
-							    <a class="navbar-brand" href="#">
+							    <a class="navbar-brand" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>">
 							    	<div class="logoWrap">
 							    	<img class="logo" src="img/pp-logo.jpg" alt="">
 							    	 </div>

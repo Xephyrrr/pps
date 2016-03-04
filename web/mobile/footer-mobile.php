@@ -42,7 +42,7 @@
 </footer>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/bootstrap.min.js"></script>
 <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/jquery-ui.js"></script>

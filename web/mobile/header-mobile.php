@@ -47,7 +47,7 @@
 							<p>CALL:123-4567</p>
 							<ul class="nav navbar-nav nav-pills">
 								<li>
-									<a href="">HOME</a>
+									<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>">HOME</a>
 								</li>
 								<li>
 									<a href="">ABOUT US</a>
