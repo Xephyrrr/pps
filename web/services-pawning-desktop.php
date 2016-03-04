@@ -239,7 +239,7 @@
 <div id="scroll7" class="terms-and-conditions">
 	<div class="container">
 		<div class="row ">
-			<div class="col-sm-8 col-sm-offset-2">
+			<div class="col-sm-12 ">
 				<h2>TERMS AND CONDITIONS</h2>
 				
 				
