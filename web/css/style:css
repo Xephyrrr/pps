@@ -1,0 +1,952 @@
+@font-face {
+  font-family: 'Century Gothic Bold';
+  src: url("../fonts/century gothic/CenturyGothic-Bold.eot");
+  src: url("../fonts/century gothic/CenturyGothic-Bold.svg");
+  src: url("../fonts/century gothic/CenturyGothic-Bold.ttf");
+  src: url("../fonts/century gothic/CenturyGothic-Bold.woff"); }
+@font-face {
+  font-family: 'Century Gothic Regular';
+  src: url("../fonts/century gothic/CenturyGothic-Regular.eot");
+  src: url("../fonts/century gothic/CenturyGothic-Regular.svg");
+  src: url("../fonts/century gothic/CenturyGothic-Regular.ttf");
+  src: url("../fonts/century gothic/CenturyGothic-Regular.woff"); }
+h2, h3, h4 {
+  font-family: "Century Gothic Bold";
+  font-weight: normal; }
+
+h1 {
+  color: #ffffff;
+  font-family: "Century Gothic Bold"; }
+
+p, span {
+  font-family: "Century Gothic Regular"; }
+
+.logo {
+  width: 145px; }
+
+.desktopNav {
+  height: 106px; }
+
+.wrap {
+  background-color: gray;
+  background-position: center center;
+  background-size: cover;
+  padding: 30px 0; }
+  .wrap h1 {
+    text-shadow: 2px 2px 8px #5F5F5F;
+    margin-top: 100px; }
+  .wrap h3 {
+    font-family: "Century Gothic Bold"; }
+  .wrap p {
+    color: #ffffff; }
+  .wrap #highlight {
+    margin-top: 20px;
+    background: rgba(40, 40, 40, 0.5); }
+
+input:focus {
+  background: #E8F6FC; }
+
+.nav-pills {
+  padding-top: 20px; }
+
+.navbar p {
+  font-family: "Century Gothic Bold";
+  color: #013752;
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: -20px;
+  margin-right: 10px;
+  height: 10px; }
+
+li a {
+  font-family: "Century Gothic Bold";
+  color: #013752; }
+li li.active {
+  background-color: #fca951; }
+
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: #fca951;
+  height: 40px; }
+
+.active {
+  background-color: #fca951; }
+
+.form-control {
+  border-radius: 0; }
+
+#login-modal .modal-dialog {
+  width: 350px; }
+
+#login-modal input[type=text], input[type=password], select {
+  margin-top: 10px; }
+
+#register-form, #lost-form, #login-form, .modal-footer {
+  background-color: #ECECEC; }
+
+#div-login-msg,
+#div-lost-msg,
+#div-register-msg {
+  border: 1px solid #dadfe1;
+  height: 30px;
+  line-height: 28px;
+  transition: all ease-in-out 500ms; }
+
+#div-login-msg.success,
+#div-lost-msg.success,
+#div-register-msg.success {
+  border: 1px solid #68c3a3;
+  background-color: #c8f7c5; }
+
+#div-login-msg.error,
+#div-lost-msg.error,
+#div-register-msg.error {
+  border: 1px solid #eb575b;
+  background-color: #ffcad1; }
+
+#icon-login-msg,
+#icon-lost-msg,
+#icon-register-msg {
+  width: 30px;
+  float: left;
+  line-height: 28px;
+  text-align: center;
+  background-color: #dadfe1;
+  margin-right: 5px;
+  transition: all ease-in-out 500ms; }
+
+#icon-login-msg.success,
+#icon-lost-msg.success,
+#icon-register-msg.success {
+  background-color: #68c3a3 !important; }
+
+#icon-login-msg.error,
+#icon-lost-msg.error,
+#icon-register-msg.error {
+  background-color: #eb575b !important; }
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .8; }
+
+.modal-content {
+  background-color: #ececec;
+  border-radius: 0px;
+  outline: 0; }
+  .modal-content img {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px; }
+
+.modal-header {
+  min-height: 16.43px;
+  padding: 15px 15px 15px 15px;
+  border-bottom: 0px; }
+
+.modal-body {
+  position: relative;
+  padding: 5px 15px 5px 15px; }
+
+.modal-footer {
+  padding: 15px 15px 15px 15px;
+  text-align: left;
+  border-top: 0px; }
+
+.checkbox {
+  margin-bottom: 0px; }
+
+.btn {
+  border-radius: 0px;
+  font-family: "Century Gothic Bold"; }
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none; }
+
+.btn-lg, .btn-group-lg > .btn {
+  border-radius: 0px; }
+
+.btn-link {
+  padding: 5px 10px 0px 0px;
+  color: #95a5a6; }
+
+.btn-link:hover, .btn-link:focus {
+  color: #2c3e50;
+  text-decoration: none; }
+
+.glyphicon {
+  top: 0px; }
+
+.form-control {
+  border-radius: 0px; }
+
+.modal-body {
+  overflow: auto; }
+  .modal-body img {
+    width: 100%; }
+
+.modal-header button {
+  padding-bottom: 10px; }
+
+/*
+=====================================
+Value Slider
+=====================================
+*/
+.loan-widget {
+  background: rgba(13, 34, 51, 0.8);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 450px; }
+  .loan-widget h3 {
+    margin-top: 0;
+    color: #ffffff;
+    font-family: "Century Gothic Bold"; }
+  .loan-widget .title {
+    color: #ffffff;
+    margin-bottom: 10px; }
+  .loan-widget input {
+    background: none;
+    color: #ffffff;
+    border: 0;
+    font-weight: 200;
+    font-size: 20px;
+    padding-top: 10px; }
+  .loan-widget a {
+    display: block;
+    background: #fca951;
+    color: #ffffff;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 5px;
+    width: 145px;
+    height: 30px;
+    font-family: "Century Gothic Bold"; }
+  .loan-widget a:hover {
+    text-decoration: none; }
+  .loan-widget .form-control {
+    background: none;
+    box-shadow: none;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 10px; }
+  .loan-widget .tips {
+    font-size: 10px;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: #16A0E8;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 70px;
+    padding-top: 1px;
+    text-align: center;
+    right: 20px; }
+  .loan-widget img {
+    position: absolute;
+    width: 55px; }
+
+#loanValue {
+  display: block;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 200; }
+
+.ui-widget-content {
+  background: #16a0e8 !important; }
+
+.ui-corner-all {
+  border-radius: 10px !important;
+  outline: none; }
+
+.ui-slider:hover, .ui-slider:focus {
+  cursor: pointer; }
+
+.ui-slider .ui-slider-handle {
+  height: 20px !important;
+  border-radius: 50% !important; }
+
+.ui-slider .ui-slider-handle:hover {
+  cursor: pointer; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  cursor: pointer; }
+
+/*
+.ui-slider-horizontal .ui-slider-handle {
+	margin-left: 10px; !important;
+}
+*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: #fff url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% !important; }
+
+.tooltip-inner {
+  text-align: left !important; }
+
+.accountHead {
+  background-color: #555555;
+  padding: 20px; }
+  .accountHead span, .accountHead a {
+    color: #ffffff;
+    font-size: 18px; }
+  .accountHead span i {
+    margin-right: 10px; }
+  .accountHead a {
+    float: right; }
+    .accountHead a i {
+      margin-left: 10px; }
+
+.loanInfo {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .loanInfo .right {
+    float: right;
+    font-weight: bold;
+    color: #16a0e8; }
+  .loanInfo section {
+    border: 3px solid #16A0E8;
+    padding: 20px 10px 30px;
+    text-align: center; }
+    .loanInfo section i {
+      font-size: 30px;
+      color: #16a0e8; }
+    .loanInfo section span {
+      font-size: 25px;
+      color: #FF7B08; }
+
+.homeCta {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #f9f4ea; }
+  .homeCta section {
+    margin: 10px;
+    padding: 50px 10px;
+    border: 2px solid #cccccc;
+    text-align: center; }
+    .homeCta section p {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 16px; }
+    .homeCta section ul {
+      margin-top: 30px; }
+    .homeCta section li {
+      color: #229fe7;
+      text-align: left; }
+      .homeCta section li a {
+        color: #229fe7;
+        font-family: "Century Gothic Regular"; }
+  .homeCta .loanType {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px; }
+
+/*
+=====================================
+About
+=====================================
+*/
+.about, .how {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 90px;
+  background-color: #ffffff; }
+  .about h1, .how h1 {
+    color: #229fe7;
+    margin-bottom: 50px;
+    font-size: 42px;
+    letter-spacing: 1px;
+    line-height: 125%; }
+  .about h2, .how h2 {
+    color: #fca951;
+    font-size: 15px;
+    font-family: "Century Gothic Bold"; }
+  .about h5, .how h5 {
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: "Century Gothic Regular";
+    line-height: 150%; }
+  .about p, .how p {
+    font-size: 13px;
+    color: #505050; }
+  .about .uvp, .how .uvp {
+    text-align: center;
+    margin-top: 30px;
+    padding: 45px; }
+  .about img, .how img {
+    width: 100px;
+    margin-bottom: 10px; }
+  .about span, .how span {
+    display: block;
+    font-size: 20px;
+    color: #333333;
+    font-family: "Century Gothic Bold";
+    margin-bottom: 10px; }
+
+.howItWorks {
+  background: #cccccc;
+  height: 255px; }
+  .howItWorks h1 {
+    text-align: center;
+    margin: 100px 0; }
+
+.how {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .how .items {
+    margin-bottom: 40px; }
+    .how .items p {
+      text-align: justify; }
+    .how .items img {
+      float: right;
+      margin-right: 20px; }
+
+.faqCta {
+  background: #4eb9e7;
+  text-align: center;
+  padding: 10px 0 30px; }
+  .faqCta h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .faqCta h3 {
+    margin-top: 0; }
+  .faqCta p {
+    padding-top: 30px;
+    color: #ffffff;
+    overflow: auto;
+    font-size: 16px; }
+  .faqCta .number {
+    font-size: 70px;
+    width: 60px;
+    float: left;
+    border-right: 1px solid #ffffff;
+    margin-right: 20px;
+    line-height: normal; }
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-shadow: none;
+  margin-top: 60px; }
+
+.eligibility {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .eligibility h2 {
+    color: #16a0e8;
+    font-size: 30px; }
+  .eligibility p {
+    font-size: 20px;
+    color: #505050;
+    margin-bottom: 30px; }
+  .eligibility span {
+    display: block;
+    text-align: center; }
+  .eligibility a {
+    display: block;
+    background: #16a0e8;
+    color: #ffffff;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 345px;
+    margin: 30px auto; }
+  .eligibility a:hover {
+    text-decoration: none; }
+
+.application {
+  display: block;
+  clear: both;
+  padding-bottom: 30px; }
+  .application h4, .application label {
+    color: #505050; }
+  .application h3 {
+    color: #007bc0; }
+
+.aboutUs, .faq {
+  padding-top: 70px;
+  padding-bottom: 30px; }
+  .aboutUs p, .faq p {
+    font-size: 18px;
+    text-align: justify; }
+  .aboutUs img, .faq img {
+    width: 100%; }
+
+.faq a {
+  display: block;
+  outline: none; }
+
+.login {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .login .checkbox {
+    margin-bottom: 20px; }
+  .login .btn {
+    float: right; }
+
+.platforms {
+  background: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+  background-color: #ffffff; }
+  .platforms h1 {
+    font-size: 32px;
+    color: #229fe7; }
+  .platforms img {
+    width: 100px; }
+  .platforms span {
+    font-family: "Century Gothic Bold";
+    margin-bottom: 10px; }
+  .platforms p {
+    padding: 10px;
+    font-size: 16px; }
+  .platforms img {
+    width: 750px; }
+
+.carousel {
+  background: #fca951;
+  text-align: center;
+  height: 338px; }
+  .carousel h1 {
+    margin-bottom: 20px; }
+  .carousel .carousel-indicators li {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 15px;
+    height: 15px; }
+  .carousel .carousel-indicators .active {
+    background-color: #229fe7;
+    border: 2px solid #ffffff;
+    width: 16px;
+    height: 16px; }
+  .carousel p {
+    font-size: 18px; }
+
+.bottomCta {
+  background: #cccccc;
+  text-align: center;
+  padding: 50px 0; }
+  .bottomCta p {
+    font-size: 15px;
+    color: #282828; }
+  .bottomCta .btn {
+    margin-top: 15px;
+    font-size: 20px; }
+
+footer {
+  background: #333333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left; }
+  footer h4 {
+    color: #ffffff;
+    padding-top: 25px; }
+  footer img {
+    width: 113px; }
+  footer .footerNav {
+    padding: 0; }
+    footer .footerNav li {
+      list-style: none;
+      display: block;
+      padding-top: 10px; }
+  footer a, footer span {
+    color: #ffffff;
+    padding-top: 30px; }
+  footer a {
+    font-family: "Century Gothic Regular";
+    font-size: 12px; }
+  footer a:hover {
+    color: #16A0E8;
+    text-decoration: none; }
+  footer span {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 200;
+    overflow: auto;
+    margin-right: 10px !important; }
+  footer .social img {
+    width: 45px;
+    margin: 5px 10px 5px 0; }
+
+.footerBottom {
+  background: #232323;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 0;
+  font-size: 12px;
+  height: 100px; }
+
+/*
+================================
+Application Steps
+================================
+*/
+.bs-wizard {
+  margin-top: 40px; }
+
+/*Form Wizard*/
+.bs-wizard {
+  border-bottom: solid 1px #e0e0e0;
+  padding: 0 0 10px 0; }
+
+.bs-wizard > .bs-wizard-step {
+  padding: 0;
+  position: relative; }
+
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
+  color: #595959;
+  font-size: 16px;
+  margin-bottom: 5px; }
+
+.bs-wizard > .bs-wizard-step .bs-wizard-info {
+  color: #999;
+  font-size: 14px; }
+
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: #fbe8aa;
+  top: 45px;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  border-radius: 50%; }
+
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {
+  content: ' ';
+  width: 14px;
+  height: 14px;
+  background: #fbbd19;
+  border-radius: 50px;
+  position: absolute;
+  top: 8px;
+  left: 8px; }
+
+.bs-wizard > .bs-wizard-step > .progress {
+  position: relative;
+  border-radius: 0px;
+  height: 8px;
+  box-shadow: none;
+  margin: 20px 0; }
+
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {
+  width: 0px;
+  box-shadow: none;
+  background: #fbe8aa; }
+
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
+  width: 100%; }
+
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {
+  width: 50%; }
+
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {
+  width: 0%; }
+
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {
+  width: 100%; }
+
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {
+  background-color: #f5f5f5; }
+
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {
+  opacity: 0; }
+
+.bs-wizard > .bs-wizard-step:first-child > .progress {
+  left: 50%;
+  width: 50%; }
+
+.bs-wizard > .bs-wizard-step:last-child > .progress {
+  width: 50%; }
+
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot {
+  pointer-events: none; }
+
+/*END Form Wizard*/
+.wizard {
+  margin: 20px auto;
+  background: #fff; }
+  .wizard .form-control {
+    border-color: #5BC0DE; }
+  .wizard h3 {
+    color: #007bc0; }
+  .wizard hr {
+    background-color: #5BC0DE;
+    color: #5BC0DE;
+    border-color: #5BC0DE; }
+
+.wizard .nav-tabs {
+  position: relative;
+  margin: 40px auto;
+  margin-bottom: 0;
+  border-bottom-color: #5BC0DE; }
+
+.wizard > div.wizard-inner {
+  position: relative; }
+
+.connecting-line {
+  height: 2px;
+  background: #e0e0e0;
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 1; }
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+  color: #555555;
+  cursor: default;
+  border: 0;
+  border-bottom-color: transparent; }
+
+span.round-tab {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  display: inline-block;
+  border-radius: 100px;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-size: 25px; }
+
+span.round-tab i {
+  color: #555555; }
+
+.wizard li.active span.round-tab {
+  background: #fff;
+  border: 2px solid #5bc0de; }
+
+.wizard li.active span.round-tab i {
+  color: #5bc0de; }
+
+span.round-tab:hover {
+  color: #333;
+  border: 2px solid #333; }
+
+.wizard .nav-tabs > li {
+  width: 25%; }
+
+.wizard li:after {
+  content: " ";
+  position: absolute;
+  left: 46%;
+  opacity: 0;
+  margin: 0 auto;
+  bottom: 0px;
+  border: 5px solid transparent;
+  border-bottom-color: #5bc0de;
+  transition: 0.1s ease-in-out; }
+
+.wizard li.active:after {
+  content: " ";
+  position: absolute;
+  left: 46%;
+  opacity: 1;
+  margin: 0 auto;
+  bottom: 0px;
+  border: 10px solid transparent;
+  border-bottom-color: #5bc0de; }
+
+.wizard .nav-tabs > li a {
+  width: 70px;
+  height: 70px;
+  margin: 20px auto;
+  border-radius: 100%;
+  padding: 0; }
+
+.wizard .nav-tabs > li a:hover {
+  background: transparent; }
+
+.wizard .tab-pane {
+  position: relative;
+  padding-top: 50px; }
+
+.wizard h3 {
+  margin-top: 0; }
+
+.contactForm textarea {
+  margin-bottom: 20px; }
+.contactForm .btn {
+  float: right;
+  margin-bottom: 30px; }
+
+.introLoading .doubleLoaderTop h3 {
+  color: #ffffff;
+  z-index: 1000;
+  text-align: center;
+  margin-top: 150px; }
+
+/*
+=================================
+Custom Media Queries
+=================================
+*/
+@media (max-width: 992px) {
+  .logo {
+    width: 100px; }
+
+  .navbar-nav > li > a {
+    font-size: 12px;
+    padding-left: 5px; }
+
+  .rule {
+    display: none; } }
+@media (min-width: 768px) {
+  .mobileNav {
+    display: none; }
+
+  .rule {
+    display: none; } }
+@media (max-width: 767px) {
+  .desktopNav {
+    display: none; }
+
+  #side-menu {
+    background: #252525; }
+
+  .navbar .navbar-toggle {
+    margin-right: 15px; }
+
+  .navbar-nav > li > a {
+    border-bottom: 1px dotted #5bc0de;
+    font-size: 16px !important; }
+
+  .logo {
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px; }
+
+  label {
+    margin-bottom: 0; }
+
+  .form-control {
+    margin-top: 0; }
+
+  .form-group {
+    margin-bottom: 5px; }
+
+  .navbar .navbar-toggle {
+    margin-top: 20px; }
+  .navbar .icon-bar {
+    background-color: #16A0E8 !important; }
+
+  .wrap p {
+    margin-bottom: 30px; }
+
+  .about {
+    padding-top: 30px; }
+
+  .wizard {
+    margin-top: 0; }
+    .wizard .nav-tabs {
+      margin-top: 0; } }
+@media (max-width: 585px) {
+  .wrap h1 {
+    text-align: center; }
+
+  .loan-widget {
+    position: static;
+    margin: auto;
+    width: 350px; }
+    .loan-widget .btn {
+      margin: auto; }
+
+  .how h2 {
+    margin-top: -10px; }
+  .how img {
+    float: left; }
+  .how span {
+    margin-left: 10px;
+    font-size: 24px; }
+  .how p {
+    padding-top: 10px; }
+
+  .faqCta p {
+    font-size: 20px; }
+  .faqCta h2 {
+    font-size: 40px;
+    line-height: 140%; }
+
+  .homeCta {
+    background-color: #ffffff; }
+    .homeCta h3 {
+      font-size: 34px; }
+    .homeCta p {
+      font-size: 10px; }
+    .homeCta li {
+      list-style-type: none;
+      list-style-position: inside;
+      text-align: center;
+      margin: auto; }
+      .homeCta li a {
+        padding-left: -100px;
+        text-align: center; }
+
+  .platforms {
+    display: none; }
+    .platforms img {
+      width: 450px; }
+
+  .bottomCta p {
+    font-size: 24px;
+    font-weight: lighter; }
+  .bottomCta .btn {
+    font-size: 24px; }
+
+  footer {
+    text-align: center; }
+    footer h4 {
+      margin-top: -10px; }
+    footer hr {
+      display: none; }
+    footer .bottomLogo {
+      display: none; }
+    footer .footerNav li {
+      display: inline; }
+
+  .rule {
+    display: initial; }
+
+  #social {
+    font-size: 24px; }
+
+  .wizard {
+    width: 90%;
+    height: auto !important; }
+
+  span.round-tab {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px; }
+
+  .wizard .nav-tabs > li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px; }
+
+  .wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 35%; } }
+
+/*# sourceMappingURL=style:css.map */
