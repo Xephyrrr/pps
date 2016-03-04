@@ -22,7 +22,7 @@ if( file_exists(dirname(__FILE__).'/nicejson/nicejson.php') ) {
 }
 
 // Include Mobile Detect.
-require_once dirname(__FILE__).'/../Mobile_Detect.php';
+require_once dirname(__FILE__) . '/../Mobile_Detect.php';
 $detect = new Mobile_Detect;
 
 $json = array(
