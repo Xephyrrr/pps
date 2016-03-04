@@ -1,0 +1,2181 @@
+
+$heading: 'Century Gothic Bold Italic';
+$text: 'Century Gothic Regular';
+$subHeading: 'Century Gothic Bold';
+$subText: 'Century Gothic Italic';
+$orange: #F79125;
+$blueGreen: #013752;
+$blue: #229fe7;
+$darkerBlue: #007bc0;
+$gray: #333333;
+$red: #E11C24;
+$green: #39A14A;
+$darkYellow: #ECCB00;
+$lightYellow: #ECCB00;
+$lightGreen: #11B864;
+
+@font-face {
+	font-family: 'Century Gothic Bold';
+	src: url('../fonts/century gothic/CenturyGothic-Bold.eot');
+	src: url('../fonts/century gothic/CenturyGothic-Bold.svg');
+	src: url('../fonts/century gothic/CenturyGothic-Bold.ttf');
+	src: url('../fonts/century gothic/CenturyGothic-Bold.woff');
+}
+
+@font-face {
+	font-family: 'Century Gothic Regular';
+	src: url('../fonts/century gothic/CenturyGothic-Regular.eot');
+	src: url('../fonts/century gothic/CenturyGothic-Regular.svg');
+	src: url('../fonts/century gothic/CenturyGothic-Regular.ttf');
+	src: url('../fonts/century gothic/CenturyGothic-Regular.woff');
+}
+
+@font-face {
+	font-family: 'Century Gothic Bold Italic';
+	src: url('../fonts/century gothic/CenturyGothic-BoldItalic.eot');
+	src: url('../fonts/century gothic/CenturyGothic-BoldItalic.svg');
+	src: url('../fonts/century gothic/CenturyGothic-BoldItalic.ttf');
+	src: url('../fonts/century gothic/CenturyGothic-BoldItalic.woff');
+}
+
+@font-face {
+	font-family: 'Century Gothic Italic';
+	src: url('../fonts/century gothic/CenturyGothic-Italic.eot');
+	src: url('../fonts/century gothic/CenturyGothic-Italic.svg');
+	src: url('../fonts/century gothic/CenturyGothic-Italic.ttf');
+	src: url('../fonts/century gothic/CenturyGothic-Italic.woff');
+}
+
+h2, h3, h4 {
+	font-family: $heading;
+	font-weight: normal;
+}
+
+h1 {
+	color: #ffffff;
+	font-family: $subHeading;
+}
+
+h2 {
+	color: $red;
+	font-size: 50px; 
+}
+
+p, span {
+	font-family: $text;
+}
+
+form {
+	label {
+		font-family: $text;
+	}
+}
+
+hr {
+	border-top: 1px solid #E0E0E0;
+}
+
+.logo {
+	width: 145px;
+	transition: all 0.25s ease;
+}
+
+.logoWrap {
+	background-color: #F8DD02;
+	padding: 20px;
+}
+
+.hero-image {
+	width: 100%;
+}
+.discountsection{
+	padding-top: 10px;
+}
+/*
+REMITTANCE SECTION
+// */
+// .container.remittancecontainer{
+// 	    margin-right: 0px;
+// 	        margin-left: 99px;
+// }
+.remittancecontiner{
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	img {
+		margin: auto;
+	}
+}
+.ids{
+	    width: 100%;
+}
+.remittancebg{
+background-color: #F8DD02;
+// width:	49%;
+}
+.remittanceheader{
+	    font-size: 28px;
+
+}
+.remittancedesc1{
+	margin-top:70px;
+}
+.remittancedesc2{
+	margin-top:145px;
+}
+
+
+.accepted-id{
+	text-align: center;
+	background-color: $green;
+	padding-bottom: 30px;
+	h2{
+		color:#FFFFFF;
+		margin-top: 100px;
+	}
+	p{
+		margin-top: 25px;
+		color:#FFFFFF;
+	}
+	img {
+		text-align: center;
+		margin: auto;
+		width:100%;
+		max-width: 500px;
+	}
+}
+
+.acceptedidmargin{
+	margin-top:	30px;
+}
+
+.btnregular{
+	font-size:20px;
+	padding: 10px 40px 10px 40px;
+	margin-top:	30px;
+}
+hr.borderline-yellow{
+	border-top: 8px solid #F8DD02;
+	margin-bottom:0px;
+}
+/*
+HOW TO PAWN SECTION
+
+*/
+.btn.btn-danger.rightbtn{
+	float:right;
+	font-size:15px;
+	padding: 10px 25px 10px 25px;
+	//margin-top:	30px;
+}
+
+.testimonials h2{
+	color: #000000;
+	text-align:	left;
+}
+.testimonials p{
+text-align:	left;
+
+
+}
+.testimonials p:nth-child(3){
+	margin-top: 20px;
+}
+
+.insurance h2, .insurance p{
+	color:#fff;
+}
+/*
+SUKI & MYWALLET SECTION
+*/
+.btn.btn-danger.howtoapplybtn{
+	font-size:20px;
+	padding: 10px 40px 15px 40px;
+	margin-top:	10px;
+}
+.btn.btn-danger.learnmorebtn{
+		font-size:20px;
+	padding: 10px 40px 15px 40px;
+	margin-top:	10px;
+	background:#ECCB00;
+	border-color:#ECCB00;
+	color:#E11C24;
+}
+
+/*
+PADALA SECTION
+*/
+.loan-widget input{
+	margin-right: 5px;
+
+}
+.feelabel{
+	color: #E11C24;
+	//display: inline-block;
+    max-width: 100%;
+    //margin-bottom: 5px;
+    font-weight: bold;
+    //text-align: center;
+}
+.feeValue.feeholder{
+	color: #E11C24;
+	//text-align: center;
+	margin-right: 0px;
+	width: 100px;
+}
+
+.col-sm-6.loanValueText{
+padding:	0px;
+
+}
+
+
+.padalaValue.remittance{
+	border-style:inset;
+	width: 80%;
+	background: rgba(115, 115, 115, 0.28);
+	padding: 5px 5px 5px 5px;
+
+}
+
+
+.col-sm-6.amountwrap{
+	padding: 0;
+}
+
+
+.form-control.amount{
+	border-width:1px;
+	border-style:inset;
+	padding: 5px 5px 5px 5px!important;
+}
+
+
+.container.content-filter{
+	margin-top: -7px;
+}
+/*
+HEADER FILTER
+*/
+
+
+
+
+/*
+REMITTANCE OPTIONS SECTION
+*/
+
+
+.remittance-options{
+	margin-bottom: 30px;
+	h3	{
+		color:#E11C24;
+	}
+
+
+	.col-sm-7{
+		img {
+			float: right;
+		}
+	}
+	.btn {
+		margin-top: 20px;
+	}
+}
+
+.content-filter {
+	text-align: center;
+	margin: auto;
+
+	.filters {
+		margin-top: 60px;
+
+		p {
+			font-family: $subText;
+			color: $red;
+		}
+	}
+
+	.btn-lg {
+		width: 175px;
+		font-size: 22px;
+	}
+}
+
+.content-filter-header {
+	background-color: $red;
+	padding: 15px;
+	position: absolute;
+	z-index: 99;
+	top: -25px;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	h1 {
+		font-size: 30px;
+		margin: 0;
+	}
+}
+
+
+
+.content-filter-xsMobile {
+	text-align: center;
+	margin: auto;
+
+	.filters {
+		margin-top: 20px;
+
+		p {
+			font-family: $subText;
+			color: $red;
+			font-size: 12px;
+		}
+	}
+
+	.btn-lg {
+		width: 175px;
+		font-size: 20px;
+		padding: 8px 16px;
+	}
+
+	.content-filter-header-xsMobile {
+		background-color: $red;
+		text-align: center;
+		margin: auto;
+		width: 100%;
+		padding: 10px;
+		h1 {
+			font-size: 21px;
+			margin: 0;
+		}
+	}
+}
+
+.divider {
+	text-align: center;
+}
+
+.toggle-filter {
+	border: 0;
+}
+
+.toggle-filter:hover, .toggle-filter:focus {
+	background-color: $red;
+}
+
+.pawning-hero {
+	background: url(../img/pawning-hero-470.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: 100%;
+    min-height: 90%;
+    display: block;
+    padding: 130px 0;
+    text-align: center;
+    background-position: center;
+
+}
+
+.remittance-hero {
+	background: url(../img/remittance-hero-470.jpg) no-repeat;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: 100%;
+    min-height: 90%;
+    display: block;
+    padding: 130px 0;
+    text-align: center;
+    background-position: center;
+}
+
+.store-locator {
+	background-color: $green;
+	padding-top: 65px;
+	padding-bottom: 40px;
+	h3 {
+		font-family: $text;
+		color: #FFFFFF;
+		display: inline;
+		font-size: 29px;
+	}
+	.form-control {
+		margin: 0;
+	}
+}
+
+.store-locator.pawning{
+	padding-top: 35px;
+	padding-bottom: 11px;
+	h3 {
+		font-family: $text;
+		color: #FFFFFF;
+		display: inline;
+		font-size: 29px;
+	}
+}
+
+.store-locator.remittance{
+	padding-top: 35px;
+	padding-bottom: 23px;
+	h3 {
+		font-family: $text;
+		color: #FFFFFF;
+		display: inline;
+		font-size: 29px;
+	}
+}
+
+
+.top-margin {
+	height: 64px;
+}
+
+.nav-wrap {
+	background-color: #FFFFFF;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	transition: all 0.25s ease;
+}
+
+.nav-wrap.past-hero {
+	.logo {
+		width: 130px;
+	}
+	.logoWrap {
+		padding: 0;
+	}
+}
+
+.btn-danger {
+	background-color: $red;
+}
+
+#map {
+	height: 600px;
+	display: none;
+	transition: all 0.25s ease;
+}
+
+.flex-center {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  height: 400px;
+	  resize: vertical;
+	}
+
+.pawning {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+
+	h2 {
+		//margin-top: 80px;
+	}
+	h3 {
+		color: $red;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.description {
+		margin-top: 30px;
+	}
+
+	img {
+		text-align: center;
+		margin: auto;
+		width:100%;
+		max-width: 500px;
+		margin-bottom: 20px;
+	}
+	.international {
+		text-align: center;
+
+		img {
+			max-width: 100px;
+    		margin: 10px;
+    		margin-bottom: 30px;
+		}
+		/*
+		.btn {
+			text-align: center;
+		}
+		*/
+	}
+}
+
+.accepted-items {
+	img {
+		margin: 10px;
+	}
+}
+
+.interest-calculator {
+	background-color: $red;
+	
+	h1, h2, h3, h4, p {
+		color: #FFFFFF;
+	}
+
+	h3, h4 {
+		font-family: $subHeading;
+	}
+
+	h3 {
+		
+		font-size: 50px;
+	}
+
+	h4 {
+		font-size: 30px;
+	}
+	.radiolabelremit{
+   	font-weight:normal;
+   }
+	
+}
+
+.padala-calculator {
+	background-color: $green;
+	padding: 30px 0;
+	
+
+	h1, h2, h3, h4, p {
+		color: #FFFFFF;
+	}
+
+	h3, h4 {
+		font-family: $heading;
+	}
+
+	h3 {
+		//margin-top: 150px;
+		font-size: 50px;
+	}
+
+	h4 {
+		font-size: 30px;
+	}
+
+	.loan-widget .ui-widget-content {
+    background: $green !important;
+   }
+
+   #padalaValue {
+   	color: $green;
+   }
+
+   #radio-inline{
+   	font-weight:normal;
+   }
+   .radiolabelremit{
+   	font-weight:normal;
+   }
+   .center {
+   		margin-top: 30px;
+   		text-align: center;
+   }
+}
+
+.bills-payment {
+
+	padding: 50px 0;
+	h2 {
+		//margin-top: 80px;
+	}
+}
+
+.suki-card {
+	text-align: center;
+	padding: 50px 0;
+	background-color: $darkYellow;
+	h2 {
+		//margin-top: 80px;
+	}
+	img {
+		text-align: center;
+		margin: auto;
+		width:100%;
+		max-width: 500px;
+	}
+}
+
+.redeem {
+	text-align: center;
+	padding: 50px 0;
+	background-color: $darkYellow;
+	h2 {
+		//margin-top: 80px;
+	}
+	img {
+		text-align: center;
+	    margin: auto;
+	    max-width: 480px;
+	    max-height: 420px;
+	}
+}
+
+.other {
+	padding: 40px 0;
+	h2 {
+		//margin-top: 70px;
+		font-size: 42px;
+	}
+}
+
+.other-list {
+	.col-sm-12 {
+		padding: 0;
+	}
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		li {
+			padding: 10px 0;
+			
+			a {
+				padding-left: 30px;
+				font-size: 40px;
+				color: $red;
+				font-family: $heading;
+			}
+		}
+		li:not(:last-child) {
+			border-bottom: 1px solid $red;
+		}
+	}
+}
+
+.e-loading {
+	padding: 50px 0;
+	background-color: $lightYellow;
+	h2 {
+		//margin-top: 80px;
+	}
+}
+
+.insurance {
+	text-align: center;
+	padding: 50px 0;
+	background-color: $green;
+	h2 {
+		//margin-top: 80px;
+	}
+	img {
+		text-align: center;
+		margin: auto;
+		width:100%;
+		max-width: 500px;
+	}
+}
+
+.testimonials {
+	text-align: center;
+	p {
+		font-size: 18px;
+		margin-top: 50px;
+	}
+
+	.carousel .carousel-indicators .active  {
+		background-color: $red;
+		width: 20px;
+    	height: 20px;
+	}
+
+	.carousel .carousel-indicators li {
+		background-color: #6F6F6F;
+		width: 20px;
+    	height: 20px;
+	}
+}
+
+.carousel-indicators {
+	bottom: -45px;
+}
+
+.news {
+	padding: 70px 0;
+	background-color: #F9F8E4;
+
+	h2 {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	a {
+		color: $red;
+	}
+
+	a.btn {
+		margin-top: 20px;
+		color: #FFF;
+	}
+}
+.desktopNav {
+	height: 90px;
+}
+
+
+input:focus {
+	background: #E8F6FC;
+}
+
+
+.nav-pills{
+	padding-top: 20px;
+
+}
+
+.navbar-brand {
+	position: absolute;
+	z-index:99;
+	padding: 0;
+}
+
+.heroCarousel {
+		.carousel-indicators .active {
+	    //background-color: #2980b9;
+	}
+
+	.carousel-inner img {
+	    width: 100%;
+	    height: auto;
+	   // max-height: auto;
+	}
+
+	.carousel-control {
+	    width: 0;
+	}
+
+	.carousel-control.left,
+	.carousel-control.right {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		background-image: none;
+		background-repeat: no-repeat;
+		text-shadow: none;
+	}
+
+	.carousel-control.left span {
+		padding: 15px;
+	}
+
+	.carousel-control.right span {
+		padding: 15px;
+	}
+
+	.carousel-control .glyphicon-chevron-left, 
+	.carousel-control .glyphicon-chevron-right, 
+	.carousel-control .icon-prev, 
+	.carousel-control .icon-next {
+		position: absolute;
+		top: 45%;
+		z-index: 5;
+		display: inline-block;
+	}
+
+	.carousel-control .glyphicon-chevron-left,
+	.carousel-control .icon-prev {
+		left: 45px;
+		font-size: 40px;
+    	color: rgba(27, 27, 27, 0.8);
+	}
+
+	.carousel-control .glyphicon-chevron-right,
+	.carousel-control .icon-next {
+		right: 75px;
+		font-size: 40px;
+    	color: rgba(27, 27, 27, 0.8);
+	}
+
+	.carousel-control.left span,
+	.carousel-control.right span {
+		//background-color: #000;
+	}
+
+	.carousel-control.left span:hover,
+	.carousel-control.right span:hover {
+		opacity: .7;
+		filter: alpha(opacity=70);
+	}
+
+	/* Carousel Header Styles */
+	.header-text {
+	    position: absolute;
+	    top: 20%;
+	    left: 1.8%;
+	    right: auto;
+	    width: 96.66666666666666%;
+	    color: #fff;
+	}
+
+	.header-text h2 {
+	    font-size: 40px;
+	}
+
+	.header-text h2 span {
+	    background-color: #2980b9;
+		padding: 10px;
+	}
+
+	.header-text h3 span {
+		background-color: #000;
+		padding: 15px;
+	}
+
+	.btn-min-block {
+	    min-width: 170px;
+	    line-height: 26px;
+	}
+
+	.btn-theme {
+	    color: #fff;
+	    background-color: transparent;
+	    border: 2px solid #fff;
+	    margin-right: 15px;
+	}
+}
+
+.navbar {
+	p {
+		font-family: $subHeading;
+		color: #58595B;
+		text-align: right;
+		margin-top:30px;
+		margin-bottom: -10px;
+		margin-right: 10px;
+		height: 10px;
+	}
+	
+
+	.fa-search {
+		position: relative;
+	    float: right;
+	    top: 26px;
+	    right: 64px;
+	    color: #888;
+	    border-right: 1px solid #9C9898;
+	    padding-right: 12px;
+	    padding: 3px 10px 7px 0px;
+	}
+	
+/*
+	.search-bar-mobile {
+		position: relative;
+	    float: right;
+	    top: 26px;
+	    right: 64px;
+	    color: #888;
+	    //border-right: 1px solid #9C9898;
+	    padding-right: 12px;
+	    padding: 3px 10px 7px 0px;
+	}
+	*/
+}
+
+li {
+	a {
+		font-family: $subHeading;
+		color: #58595B;
+	}
+}
+
+.navbar-nav > li > a {
+	padding: 0px;
+}
+
+.nav > li > a{
+	padding: 5px 10px;
+}
+
+.navbar-nav>li>a:hover {
+	text-decoration: none;
+    background-color: $orange;
+	padding: -100px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	 background-color: $orange;
+}
+
+.form-control {
+	border-radius: 0;
+}
+
+
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .8;
+}
+
+.modal-content {
+    background-color: #ececec;
+    border-radius: 0px;
+    outline: 0;
+
+    img {
+    	width: 100%;
+    	padding: 10px 20px;
+    	margin-bottom: 10px;
+    }
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 0px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+}
+
+.modal-footer {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border-top: 0px;
+}
+
+.checkbox {
+    margin-bottom: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+    font-family: $subHeading;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    border-radius: 0px;
+}
+
+.btn-link {
+    padding: 5px 10px 0px 0px;
+    color: #95a5a6;
+}
+
+.btn-link:hover, .btn-link:focus {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.btn-warning {
+	background-color: $orange;
+}
+
+.btn-warning:hover {
+	background-color: #E88522;
+}
+
+.glyphicon {
+    top: 0px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.modal-body {
+	overflow: auto;
+
+	img {
+		width: 100%;
+	}
+}
+
+.modal-header {
+	button {
+		padding-bottom: 10px;
+	}
+}
+
+.navbar {
+	border: 0;
+}
+
+/*
+=====================================
+WIDGET
+=====================================
+*/
+
+.loan-widget {
+	background: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+	height: 370px;
+	//margin-left: -10px;
+	margin-top: 50px;
+
+	.ui-widget-content {
+	background: $red;
+	}
+	
+	h3 {
+		margin-top: 0;
+		color: #58595B;
+		font-family: $heading;
+	}
+
+	.title {
+		display: block;
+		color: #58595B;
+		margin-bottom: 10px;
+	}
+
+	input {
+		background: none;
+		color: #58595B;
+		border: 0;
+		font-weight: 200;
+		font-size: 20px;
+		//padding-top: 10px;
+	}
+
+	.radio-inline {
+		font-family: $text;
+		color: #58595B;
+	}
+
+	label {
+		color: #58595B;
+	}
+
+
+/*
+
+input[type="radio"] {
+    display:none;
+}
+*/
+input[type="radio"] + label {
+    color: #ffffff ;
+    font-family:$heading;
+    font-size:14px;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:17px;
+    height:17px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    border: 3px solid #ffffff
+}
+
+input[type="radio"] + label span {
+     background-color: #ffffff;
+}
+
+input[type="radio"]:checked + label span{
+     background-color: #fca951;
+}
+
+/*
+	a {
+		display: block;
+		background: $orange;
+		color: #ffffff;
+		border-radius: 3px;
+		text-align: center;
+		font-size: 15px;
+		padding-top: 5px;
+		width: 145px;
+		height: 30px;
+		font-family: $heading;
+		margin-left: -30px;
+	}
+	*/
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.form-control {
+		background: none;
+		box-shadow: none;
+		height: auto;
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+
+	.tips {
+		font-size: 10px;
+		display: inline-block;
+		height: 15px;
+		width: 15px;
+		background: $orange;
+		color: #fff;
+		border-radius: 50%;
+		bottom: 70px;
+		padding-top: 1px;
+		text-align: center;
+		right: 20px;
+		margin-top: 0px;
+	}
+
+
+	img {
+		position: absolute;
+		width: 55px;
+	}
+
+	.applyButton {
+		text-align: center;
+
+	}
+
+	.loanValueText {
+		//text-align: center;
+		.btn {
+			margin-top: 10px;
+		}
+	}
+
+
+}
+
+
+
+#loanValue {
+		display: block;
+		font-size: 22px;
+		color: $red;
+		text-align: center;
+		font-weight: 200;
+		//margin-left: -30px;
+}
+
+
+	
+
+.ui-widget
+.ui-corner-all {
+	border-radius: 0px !important;
+	outline: none;
+}
+
+.ui-slider:hover, .ui-slider:focus {
+	cursor: pointer;
+}
+
+.ui-slider .ui-slider-handle {
+	height: 20px !important;
+	border-radius: 0% !important;
+}
+
+.ui-slider .ui-slider-handle:hover {
+	cursor: pointer;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	cursor: pointer;
+}
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background: #fff url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% !important;
+}
+
+.tooltip-inner {
+	text-align: left !important;
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+
+.loanInfo {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	h1 {
+		color: #505050;
+	}
+
+
+	.right {
+		float: right;
+		font-weight: bold;
+		color: #16a0e8;
+	}
+
+	section {
+		border: 3px solid #16A0E8;
+		padding: 20px 10px 30px;
+		text-align: center;
+
+		i {
+			font-size: 30px;
+			color: #16a0e8;
+		}
+
+		span {
+			font-size: 25px;
+			color: #FF7B08;
+		}
+	}
+}
+
+
+
+
+
+#testimonials {
+	background: url(../img/testimonials.jpg) no-repeat #000000;
+	background-size: cover;
+	background-position: center center;
+	height: 330px;
+}
+
+
+.carousel-inner {
+		background: none;
+	}
+
+.carousel{
+	background: $blue;
+	text-align: center;
+	background: none;
+
+
+	h1 {
+		margin-bottom: 20px;
+	}
+
+	.carousel-indicators li {
+		background-color: #ffffff;
+		border: 2px solid #ffffff;
+		width: 15px;
+		height: 15px;
+	}
+
+	.carousel-indicators .active {
+		background-color: $blue;
+		border: 2px solid #ffffff;
+		width: 16px;
+		height: 16px;
+	}
+
+
+}
+
+footer {
+	background: $lightGreen;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+
+	ul {
+		margin-bottom: 30px;
+    	margin-top: 20px;
+    	padding-left: 0;
+		li{
+			font-family: $subHeading;
+			color: #FFFFFF;
+			display: inline;
+			margin-right: 25px;
+		}
+	}
+	h4 {
+		color: #ffffff;
+		padding-top: 25px;
+	}
+
+	p {
+		font-size: 12px;
+		color: #fff;
+		margin-top: 30px;
+		font-family: $subHeading;
+	}
+/*
+	img {
+		width: 115px;
+	}
+*/
+	.footerNav {
+		padding: 0;
+
+		li {
+			list-style: none;
+			display: block;
+			padding-top: 10px;
+		}
+	}
+
+	a, span {
+		color: #ffffff;
+		padding-top: 30px;
+	}
+
+	a {
+		font-family: $text;
+		font-size: 12px;
+
+	}
+
+	a:hover {
+		color: #16A0E8;
+		text-decoration: none;
+	}
+
+	span {
+		text-align: right;
+		font-size: 12px;
+		font-weight: 200;
+		overflow: auto;
+		margin-right: 10px !important;
+	}
+
+	.social {
+		margin-top: 20px;
+		img {
+			width: 45px;
+			margin: 5px 10px 5px 0;
+		}
+	}
+}
+
+footer.footer-pawning {
+	background: #E1201C;
+}
+
+.footerBottom {
+	background: #232323;
+	text-align: center;
+	color: #ffffff;
+	padding: 40px 0;
+	font-size: 12px;
+	height: 100px;
+}
+
+.desktopNav {
+	display: none;
+}
+
+.navbar-toggle {
+    display: inline;
+    border: 0 solid transparent;
+    margin-right: 0;
+    left: 15px;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 15px;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.store-locator {
+	display: none;
+}
+
+.interest-calculator {
+    padding: 30px 0;
+}
+
+.navbar-default {
+	background-color: #fff;
+}
+
+/*
+SERVICES PAWNING
+*/
+
+.services-pawning {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	background-color: $red;
+	text-align: center;
+	h2 {
+		color: #FFF;
+		font-size: 70px;
+		//margin-left: 10%;
+	}
+	h3 {
+		color: #FFF;
+
+	}
+	p {
+		color: #FFF;
+
+	}
+	img {
+		text-align: center;
+		margin: auto;
+		width:100%;
+		max-width: 400px;
+		margin-bottom: 20px;
+	}
+}
+
+.services-interest-calculator {
+	background-color: #fff;
+	padding: 80px 0;
+	h2, h3, ul {
+		text-align: center;
+	}
+	ul {
+		padding-left: 0;
+	}
+}
+
+.loan-widget-bg{
+	background-color: #EBEBEB !important;
+}
+
+.desktopNav2 {
+	height: 54px;
+	background-color: #E74F24;
+}
+.nav.nav-pills.navbar-right{
+	margin-right: 40px;
+	padding-top:	13px;	
+}
+.how-to-renew{
+	background-color:#FFF7D6;
+	padding: 80px 0;
+	text-align: center;
+
+	h2{
+		margin-bottom: 50px;
+	}
+	img {
+		text-align: center;
+		margin: auto;
+		width:100%;
+		max-width: 300px;
+		margin-bottom: 20px;
+	}
+}
+.how-to-redeem{
+	background-color:#FFF7D6;
+	padding: 0px 0px 80px 0px;
+	text-align: center;
+
+	h2{
+		margin-bottom: 50px;
+	}
+	img {
+		text-align: center;
+		margin: auto;
+		width:100%;
+		max-width: 300px;
+		margin-bottom: 20px;
+	}
+}
+
+.desktopNav2 li {
+	a {
+		font-family: "Century Gothic Regular";
+		color: #fff;
+		font-weight: normal;
+	}
+}
+
+
+.how-to-pawn{
+	background-color: #EBEBEB ;
+	padding: 80px 0;
+	text-align: center;
+
+	h2{
+		margin-bottom: 50px;
+	}
+	img {
+		text-align: center;
+		margin: auto;
+		width:100%;
+		max-width: 300px;
+		margin-bottom: 20px;
+	}
+}
+.howtoredeempawn{
+	//margin-left: 5%;
+
+}
+
+.services-interest-calculator{
+
+	li{
+		display: inline;
+		font-size: 18px;
+	}
+	.interestpercent{
+		color: $red;
+		margin-left: 35%;
+	}
+	.interestdays{
+		padding-left:	0px;
+		margin-top: 40px;
+		margin-left: 20%;
+	}
+	h3{
+		font-size: 19px;
+	}
+}
+
+.pawning-accepted-items{
+	padding: 80px 0;
+
+	p{
+		margin-top: 60px;
+		font-size: 20px;
+		margin-left: 14%;
+	}
+	h2{
+		margin-bottom: 60px;
+	}
+}
+
+.terms-and-conditions{
+	padding: 80px 0;
+	background-color:	#EBEBEB;
+	h2{
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	.carret{
+		color: $red;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+	}
+	.chevron{
+		margin-left: 10px;
+		margin-top: 30px;
+	}
+}   
+/*
+REMITTANCE SECTION
+ */
+
+.remittancecontiner{
+	//padding: 10px 10px 10px 75px;
+}
+.ids{
+	width: 100%;
+}
+.remittancebg{
+	background-color: #F8DD02;
+// width:	49%;
+}
+.remittanceheader{
+	font-size: 28px;
+
+}
+.remittancedesc1{
+	margin-top:70px;
+}
+.remittancedesc2{
+	margin-top:145px;
+}
+
+
+.accepted-id{
+	background-color: $green;
+	h2{
+		color:#FFFFFF;
+		margin-top: 100px;
+	}
+	p{
+		margin-top: 25px;
+		color:#FFFFFF;
+	}
+}
+
+.acceptedidmargin{
+	margin-top:	30px;
+}
+
+.btnregular{
+	font-size:20px;
+	padding: 10px 40px 10px 40px;
+	margin-top:	30px;
+}
+hr.borderline-yellow{
+	border-top: 8px solid #F8DD02;
+	margin-bottom:0px;
+}
+
+.pawning-mobile-nav {
+	position: fixed;
+	z-index: 1;
+	background-color: $orange;
+    width: 100%;
+    padding: 10px 2px;
+    color: #fff;
+    a {
+    	color: #fff;
+    	font-family: $text;
+    }
+    ul {
+    	list-style-type: none;
+    }
+}
+/*
+#pawning-nav {
+	width: 100%;
+	background-color: $red;
+}
+*/
+
+/*
+SERVICES TERMS AND CONDITIONS
+*/
+.terms-and-conditions2{
+	padding: 80px 0;
+	background-color: #F9F8E4;
+	h2{
+		margin-bottom: 60px;
+	}
+	.carret{
+		color: $red;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+	}
+	.chevron{
+		margin-left: 10px;
+		margin-top: 30px;
+	}
+}   
+/*
+SERVICES INTERNATIONAL PARTNERS
+*/
+
+.services-international-partners {
+	padding: 80px 0;
+
+
+	h2 {
+		margin-top: 80px;
+		margin-bottom: 50px;
+		font-size: 45px;
+		text-align: center;
+	}
+	.carret2{
+		color: $red;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.international2 {
+		text-align: center;
+
+		img {
+			max-width: 100px;
+			margin: 10px;
+			margin-bottom: 50px;
+		}
+	}
+
+	.chevron{
+		margin-left: 10px;
+		margin-top: 30px;
+	}
+}
+
+/*
+SERVICES AUTHORIZED AGENTS
+*/
+.services-authorized-agents{
+
+	padding: 80px 0;
+	background-color:	#EBEBEB;
+	h2{
+		margin-bottom: 60px;
+		text-align: center;
+	}
+	.carret{
+		color: $red;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+	}
+	.chevron{
+		margin-left: 10px;
+		margin-top: 30px;
+	}
+	li{
+		font-size: 18px;
+	}
+} 
+
+
+/*
+SERVICES ACCEPTED IDs
+*/
+.services-accepted-ids{
+	padding: 80px 0;
+	background-color:	#fff;
+	h2{
+		margin-bottom: 60px;
+	}
+	.carret{
+		color: $red;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+	}
+	.chevron{
+		margin-left: 10px;
+		margin-top: 30px;
+	}
+} 
+/*
+SERVICES REMITTANCE
+*/
+
+.services-remittance {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	background-color: $green;
+	text-align: center;
+	h2 {
+		color: #FFF;
+		font-size: 70px;
+		//margin-left: 10%;
+	}
+	h3 {
+		color: #FFF;
+		padding-bottom: 20px;
+
+	}
+	p {
+		color: #FFF;
+	}
+	img {
+		text-align: center;
+		margin: auto;
+		width:100%;
+		max-width: 300px;
+		margin-bottom: 20px;
+	}
+}
+
+.remittance-loan-widget-bg{
+	background-color: #EBEBEB !important;
+}
+
+.services-padala-calculator{
+	padding: 80px 0;
+	h2, p{
+		text-align: center;
+	}
+	li{
+		display: inline;
+		font-size: 18px;
+	}
+	.interestpercent{
+		color: $red;
+		margin-left: 35%;
+	}
+	.interestdays{
+		padding-left:	0px;
+		margin-top: 40px;
+		margin-left: 20%;
+	}
+	h3{
+		font-size: 19px;
+		text-align: center;
+	}
+	.center {
+		margin-top: 30px;
+		text-align: center;
+	}
+}
+
+.search-bar-mobile {
+	width: 50%;
+	float: right;
+	position: relative;
+}
+
+
+
+/*
+=================================
+Custom Media Queries
+=================================
+*/
+
+@media (min-width: 768px) {
+	/*
+	.col-sm-6 {
+		float: none;
+	}
+	*/
+}
+
+
+
+
+@media( max-width : 768px ) {
+
+
+
+	.nav-wrap.past-hero .logo {
+    	width: 100px;
+	}
+
+	.content-filter-header {
+		h1 {
+    		font-size: 24px;
+		}
+   	}
+
+	.interest-calculator, .padala-calculator {
+		h3, h4, p {
+			text-align: center;
+		}
+	}
+
+
+	#side-menu {
+		background: #252525;
+
+		#logo {
+			margin-bottom: 30px;
+		}
+
+		li {
+			display: block;
+			clear: left;
+			//padding-left: 20px;
+			a {
+				display: block;
+				clear: left;
+				font-family: $text;
+				color: #ffffff;
+				border-radius: 0;
+				padding-left: 20px;
+			}
+		}
+
+		hr {
+			width: 90%;
+		}
+	}
+
+	.navbar-nav > li > a {
+		border-bottom: 1px dotted #5bc0de;
+		font-size: 16px !important;
+	}
+
+	.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+		background-color: $red;
+	}
+
+	.nav > li > a:hover, .nav > li > a:focus {
+		background-color: $red; 
+	}
+
+	.logo {
+		width: 75px;
+	    margin-top: 5px;
+	    margin-left: 10px;
+	    margin-bottom: 5px;
+	}
+
+	label {
+		margin-bottom: 0;
+	}
+
+	.form-control {
+		margin-top: 0;
+	}
+
+	.form-group {
+		margin-bottom: 5px;
+	}
+
+	.navbar {
+		.navbar-toggle {
+			margin-top: 20px;
+		}
+
+	}
+
+	
+
+	.wrap {
+		p {
+			margin-bottom: 30px;
+		}
+	}
+
+	.testimonials {
+		text-align: center;
+		height: 350px;
+		h2 {
+			text-align: center;
+		}
+		p {
+			text-align: center;
+		}
+		
+	}
+
+	.loan-widget {
+		
+		background: #fff;
+		height: auto;
+		p {
+			text-align: left;
+		}
+	}
+
+	.news {
+		text-align: center;
+		img {
+			margin: auto;
+		}
+	}
+	
+	#nav1 {
+		ul {
+			li {
+				padding-left: 0;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+}
+
+@media( max-width : 767px ) {
+	.content-filter {
+		.filters {
+			margin-top: 25px;
+		}
+	}
+	.content-filter-header {
+		position:static;
+	}
+}
+
+@media( max-width : 585px ) {
+
+	/*
+	.loan-widget {
+		position: relative;
+		margin: auto;
+		margin-top: 20px;
+		width: 320px;
+		height: 380px;
+		background: #fff;
+
+		a {
+			padding-top: 0;	
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		img {
+			width: 35px;
+			margin-left: 50px;
+		}
+
+		
+
+		.applyButton {
+			margin-top: 40px;
+			margin-left: -210px;
+		}
+
+		.btn {
+			position: relative;
+			margin-left: 0px;
+			font-size: 28px;
+			padding-top: 3px;
+			font-size: 24px;
+			margin-bottom: 10px;
+			width: 200px;
+			height: 40px;
+			margin-top: 30px;
+
+			a {
+				padding-bottom: -100px;
+				margin-top: 100px;
+			}
+		}
+	}
+
+
+
+	#loanValue {
+		margin-top: -20px;
+		margin-left: 15px;
+		font-size: 16px;
+	}
+*/
+	
+	footer {
+
+		text-align: center;
+
+		h4 {
+			margin-top: -10px;
+		}
+
+		hr {
+			display: none;
+		}
+
+		li {
+			a {
+				font-family: $subHeading;
+			}
+		}
+		
+
+		.footerNav {
+			li {
+				display: inline;
+			}
+		}
+	
+	}
+
+	#social {
+		font-size: 24px;
+	}
+}
+
+@media( min-width : 481px ) {
+	img.mobile {
+			display: none;
+		}
+
+	.carousel {
+		img.mobile {
+			display: none;
+		}
+	}
+
+	.content-filter-xsMobile {
+		display: none;
+	}
+}
+
+@media( max-width : 480px ) {
+	img.desktop {
+			display: none;
+		}
+
+	.carousel {
+		img.desktop {
+			display: none;
+		}
+	}
+
+	
+
+	.content-filter {
+		display: none;
+	}
+
+	.pawning-hero {
+		background: url(../img/pawning-hero-mobile.jpg) no-repeat;
+		//-webkit-background-size: cover;
+	   // -moz-background-size: cover;
+	   // -o-background-size: cover;
+	    background-size: cover;
+	}
+
+	.remittance-hero {
+		background: url(../img/remittance-hero-mobile.jpg) no-repeat;
+		//-webkit-background-size: cover;
+	   // -moz-background-size: cover;
+	   // -o-background-size: cover;
+	    background-size: cover;
+	}
+
+	.interest-calculator {
+		h3 {
+			font-size: 40px;
+		}
+		h4 {
+			font-size: 25px;
+		}
+	}
+
+	.padala-calculator {
+		h3 {
+			font-size: 40px;
+		}
+	}
+
+	.other-list {
+		ul {
+			li {
+				a {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	.carousel-control.right {
+    	right: -60px;
+	}
+
+	.carousel-control.left {
+    	left: -35px;
+	}
+
+
+	.terms-and-conditions, .terms-and-conditions2 {
+		h2 {
+			font-size: 40px;
+		}
+	}
+
+	.heroCarousel {
+		overflow: hidden;
+	}
+
+}
+
+@media( max-width : 320px ) {
+	.other-list ul li a {
+	    font-size: 23px;
+	}
+}

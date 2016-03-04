@@ -1,0 +1,1511 @@
+@font-face {
+  font-family: 'Century Gothic Bold';
+  src: url("../fonts/century gothic/CenturyGothic-Bold.eot");
+  src: url("../fonts/century gothic/CenturyGothic-Bold.svg");
+  src: url("../fonts/century gothic/CenturyGothic-Bold.ttf");
+  src: url("../fonts/century gothic/CenturyGothic-Bold.woff"); }
+@font-face {
+  font-family: 'Century Gothic Regular';
+  src: url("../fonts/century gothic/CenturyGothic-Regular.eot");
+  src: url("../fonts/century gothic/CenturyGothic-Regular.svg");
+  src: url("../fonts/century gothic/CenturyGothic-Regular.ttf");
+  src: url("../fonts/century gothic/CenturyGothic-Regular.woff"); }
+@font-face {
+  font-family: 'Century Gothic Bold Italic';
+  src: url("../fonts/century gothic/CenturyGothic-BoldItalic.eot");
+  src: url("../fonts/century gothic/CenturyGothic-BoldItalic.svg");
+  src: url("../fonts/century gothic/CenturyGothic-BoldItalic.ttf");
+  src: url("../fonts/century gothic/CenturyGothic-BoldItalic.woff"); }
+@font-face {
+  font-family: 'Century Gothic Italic';
+  src: url("../fonts/century gothic/CenturyGothic-Italic.eot");
+  src: url("../fonts/century gothic/CenturyGothic-Italic.svg");
+  src: url("../fonts/century gothic/CenturyGothic-Italic.ttf");
+  src: url("../fonts/century gothic/CenturyGothic-Italic.woff"); }
+h2, h3, h4 {
+  font-family: "Century Gothic Bold Italic";
+  font-weight: normal; }
+
+h1 {
+  color: #ffffff;
+  font-family: "Century Gothic Bold"; }
+
+h2 {
+  color: #E11C24;
+  font-size: 50px; }
+
+p, span {
+  font-family: "Century Gothic Regular"; }
+
+form label {
+  font-family: "Century Gothic Regular"; }
+
+hr {
+  border-top: 1px solid #E0E0E0; }
+
+.logo {
+  width: 145px;
+  transition: all 0.25s ease; }
+
+.logoWrap {
+  background-color: #F8DD02;
+  padding: 20px; }
+
+.hero-image {
+  width: 100%; }
+
+.discountsection {
+  padding-top: 10px; }
+
+/*
+REMITTANCE SECTION
+// */
+.remittancecontiner {
+  padding: 10px 10px 10px 10px;
+  text-align: center; }
+  .remittancecontiner img {
+    margin: auto; }
+
+.ids {
+  width: 100%; }
+
+.remittancebg {
+  background-color: #F8DD02; }
+
+.remittanceheader {
+  font-size: 28px; }
+
+.remittancedesc1 {
+  margin-top: 70px; }
+
+.remittancedesc2 {
+  margin-top: 145px; }
+
+.accepted-id {
+  text-align: center;
+  background-color: #39A14A;
+  padding-bottom: 30px; }
+  .accepted-id h2 {
+    color: #FFFFFF;
+    margin-top: 100px; }
+  .accepted-id p {
+    margin-top: 25px;
+    color: #FFFFFF; }
+  .accepted-id img {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 500px; }
+
+.acceptedidmargin {
+  margin-top: 30px; }
+
+.btnregular {
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
+  margin-top: 30px; }
+
+hr.borderline-yellow {
+  border-top: 8px solid #F8DD02;
+  margin-bottom: 0px; }
+
+/*
+HOW TO PAWN SECTION
+
+*/
+.btn.btn-danger.rightbtn {
+  float: right;
+  font-size: 15px;
+  padding: 10px 25px 10px 25px; }
+
+.testimonials h2 {
+  color: #000000;
+  text-align: left; }
+
+.testimonials p {
+  text-align: left; }
+
+.testimonials p:nth-child(3) {
+  margin-top: 20px; }
+
+.insurance h2, .insurance p {
+  color: #fff; }
+
+/*
+SUKI & MYWALLET SECTION
+*/
+.btn.btn-danger.howtoapplybtn {
+  font-size: 20px;
+  padding: 10px 40px 15px 40px;
+  margin-top: 10px; }
+
+.btn.btn-danger.learnmorebtn {
+  font-size: 20px;
+  padding: 10px 40px 15px 40px;
+  margin-top: 10px;
+  background: #ECCB00;
+  border-color: #ECCB00;
+  color: #E11C24; }
+
+/*
+PADALA SECTION
+*/
+.loan-widget input {
+  margin-right: 5px; }
+
+.feelabel {
+  color: #E11C24;
+  max-width: 100%;
+  font-weight: bold; }
+
+.feeValue.feeholder {
+  color: #E11C24;
+  margin-right: 0px;
+  width: 100px; }
+
+.col-sm-6.loanValueText {
+  padding: 0px; }
+
+.padalaValue.remittance {
+  border-style: inset;
+  width: 80%;
+  background: rgba(115, 115, 115, 0.28);
+  padding: 5px 5px 5px 5px; }
+
+.col-sm-6.amountwrap {
+  padding: 0; }
+
+.form-control.amount {
+  border-width: 1px;
+  border-style: inset;
+  padding: 5px 5px 5px 5px !important; }
+
+.container.content-filter {
+  margin-top: -7px; }
+
+/*
+HEADER FILTER
+*/
+/*
+REMITTANCE OPTIONS SECTION
+*/
+.remittance-options {
+  margin-bottom: 30px; }
+  .remittance-options h3 {
+    color: #E11C24; }
+  .remittance-options .col-sm-7 img {
+    float: right; }
+  .remittance-options .btn {
+    margin-top: 20px; }
+
+.content-filter {
+  text-align: center;
+  margin: auto; }
+  .content-filter .filters {
+    margin-top: 60px; }
+    .content-filter .filters p {
+      font-family: "Century Gothic Italic";
+      color: #E11C24; }
+  .content-filter .btn-lg {
+    width: 175px;
+    font-size: 22px; }
+
+.content-filter-header {
+  background-color: #E11C24;
+  padding: 15px;
+  position: absolute;
+  z-index: 99;
+  top: -25px;
+  text-align: center;
+  margin: auto;
+  width: 100%; }
+  .content-filter-header h1 {
+    font-size: 30px;
+    margin: 0; }
+
+.content-filter-xsMobile {
+  text-align: center;
+  margin: auto; }
+  .content-filter-xsMobile .filters {
+    margin-top: 20px; }
+    .content-filter-xsMobile .filters p {
+      font-family: "Century Gothic Italic";
+      color: #E11C24;
+      font-size: 12px; }
+  .content-filter-xsMobile .btn-lg {
+    width: 175px;
+    font-size: 20px;
+    padding: 8px 16px; }
+  .content-filter-xsMobile .content-filter-header-xsMobile {
+    background-color: #E11C24;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px; }
+    .content-filter-xsMobile .content-filter-header-xsMobile h1 {
+      font-size: 21px;
+      margin: 0; }
+
+.divider {
+  text-align: center; }
+
+.toggle-filter {
+  border: 0; }
+
+.toggle-filter:hover, .toggle-filter:focus {
+  background-color: #E11C24; }
+
+.pawning-hero {
+  background: url(../img/pawning-hero-470.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-height: 90%;
+  display: block;
+  padding: 130px 0;
+  text-align: center;
+  background-position: center; }
+
+.remittance-hero {
+  background: url(../img/remittance-hero-470.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-height: 90%;
+  display: block;
+  padding: 130px 0;
+  text-align: center;
+  background-position: center; }
+
+.store-locator {
+  background-color: #39A14A;
+  padding-top: 65px;
+  padding-bottom: 40px; }
+  .store-locator h3 {
+    font-family: "Century Gothic Regular";
+    color: #FFFFFF;
+    display: inline;
+    font-size: 29px; }
+  .store-locator .form-control {
+    margin: 0; }
+
+.store-locator.pawning {
+  padding-top: 35px;
+  padding-bottom: 11px; }
+  .store-locator.pawning h3 {
+    font-family: "Century Gothic Regular";
+    color: #FFFFFF;
+    display: inline;
+    font-size: 29px; }
+
+.store-locator.remittance {
+  padding-top: 35px;
+  padding-bottom: 23px; }
+  .store-locator.remittance h3 {
+    font-family: "Century Gothic Regular";
+    color: #FFFFFF;
+    display: inline;
+    font-size: 29px; }
+
+.top-margin {
+  height: 64px; }
+
+.nav-wrap {
+  background-color: #FFFFFF;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  transition: all 0.25s ease; }
+
+.nav-wrap.past-hero .logo {
+  width: 130px; }
+.nav-wrap.past-hero .logoWrap {
+  padding: 0; }
+
+.btn-danger {
+  background-color: #E11C24; }
+
+#map {
+  height: 600px;
+  display: none;
+  transition: all 0.25s ease; }
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  resize: vertical; }
+
+.pawning {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; }
+  .pawning h3 {
+    color: #E11C24;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .pawning .description {
+    margin-top: 30px; }
+  .pawning img {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px; }
+  .pawning .international {
+    text-align: center;
+    /*
+    .btn {
+    	text-align: center;
+    }
+    */ }
+    .pawning .international img {
+      max-width: 100px;
+      margin: 10px;
+      margin-bottom: 30px; }
+
+.accepted-items img {
+  margin: 10px; }
+
+.interest-calculator {
+  background-color: #E11C24; }
+  .interest-calculator h1, .interest-calculator h2, .interest-calculator h3, .interest-calculator h4, .interest-calculator p {
+    color: #FFFFFF; }
+  .interest-calculator h3, .interest-calculator h4 {
+    font-family: "Century Gothic Bold"; }
+  .interest-calculator h3 {
+    font-size: 50px; }
+  .interest-calculator h4 {
+    font-size: 30px; }
+  .interest-calculator .radiolabelremit {
+    font-weight: normal; }
+
+.padala-calculator {
+  background-color: #39A14A;
+  padding: 30px 0; }
+  .padala-calculator h1, .padala-calculator h2, .padala-calculator h3, .padala-calculator h4, .padala-calculator p {
+    color: #FFFFFF; }
+  .padala-calculator h3, .padala-calculator h4 {
+    font-family: "Century Gothic Bold Italic"; }
+  .padala-calculator h3 {
+    font-size: 50px; }
+  .padala-calculator h4 {
+    font-size: 30px; }
+  .padala-calculator .loan-widget .ui-widget-content {
+    background: #39A14A !important; }
+  .padala-calculator #padalaValue {
+    color: #39A14A; }
+  .padala-calculator #radio-inline {
+    font-weight: normal; }
+  .padala-calculator .radiolabelremit {
+    font-weight: normal; }
+  .padala-calculator .center {
+    margin-top: 30px;
+    text-align: center; }
+
+.bills-payment {
+  padding: 50px 0; }
+
+.suki-card {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ECCB00; }
+  .suki-card img {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 500px; }
+
+.redeem {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ECCB00; }
+  .redeem img {
+    text-align: center;
+    margin: auto;
+    max-width: 480px;
+    max-height: 420px; }
+
+.other {
+  padding: 40px 0; }
+  .other h2 {
+    font-size: 42px; }
+
+.other-list .col-sm-12 {
+  padding: 0; }
+.other-list ul {
+  list-style-type: none;
+  padding-left: 0; }
+  .other-list ul li {
+    padding: 10px 0; }
+    .other-list ul li a {
+      padding-left: 30px;
+      font-size: 40px;
+      color: #E11C24;
+      font-family: "Century Gothic Bold Italic"; }
+  .other-list ul li:not(:last-child) {
+    border-bottom: 1px solid #E11C24; }
+
+.e-loading {
+  padding: 50px 0;
+  background-color: #ECCB00; }
+
+.insurance {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #39A14A; }
+  .insurance img {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 500px; }
+
+.testimonials {
+  text-align: center; }
+  .testimonials p {
+    font-size: 18px;
+    margin-top: 50px; }
+  .testimonials .carousel .carousel-indicators .active {
+    background-color: #E11C24;
+    width: 20px;
+    height: 20px; }
+  .testimonials .carousel .carousel-indicators li {
+    background-color: #6F6F6F;
+    width: 20px;
+    height: 20px; }
+
+.carousel-indicators {
+  bottom: -45px; }
+
+.news {
+  padding: 70px 0;
+  background-color: #F9F8E4; }
+  .news h2 {
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .news a {
+    color: #E11C24; }
+  .news a.btn {
+    margin-top: 20px;
+    color: #FFF; }
+
+.desktopNav {
+  height: 90px; }
+
+input:focus {
+  background: #E8F6FC; }
+
+.nav-pills {
+  padding-top: 20px; }
+
+.navbar-brand {
+  position: absolute;
+  z-index: 99;
+  padding: 0; }
+
+.heroCarousel {
+  /* Carousel Header Styles */ }
+  .heroCarousel .carousel-inner img {
+    width: 100%;
+    height: auto; }
+  .heroCarousel .carousel-control {
+    width: 0; }
+  .heroCarousel .carousel-control.left,
+  .heroCarousel .carousel-control.right {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-image: none;
+    background-repeat: no-repeat;
+    text-shadow: none; }
+  .heroCarousel .carousel-control.left span {
+    padding: 15px; }
+  .heroCarousel .carousel-control.right span {
+    padding: 15px; }
+  .heroCarousel .carousel-control .glyphicon-chevron-left,
+  .heroCarousel .carousel-control .glyphicon-chevron-right,
+  .heroCarousel .carousel-control .icon-prev,
+  .heroCarousel .carousel-control .icon-next {
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+    display: inline-block; }
+  .heroCarousel .carousel-control .glyphicon-chevron-left,
+  .heroCarousel .carousel-control .icon-prev {
+    left: 45px;
+    font-size: 40px;
+    color: rgba(27, 27, 27, 0.8); }
+  .heroCarousel .carousel-control .glyphicon-chevron-right,
+  .heroCarousel .carousel-control .icon-next {
+    right: 75px;
+    font-size: 40px;
+    color: rgba(27, 27, 27, 0.8); }
+  .heroCarousel .carousel-control.left span:hover,
+  .heroCarousel .carousel-control.right span:hover {
+    opacity: .7;
+    filter: alpha(opacity=70); }
+  .heroCarousel .header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff; }
+  .heroCarousel .header-text h2 {
+    font-size: 40px; }
+  .heroCarousel .header-text h2 span {
+    background-color: #2980b9;
+    padding: 10px; }
+  .heroCarousel .header-text h3 span {
+    background-color: #000;
+    padding: 15px; }
+  .heroCarousel .btn-min-block {
+    min-width: 170px;
+    line-height: 26px; }
+  .heroCarousel .btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px; }
+
+.navbar {
+  /*
+  	.search-bar-mobile {
+  		position: relative;
+  	    float: right;
+  	    top: 26px;
+  	    right: 64px;
+  	    color: #888;
+  	    //border-right: 1px solid #9C9898;
+  	    padding-right: 12px;
+  	    padding: 3px 10px 7px 0px;
+  	}
+  	*/ }
+  .navbar p {
+    font-family: "Century Gothic Bold";
+    color: #58595B;
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    margin-right: 10px;
+    height: 10px; }
+  .navbar .fa-search {
+    position: relative;
+    float: right;
+    top: 26px;
+    right: 64px;
+    color: #888;
+    border-right: 1px solid #9C9898;
+    padding-right: 12px;
+    padding: 3px 10px 7px 0px; }
+
+li a {
+  font-family: "Century Gothic Bold";
+  color: #58595B; }
+
+.navbar-nav > li > a {
+  padding: 0px; }
+
+.nav > li > a {
+  padding: 5px 10px; }
+
+.navbar-nav > li > a:hover {
+  text-decoration: none;
+  background-color: #F79125;
+  padding: -100px; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: #F79125; }
+
+.form-control {
+  border-radius: 0; }
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .8; }
+
+.modal-content {
+  background-color: #ececec;
+  border-radius: 0px;
+  outline: 0; }
+  .modal-content img {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px; }
+
+.modal-header {
+  min-height: 16.43px;
+  padding: 15px 15px 15px 15px;
+  border-bottom: 0px; }
+
+.modal-body {
+  position: relative;
+  padding: 5px 15px 5px 15px; }
+
+.modal-footer {
+  padding: 15px 15px 15px 15px;
+  text-align: left;
+  border-top: 0px; }
+
+.checkbox {
+  margin-bottom: 0px; }
+
+.btn {
+  border-radius: 0px;
+  font-family: "Century Gothic Bold"; }
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none; }
+
+.btn-lg, .btn-group-lg > .btn {
+  border-radius: 0px; }
+
+.btn-link {
+  padding: 5px 10px 0px 0px;
+  color: #95a5a6; }
+
+.btn-link:hover, .btn-link:focus {
+  color: #2c3e50;
+  text-decoration: none; }
+
+.btn-warning {
+  background-color: #F79125; }
+
+.btn-warning:hover {
+  background-color: #E88522; }
+
+.glyphicon {
+  top: 0px; }
+
+.form-control {
+  border-radius: 0px; }
+
+.modal-body {
+  overflow: auto; }
+  .modal-body img {
+    width: 100%; }
+
+.modal-header button {
+  padding-bottom: 10px; }
+
+.navbar {
+  border: 0; }
+
+/*
+=====================================
+WIDGET
+=====================================
+*/
+.loan-widget {
+  background: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 370px;
+  margin-top: 50px;
+  /*
+  
+  input[type="radio"] {
+      display:none;
+  }
+  */
+  /*
+  	a {
+  		display: block;
+  		background: $orange;
+  		color: #ffffff;
+  		border-radius: 3px;
+  		text-align: center;
+  		font-size: 15px;
+  		padding-top: 5px;
+  		width: 145px;
+  		height: 30px;
+  		font-family: $heading;
+  		margin-left: -30px;
+  	}
+  	*/ }
+  .loan-widget .ui-widget-content {
+    background: #E11C24; }
+  .loan-widget h3 {
+    margin-top: 0;
+    color: #58595B;
+    font-family: "Century Gothic Bold Italic"; }
+  .loan-widget .title {
+    display: block;
+    color: #58595B;
+    margin-bottom: 10px; }
+  .loan-widget input {
+    background: none;
+    color: #58595B;
+    border: 0;
+    font-weight: 200;
+    font-size: 20px; }
+  .loan-widget .radio-inline {
+    font-family: "Century Gothic Regular";
+    color: #58595B; }
+  .loan-widget label {
+    color: #58595B; }
+  .loan-widget input[type="radio"] + label {
+    color: #ffffff;
+    font-family: "Century Gothic Bold Italic";
+    font-size: 14px; }
+  .loan-widget input[type="radio"] + label span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #ffffff; }
+  .loan-widget input[type="radio"] + label span {
+    background-color: #ffffff; }
+  .loan-widget input[type="radio"]:checked + label span {
+    background-color: #fca951; }
+  .loan-widget a:hover {
+    text-decoration: none; }
+  .loan-widget .form-control {
+    background: none;
+    box-shadow: none;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 10px; }
+  .loan-widget .tips {
+    font-size: 10px;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background: #F79125;
+    color: #fff;
+    border-radius: 50%;
+    bottom: 70px;
+    padding-top: 1px;
+    text-align: center;
+    right: 20px;
+    margin-top: 0px; }
+  .loan-widget img {
+    position: absolute;
+    width: 55px; }
+  .loan-widget .applyButton {
+    text-align: center; }
+  .loan-widget .loanValueText .btn {
+    margin-top: 10px; }
+
+#loanValue {
+  display: block;
+  font-size: 22px;
+  color: #E11C24;
+  text-align: center;
+  font-weight: 200; }
+
+.ui-widget
+.ui-corner-all {
+  border-radius: 0px !important;
+  outline: none; }
+
+.ui-slider:hover, .ui-slider:focus {
+  cursor: pointer; }
+
+.ui-slider .ui-slider-handle {
+  height: 20px !important;
+  border-radius: 0% !important; }
+
+.ui-slider .ui-slider-handle:hover {
+  cursor: pointer; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  cursor: pointer; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: #fff url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% !important; }
+
+.tooltip-inner {
+  text-align: left !important; }
+
+.text-center {
+  text-align: center; }
+
+.loanInfo {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .loanInfo h1 {
+    color: #505050; }
+  .loanInfo .right {
+    float: right;
+    font-weight: bold;
+    color: #16a0e8; }
+  .loanInfo section {
+    border: 3px solid #16A0E8;
+    padding: 20px 10px 30px;
+    text-align: center; }
+    .loanInfo section i {
+      font-size: 30px;
+      color: #16a0e8; }
+    .loanInfo section span {
+      font-size: 25px;
+      color: #FF7B08; }
+
+#testimonials {
+  background: url(../img/testimonials.jpg) no-repeat #000000;
+  background-size: cover;
+  background-position: center center;
+  height: 330px; }
+
+.carousel-inner {
+  background: none; }
+
+.carousel {
+  background: #229fe7;
+  text-align: center;
+  background: none; }
+  .carousel h1 {
+    margin-bottom: 20px; }
+  .carousel .carousel-indicators li {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 15px;
+    height: 15px; }
+  .carousel .carousel-indicators .active {
+    background-color: #229fe7;
+    border: 2px solid #ffffff;
+    width: 16px;
+    height: 16px; }
+
+footer {
+  background: #11B864;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  /*
+  	img {
+  		width: 115px;
+  	}
+  */ }
+  footer ul {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-left: 0; }
+    footer ul li {
+      font-family: "Century Gothic Bold";
+      color: #FFFFFF;
+      display: inline;
+      margin-right: 25px; }
+  footer h4 {
+    color: #ffffff;
+    padding-top: 25px; }
+  footer p {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 30px;
+    font-family: "Century Gothic Bold"; }
+  footer .footerNav {
+    padding: 0; }
+    footer .footerNav li {
+      list-style: none;
+      display: block;
+      padding-top: 10px; }
+  footer a, footer span {
+    color: #ffffff;
+    padding-top: 30px; }
+  footer a {
+    font-family: "Century Gothic Regular";
+    font-size: 12px; }
+  footer a:hover {
+    color: #16A0E8;
+    text-decoration: none; }
+  footer span {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 200;
+    overflow: auto;
+    margin-right: 10px !important; }
+  footer .social {
+    margin-top: 20px; }
+    footer .social img {
+      width: 45px;
+      margin: 5px 10px 5px 0; }
+
+footer.footer-pawning {
+  background: #E1201C; }
+
+.footerBottom {
+  background: #232323;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 0;
+  font-size: 12px;
+  height: 100px; }
+
+.desktopNav {
+  display: none; }
+
+.navbar-toggle {
+  display: inline;
+  border: 0 solid transparent;
+  margin-right: 0;
+  left: 15px; }
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 15px; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888; }
+
+.store-locator {
+  display: none; }
+
+.interest-calculator {
+  padding: 30px 0; }
+
+.navbar-default {
+  background-color: #fff; }
+
+/*
+SERVICES PAWNING
+*/
+.services-pawning {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #E11C24;
+  text-align: center; }
+  .services-pawning h2 {
+    color: #FFF;
+    font-size: 70px; }
+  .services-pawning h3 {
+    color: #FFF; }
+  .services-pawning p {
+    color: #FFF; }
+  .services-pawning img {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px; }
+
+.services-interest-calculator {
+  background-color: #fff;
+  padding: 80px 0; }
+  .services-interest-calculator h2, .services-interest-calculator h3, .services-interest-calculator ul {
+    text-align: center; }
+  .services-interest-calculator ul {
+    padding-left: 0; }
+
+.loan-widget-bg {
+  background-color: #EBEBEB !important; }
+
+.desktopNav2 {
+  height: 54px;
+  background-color: #E74F24; }
+
+.nav.nav-pills.navbar-right {
+  margin-right: 40px;
+  padding-top: 13px; }
+
+.how-to-renew {
+  background-color: #FFF7D6;
+  padding: 80px 0;
+  text-align: center; }
+  .how-to-renew h2 {
+    margin-bottom: 50px; }
+  .how-to-renew img {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px; }
+
+.how-to-redeem {
+  background-color: #FFF7D6;
+  padding: 0px 0px 80px 0px;
+  text-align: center; }
+  .how-to-redeem h2 {
+    margin-bottom: 50px; }
+  .how-to-redeem img {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px; }
+
+.desktopNav2 li a {
+  font-family: "Century Gothic Regular";
+  color: #fff;
+  font-weight: normal; }
+
+.how-to-pawn {
+  background-color: #EBEBEB;
+  padding: 80px 0;
+  text-align: center; }
+  .how-to-pawn h2 {
+    margin-bottom: 50px; }
+  .how-to-pawn img {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px; }
+
+.services-interest-calculator li {
+  display: inline;
+  font-size: 18px; }
+.services-interest-calculator .interestpercent {
+  color: #E11C24;
+  margin-left: 35%; }
+.services-interest-calculator .interestdays {
+  padding-left: 0px;
+  margin-top: 40px;
+  margin-left: 20%; }
+.services-interest-calculator h3 {
+  font-size: 19px; }
+
+.pawning-accepted-items {
+  padding: 80px 0; }
+  .pawning-accepted-items p {
+    margin-top: 60px;
+    font-size: 20px;
+    margin-left: 14%; }
+  .pawning-accepted-items h2 {
+    margin-bottom: 60px; }
+
+.terms-and-conditions {
+  padding: 80px 0;
+  background-color: #EBEBEB; }
+  .terms-and-conditions h2 {
+    text-align: center;
+    margin-bottom: 60px; }
+  .terms-and-conditions .carret {
+    color: #E11C24;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center; }
+  .terms-and-conditions .chevron {
+    margin-left: 10px;
+    margin-top: 30px; }
+
+/*
+REMITTANCE SECTION
+ */
+.ids {
+  width: 100%; }
+
+.remittancebg {
+  background-color: #F8DD02; }
+
+.remittanceheader {
+  font-size: 28px; }
+
+.remittancedesc1 {
+  margin-top: 70px; }
+
+.remittancedesc2 {
+  margin-top: 145px; }
+
+.accepted-id {
+  background-color: #39A14A; }
+  .accepted-id h2 {
+    color: #FFFFFF;
+    margin-top: 100px; }
+  .accepted-id p {
+    margin-top: 25px;
+    color: #FFFFFF; }
+
+.acceptedidmargin {
+  margin-top: 30px; }
+
+.btnregular {
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
+  margin-top: 30px; }
+
+hr.borderline-yellow {
+  border-top: 8px solid #F8DD02;
+  margin-bottom: 0px; }
+
+.pawning-mobile-nav {
+  position: fixed;
+  z-index: 1;
+  background-color: #F79125;
+  width: 100%;
+  padding: 10px 2px;
+  color: #fff; }
+  .pawning-mobile-nav a {
+    color: #fff;
+    font-family: "Century Gothic Regular"; }
+  .pawning-mobile-nav ul {
+    list-style-type: none; }
+
+/*
+#pawning-nav {
+	width: 100%;
+	background-color: $red;
+}
+*/
+/*
+SERVICES TERMS AND CONDITIONS
+*/
+.terms-and-conditions2 {
+  padding: 80px 0;
+  background-color: #F9F8E4; }
+  .terms-and-conditions2 h2 {
+    margin-bottom: 60px; }
+  .terms-and-conditions2 .carret {
+    color: #E11C24;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center; }
+  .terms-and-conditions2 .chevron {
+    margin-left: 10px;
+    margin-top: 30px; }
+
+/*
+SERVICES INTERNATIONAL PARTNERS
+*/
+.services-international-partners {
+  padding: 80px 0; }
+  .services-international-partners h2 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 45px;
+    text-align: center; }
+  .services-international-partners .carret2 {
+    color: #E11C24;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center; }
+  .services-international-partners .international2 {
+    text-align: center; }
+    .services-international-partners .international2 img {
+      max-width: 100px;
+      margin: 10px;
+      margin-bottom: 50px; }
+  .services-international-partners .chevron {
+    margin-left: 10px;
+    margin-top: 30px; }
+
+/*
+SERVICES AUTHORIZED AGENTS
+*/
+.services-authorized-agents {
+  padding: 80px 0;
+  background-color: #EBEBEB; }
+  .services-authorized-agents h2 {
+    margin-bottom: 60px;
+    text-align: center; }
+  .services-authorized-agents .carret {
+    color: #E11C24;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center; }
+  .services-authorized-agents .chevron {
+    margin-left: 10px;
+    margin-top: 30px; }
+  .services-authorized-agents li {
+    font-size: 18px; }
+
+/*
+SERVICES ACCEPTED IDs
+*/
+.services-accepted-ids {
+  padding: 80px 0;
+  background-color: #fff; }
+  .services-accepted-ids h2 {
+    margin-bottom: 60px; }
+  .services-accepted-ids .carret {
+    color: #E11C24;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center; }
+  .services-accepted-ids .chevron {
+    margin-left: 10px;
+    margin-top: 30px; }
+
+/*
+SERVICES REMITTANCE
+*/
+.services-remittance {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #39A14A;
+  text-align: center; }
+  .services-remittance h2 {
+    color: #FFF;
+    font-size: 70px; }
+  .services-remittance h3 {
+    color: #FFF;
+    padding-bottom: 20px; }
+  .services-remittance p {
+    color: #FFF; }
+  .services-remittance img {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px; }
+
+.remittance-loan-widget-bg {
+  background-color: #EBEBEB !important; }
+
+.services-padala-calculator {
+  padding: 80px 0; }
+  .services-padala-calculator h2, .services-padala-calculator p {
+    text-align: center; }
+  .services-padala-calculator li {
+    display: inline;
+    font-size: 18px; }
+  .services-padala-calculator .interestpercent {
+    color: #E11C24;
+    margin-left: 35%; }
+  .services-padala-calculator .interestdays {
+    padding-left: 0px;
+    margin-top: 40px;
+    margin-left: 20%; }
+  .services-padala-calculator h3 {
+    font-size: 19px;
+    text-align: center; }
+  .services-padala-calculator .center {
+    margin-top: 30px;
+    text-align: center; }
+
+.search-bar-mobile {
+  width: 50%;
+  float: right;
+  position: relative; }
+
+/*
+=================================
+Custom Media Queries
+=================================
+*/
+@media (min-width: 768px) {
+  /*
+  .col-sm-6 {
+  	float: none;
+  }
+  */ }
+@media (max-width: 768px) {
+  .nav-wrap.past-hero .logo {
+    width: 100px; }
+
+  .content-filter-header h1 {
+    font-size: 24px; }
+
+  .interest-calculator h3, .interest-calculator h4, .interest-calculator p, .padala-calculator h3, .padala-calculator h4, .padala-calculator p {
+    text-align: center; }
+
+  #side-menu {
+    background: #252525; }
+    #side-menu #logo {
+      margin-bottom: 30px; }
+    #side-menu li {
+      display: block;
+      clear: left; }
+      #side-menu li a {
+        display: block;
+        clear: left;
+        font-family: "Century Gothic Regular";
+        color: #ffffff;
+        border-radius: 0;
+        padding-left: 20px; }
+    #side-menu hr {
+      width: 90%; }
+
+  .navbar-nav > li > a {
+    border-bottom: 1px dotted #5bc0de;
+    font-size: 16px !important; }
+
+  .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #E11C24; }
+
+  .nav > li > a:hover, .nav > li > a:focus {
+    background-color: #E11C24; }
+
+  .logo {
+    width: 75px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px; }
+
+  label {
+    margin-bottom: 0; }
+
+  .form-control {
+    margin-top: 0; }
+
+  .form-group {
+    margin-bottom: 5px; }
+
+  .navbar .navbar-toggle {
+    margin-top: 20px; }
+
+  .wrap p {
+    margin-bottom: 30px; }
+
+  .testimonials {
+    text-align: center;
+    height: 350px; }
+    .testimonials h2 {
+      text-align: center; }
+    .testimonials p {
+      text-align: center; }
+
+  .loan-widget {
+    background: #fff;
+    height: auto; }
+    .loan-widget p {
+      text-align: left; }
+
+  .news {
+    text-align: center; }
+    .news img {
+      margin: auto; }
+
+  #nav1 ul li {
+    padding-left: 0;
+    margin-bottom: 10px; } }
+@media (max-width: 767px) {
+  .content-filter .filters {
+    margin-top: 25px; }
+
+  .content-filter-header {
+    position: static; } }
+@media (max-width: 585px) {
+  	/*
+  	.loan-widget {
+  		position: relative;
+  		margin: auto;
+  		margin-top: 20px;
+  		width: 320px;
+  		height: 380px;
+  		background: #fff;
+  
+  		a {
+  			padding-top: 0;	
+  		}
+  
+  		h3 {
+  			text-align: center;
+  		}
+  
+  		img {
+  			width: 35px;
+  			margin-left: 50px;
+  		}
+  
+  		
+  
+  		.applyButton {
+  			margin-top: 40px;
+  			margin-left: -210px;
+  		}
+  
+  		.btn {
+  			position: relative;
+  			margin-left: 0px;
+  			font-size: 28px;
+  			padding-top: 3px;
+  			font-size: 24px;
+  			margin-bottom: 10px;
+  			width: 200px;
+  			height: 40px;
+  			margin-top: 30px;
+  
+  			a {
+  				padding-bottom: -100px;
+  				margin-top: 100px;
+  			}
+  		}
+  	}
+  
+  
+  
+  	#loanValue {
+  		margin-top: -20px;
+  		margin-left: 15px;
+  		font-size: 16px;
+  	}
+  */
+  footer {
+    text-align: center; }
+    footer h4 {
+      margin-top: -10px; }
+    footer hr {
+      display: none; }
+    footer li a {
+      font-family: "Century Gothic Bold"; }
+    footer .footerNav li {
+      display: inline; }
+
+  #social {
+    font-size: 24px; } }
+@media (min-width: 481px) {
+  img.mobile {
+    display: none; }
+
+  .carousel img.mobile {
+    display: none; }
+
+  .content-filter-xsMobile {
+    display: none; } }
+@media (max-width: 480px) {
+  img.desktop {
+    display: none; }
+
+  .carousel img.desktop {
+    display: none; }
+
+  .content-filter {
+    display: none; }
+
+  .pawning-hero {
+    background: url(../img/pawning-hero-mobile.jpg) no-repeat;
+    background-size: cover; }
+
+  .remittance-hero {
+    background: url(../img/remittance-hero-mobile.jpg) no-repeat;
+    background-size: cover; }
+
+  .interest-calculator h3 {
+    font-size: 40px; }
+  .interest-calculator h4 {
+    font-size: 25px; }
+
+  .padala-calculator h3 {
+    font-size: 40px; }
+
+  .other-list ul li a {
+    font-size: 30px; }
+
+  .carousel-control.right {
+    right: -60px; }
+
+  .carousel-control.left {
+    left: -35px; }
+
+  .terms-and-conditions h2, .terms-and-conditions2 h2 {
+    font-size: 40px; }
+
+  .heroCarousel {
+    overflow: hidden; } }
+@media (max-width: 320px) {
+  .other-list ul li a {
+    font-size: 23px; } }
+
+/*# sourceMappingURL=style-mobile.css.map */
