@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Century Gothic Bold';
-  /*src: url("../fonts/century gothic/CenturyGothic-Bold.eot");*/
+  src: url("../fonts/century gothic/CenturyGothic-Bold.eot");
   src: url("../fonts/century gothic/CenturyGothic-Bold.svg");
   src: url("../fonts/century gothic/CenturyGothic-Bold.ttf");
   src: url("../fonts/century gothic/CenturyGothic-Bold.woff"); }
@@ -54,6 +54,9 @@ hr {
 .discountsection {
   padding-top: 10px; }
 
+/**
+NAVBAR2 BG
+*/
 /*
 SERVICES TERMS AND CONDITIONS
 */
@@ -207,9 +210,13 @@ SERVICES PAWNING
 .loan-widget-bg {
   background-color: #EBEBEB !important; }
 
+.desktopNav3 {
+  height: 54px;
+  background-color: #F79125; }
+
 .desktopNav2 {
   height: 54px;
-  background-color: #E74F24; }
+  background-color: #E11C24; }
 
 .nav.nav-pills.navbar-right {
   margin-right: 40px;
@@ -225,7 +232,7 @@ SERVICES PAWNING
 
 .how-to-redeem {
   background-color: #FFF7D6;
-  padding: 0px 0px 80px 0px; }
+  padding: 80px 0px 80px 0px; }
   .how-to-redeem h2 {
     margin-bottom: 50px; }
   .how-to-redeem .loan-widget .form-control {
@@ -236,11 +243,22 @@ SERVICES PAWNING
 .img-responsive.how-to-redeem-img {
   margin-left: 10%; }
 
+.desktopNav3 li a {
+  font-family: "Century Gothic Regular";
+  color: #fff;
+  font-weight: normal; }
+.desktopNav3 li a:hover {
+  background-color: #E74F24; }
+.desktopNav3 li a:focus {
+  background-color: #F79125; }
+
 .desktopNav2 li a {
   font-family: "Century Gothic Regular";
   color: #fff;
   font-weight: normal; }
 .desktopNav2 li a:hover {
+  background-color: #E74F24; }
+.desktopNav2 li a:focus {
   background-color: #E74F24; }
 
 .how-to-pawn {
@@ -266,6 +284,13 @@ SERVICES PAWNING
   margin-left: 20%; }
 .services-interest-calculator h3 {
   font-size: 19px; }
+.services-interest-calculator .loan-widget.loan-widget-bg {
+  height: 500px; }
+
+.services-interest-calculator .loan-widget .applyButton {
+  margin-top: 10px;
+  font-size: 20px;
+  width: 111%; }
 
 .pawning-accepted-items {
   padding: 80px 0; }
@@ -369,14 +394,21 @@ SUKI & MYWALLET SECTION
   font-size: 20px;
   padding: 10px 40px 15px 40px;
   margin-top: 10px;
-  background: #ECCB00;
-  border-color: #ECCB00;
+  background: #fff;
+  border-color: #fff;
   color: #E11C24; }
 
-/*
-PADALA SECTION
-*/
-.loan-widget input {
+.loan-widget-row {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+#radio-suki-remittance2 {
+  margin-right: 5px; }
+
+#radio-vmsl {
+  margin-right: 5px; }
+
+#radio-ncrl {
   margin-right: 5px; }
 
 .feelabel {
@@ -387,7 +419,8 @@ PADALA SECTION
   font-weight: bold; }
 
 .feeValue.feeholder {
-  color: #E11C24; }
+  color: #E11C24;
+  padding: 5px 10px 5px 10px; }
 
 .col-sm-6.loanValueText {
   padding: 0px; }
@@ -396,15 +429,14 @@ PADALA SECTION
   border-style: inset;
   width: 80%;
   background: rgba(115, 115, 115, 0.28);
-  padding: 5px 5px 5px 5px; }
+  padding: 5px 10px 5px 10px; }
 
 .col-sm-6.amountwrap {
   padding: 0; }
 
 .form-control.amount {
   border-width: 1px;
-  border-style: inset;
-  padding: 5px 5px 5px 5px !important; }
+  border-style: inset; }
 
 .container.content-filter {
   margin-top: -7px; }
@@ -599,7 +631,8 @@ REMITTANCE OPTIONS SECTION
     font-size: 18px; }
 
 .bills-payment {
-  padding: 50px 0; }
+  padding: 50px 0;
+  background-color: #ECCB00; }
   .bills-payment h2 {
     margin-top: 80px; }
   .bills-payment p {
@@ -607,7 +640,7 @@ REMITTANCE OPTIONS SECTION
 
 .suki-card {
   padding: 50px 0;
-  background-color: #ECCB00; }
+  background-color: #fff; }
   .suki-card h2 {
     margin-top: 80px;
     margin-bottom: 30px; }
@@ -953,20 +986,21 @@ li a {
 WIDGET
 =====================================
 */
+.interest-calculator .loan-widget {
+  height: 500px; }
+.interest-calculator .applyButton {
+  font-size: 20px;
+  width: 111%;
+  margin-top: 10px; }
+
 .loan-widget {
   background: #FFFFFF;
   padding-top: 20px;
   padding-bottom: 10px;
   width: 100%;
-  height: 370px;
+  height: 400px;
   margin-left: -10px;
   margin-top: 50px;
-  /*
-  
-  input[type="radio"] {
-      display:none;
-  }
-  */
   /*
   	a {
   		display: block;
@@ -1032,8 +1066,15 @@ WIDGET
     background: #fff;
     box-shadow: none;
     height: auto;
-    padding-top: 0;
-    padding-bottom: 10px; }
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px; }
+  .loan-widget .interest-form-control {
+    background: #fff;
+    box-shadow: none;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    color: #E11C24; }
   .loan-widget .tips {
     font-size: 10px;
     display: inline-block;
@@ -1361,7 +1402,7 @@ s
   display: none; }
 
 #testimonials {
-  background: url(../img/testimonial-girl.png) no-repeat #000000;
+  background: url(../img/testimonials.jpg) no-repeat #000000;
   background-size: cover;
   background-position: center center;
   height: 330px; }
@@ -1922,6 +1963,10 @@ Custom Media Queries
   .terms-and-conditions p {
     font-size: 16px; }
 
+  .desktopNav3 li a {
+    font-size: 11px;
+    font-weight: bold; }
+
   .desktopNav2 li a {
     font-size: 11px;
     font-weight: bold; }
@@ -1931,12 +1976,14 @@ Custom Media Queries
 
   .services-interest-calculator h2 {
     font-size: 45px; }
-  .services-interest-calculator .loan-widget {
-    height: 335px; }
   .services-interest-calculator h3 {
     font-size: 16px; }
   .services-interest-calculator .interestdays {
     margin-top: 30px; }
+  .services-interest-calculator .applyButton {
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    width: 111%; }
 
   .pawning-accepted-items h2 {
     font-size: 45px; } }
@@ -2122,6 +2169,10 @@ Custom Media Queries
   .terms-and-conditions2 h2 {
     font-size: 49px; }
 
+  .desktopNav3 li a {
+    font-size: 11px;
+    font-weight: bold; }
+
   .desktopNav2 li a {
     font-size: 11px;
     font-weight: bold; }
@@ -2188,6 +2239,10 @@ Custom Media Queries
     font-size: 60px;
     margin-bottom: 30px; }
 
+  .desktopNav3 li a {
+    font-size: 9px;
+    font-weight: bold; }
+
   .desktopNav2 li a {
     font-size: 9px;
     font-weight: bold; } }
@@ -2248,6 +2303,10 @@ Custom Media Queries
     font-size: 60px;
     margin-bottom: 30px; }
 
+  .desktopNav3 li a {
+    font-size: 10px;
+    font-weight: bold; }
+
   .desktopNav2 li a {
     font-size: 10px;
     font-weight: bold; }
@@ -2263,6 +2322,10 @@ Custom Media Queries
 @media (max-width: 838px) {
   .services-interest-calculator li {
     font-size: 16px; }
+
+  .desktopNav3 li a {
+    font-size: 9px;
+    font-weight: bold; }
 
   .desktopNav2 li a {
     font-size: 9px;

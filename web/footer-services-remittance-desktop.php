@@ -872,7 +872,7 @@ $(window).on('scroll',function(){
 
 
 // Add scrollspy to <body>
-$('body').scrollspy({offset: 50}); 
+$('body').scrollspy({offset: 130}); 
 
 
 
@@ -883,7 +883,7 @@ $('body').scrollspy({offset: 50});
 
       // animate
       $('html, body').animate({
-          scrollTop: $(this.hash).offset().top - 130
+          scrollTop: $(this.hash).offset().top - 125
         }, 1000, function(){
   
           // when done, add hash to url
