@@ -48,7 +48,7 @@
 
 			<div class="content-filter-header">
 				<h1>Ano po ang maipaglilingkod namin sa inyo ? <button class="btn btn-danger toggle-filter">—</button> </h1>
-			
+
 			</div>
 		</div>
 	</div>
@@ -126,20 +126,37 @@
 					<div class="col-md-5  col-sm-1 loan-widget">
 						<div class="row">
 							<div class="col-sm-12">
-								<label class="title">LOAN</label>
+								<label class="title">ENTER LOAN AMOUNT</label>
 								<div id="slider-loan-max"></div>
-								<p>
-									<input type="text" id="loanAmount" readonly style="">
-								</p>
+								<div class="row loan-widget-row">
+									<div class="col-sm-6">
+										<!-- <label for="inputdefault">ENTER LOAN AMOUNT</label> -->
+										<input name ="defaultInput" class="form-control amount" id="inputamount" type="number" placeholder="Input Amount">
+									</div>
+
+									<div class="col-sm-6">
+										<p>	
+											<input type="text" class="loanAmount" readonly style="">
+										</p>
+									</div>
+								</div>
 							</div>
 
 							<div class="col-sm-12">
 								
 								<label class="title">DURATION</label>
 								<div id="slider-month-max"></div>
-								<p>
-									<input type="text" id="month" readonly style="">
-								</p>
+								<div class="row loan-widget-row">
+									<div class="col-sm-6">
+										<!-- <label for="inputdefault">ENTER LOAN AMOUNT</label> -->
+										<input name ="defaultInput" class="form-control amount" id="inputduration" type="number" placeholder="Input Duration">
+									</div>
+									<div class="col-sm-6">
+										<p>
+											<input type="text" id="month" readonly style="">
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 
@@ -157,11 +174,33 @@
 
 						<div class="row" id="apply">
 							
-							<div class="col-sm-6 loanValueText">
-								<input type="text" class="form-control" id="loanValue" placeholder="Php 5000.00" readonly>		
+							<div class="col-sm-6">
+								<label for="inputdefault">REDEEM AMOUNT</label>
+								<input name ="defaultInput" class="form-control interest-form-control" id="inputdefault" type="number" min="1" max="5" placeholder="Php 123" readonly>
 							</div>
-							<div class="col-sm-6 applyButton">
-								<a href="" class="btn btn-danger btn-block">LEARN MORE</a>
+							<div class="col-sm-6">
+								<label for="inputdefault">RENEWAL AMOUNT</label>
+								<input name ="defaultInput" class="form-control interest-form-control" id="inputdefault" type="number" min="1" max="5" placeholder="Php 123" readonly>
+							</div>
+							<!-- <div class="form-group">
+										<label for="inputdefault">AMOUNT TO SEND</label>
+										<input name ="defaultInput" class="form-control amount" placeholder="Input Amount" id="inputdefault" type="number" min="1" max="5">
+									</div> -->
+									
+							<!-- <div class="col-sm-6 loanValueText">
+								<input type="text" class="form-control" id="loanValue" placeholder="Php 5000.00" readonly>		
+							</div> -->
+							
+
+						</div>
+						<div id="row">
+							<div class="col-sm-6">
+							</div>
+							<div class="col-sm-6">
+
+								<div class="applyButton">
+									<a href="" class="btn btn-danger btn-block">LEARN MORE</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -217,10 +256,10 @@
 								<label class="title">BRANCH</label>
 
 								<div class="col-sm-6">
-									<label id="radio-inline"><input id="radio-vmsl" type="radio" name="locationradio" value="location1">Visayas, Mindano, Southern Luzon</label>
+									<label id="radio-inline"><input class="remittanceradio" id="radio-vmsl" type="radio" name="locationradio" value="location1">Visayas, Mindano, Southern Luzon</label>
 								</div>
 								<div class="col-sm-6">
-									<label id="radio-inline"><input id="radio-ncrl" type="radio" name="locationradio" value="location2">NCR and the rest of Luzon</label>
+									<label id="radio-inline"><input class="remittanceradio" id="radio-ncrl" type="radio" name="locationradio" value="location2">NCR and the rest of Luzon</label>
 								</div>
 
 
@@ -248,8 +287,7 @@
 								<input class="padalaValue remittance" placeholder="50000" type ="number" readonly>		
 							</div>
 							<div class="col-sm-6 loanValueText"><div class="feelabel">REMITTANCE FEE</div>
-								<input class="feeValue feeholder" placeholder="345" type ="number" readonly>		
-							</div>
+							<input class="feeValue feeholder" placeholder="345" type ="number" readonly>		
 						</div>
 					</div>
 				</div>
@@ -259,7 +297,35 @@
 </div>
 </div>
 </div>
-
+</div>
+<div class="other">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>CASH CARD WITHDRAWAL</h2>
+				<div class="col-sm-6">
+					
+					<p>Palawan Pawnshop Palawan Express Pera Padala’s branches offer BALANCE INQUIRY & WITHDRAWAL transactions thru BDO POS terminals.</p>
+					<a href="" class="btn btn-danger">VIEW BRANCHES</a>
+				</div>
+				<div class="col-sm-6">
+					<img class="img-responsive" src="img/withdrawal.png" alt="">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h2>MONEY CHANGER</h2>
+				<div class="col-sm-6">
+					
+					<p>All Palawan Pawnshop branches accept foreign currencies for exchange to Philippine Peso.</p>
+					<a href="" class="btn btn-danger">EXCHANGE RATES</a>
+				</div>
+				<div class="col-sm-6">
+					<img class="img-responsive" src="img/money-changer.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="bills-payment">
 	<div class="container">
 		<div class="row">
@@ -291,34 +357,7 @@
 	</div>
 </div>
 
-<div class="other">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
-				<h2>CASH CARD WITHDRAWAL</h2>
-				<div class="col-sm-6">
-					
-					<p>Palawan Pawnshop Palawan Express Pera Padala’s branches offer BALANCE INQUIRY & WITHDRAWAL transactions thru BDO POS terminals.</p>
-					<a href="" class="btn btn-danger">VIEW BRANCHES</a>
-				</div>
-				<div class="col-sm-6">
-					<img class="img-responsive" src="img/withdrawal.png" alt="">
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<h2>MONEY CHANGER</h2>
-				<div class="col-sm-6">
-					
-					<p>All Palawan Pawnshop branches accept foreign currencies for exchange to Philippine Peso.</p>
-					<a href="" class="btn btn-danger">EXCHANGE RATES</a>
-				</div>
-				<div class="col-sm-6">
-					<img class="img-responsive" src="img/money-changer.png" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
 <div class="e-loading">
 	<div class="container">
 		<div class="row">
@@ -369,59 +408,59 @@
 					<div class="col-sm-6">
 						<h2>Testimonials</h2>
 						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
-						<p>-Lorem Ipsum</p>
+							<p>-Lorem Ipsum</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="col-sm-6">
+							<img src="img/testimonial-girl.png" alt="">
+						</div>
+						<div class="col-sm-6">
+							<h2>Testimonials</h2>
+							<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
+								<p>-Lorem Ipsum</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-sm-6">
+								<img src="img/testimonial-girl.png" alt="">
+							</div>
+							<div class="col-sm-6">
+								<h2>Testimonials</h2>
+								<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
+									<p>-Lorem Ipsum</p>
+								</div>
+							</div>
+
+						</div>
 					</div>
 				</div>
-				<div class="item">
-					<div class="col-sm-6">
-						<img src="img/testimonial-girl.png" alt="">
-					</div>
-					<div class="col-sm-6">
-						<h2>Testimonials</h2>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
-						<p>-Lorem Ipsum</p>
+			</div>
+
+			<div class="news">
+				<div class="container">
+					<div class="row">
+						<h2>Industry Related News</h2>
+						<div class="col-sm-4">
+							<img class="img-responsive" src="img/news-1.jpg" alt="">
+							<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
+						</div>
+						<div class="col-sm-4">
+							<img class="img-responsive" src="img/news-1.jpg" alt="">
+							<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
+						</div>
+						<div class="col-sm-4">
+							<img class="img-responsive" src="img/news-1.jpg" alt="">
+							<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
+							<a href="" class="btn btn-danger pull-right rightbtn">VIEW ALL NEWS</a>
+						</div>
 					</div>
 				</div>
-				<div class="item">
-					<div class="col-sm-6">
-						<img src="img/testimonial-girl.png" alt="">
-					</div>
-					<div class="col-sm-6">
-						<h2>Testimonials</h2>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
-						<p>-Lorem Ipsum</p>
-					</div>
-				</div>
-
 			</div>
-	</div>
-</div>
-</div>
-
-<div class="news">
-	<div class="container">
-		<div class="row">
-			<h2>Industry Related News</h2>
-			<div class="col-sm-4">
-				<img class="img-responsive" src="img/news-1.jpg" alt="">
-				<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
-			</div>
-			<div class="col-sm-4">
-				<img class="img-responsive" src="img/news-1.jpg" alt="">
-				<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
-			</div>
-			<div class="col-sm-4">
-				<img class="img-responsive" src="img/news-1.jpg" alt="">
-				<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
-				<a href="" class="btn btn-danger pull-right rightbtn">VIEW ALL NEWS</a>
-			</div>
-		</div>
-	</div>
-</div>
 
 
-<?php include('footer-desktop.php'); ?>
+			<?php include('footer-desktop.php'); ?>
 

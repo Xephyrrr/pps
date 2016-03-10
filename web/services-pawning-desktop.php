@@ -64,20 +64,37 @@
 					<div class="col-md-5  col-sm-1 loan-widget loan-widget-bg">
 						<div class="row">
 							<div class="col-sm-12">
-								<label class="title">LOAN</label>
+								<label class="title">ENTER LOAN AMOUNT</label>
 								<div id="slider-loan-max"></div>
-								<p>
-									<input type="text" id="loanAmount" readonly style="">
-								</p>
+								<div class="row loan-widget-row">
+									<div class="col-sm-6">
+										<!-- <label for="inputdefault">ENTER LOAN AMOUNT</label> -->
+										<input name ="defaultInput" class="form-control amount" id="inputamount" type="number" placeholder="Input Amount">
+									</div>
+
+									<div class="col-sm-6">
+										<p>	
+											<input type="text" class="loanAmount" readonly style="">
+										</p>
+									</div>
+								</div>
 							</div>
 
 							<div class="col-sm-12">
 								
 								<label class="title">DURATION</label>
-								<div id="slider-month-max"></div>
-								<p>
-									<input type="text" id="month" readonly style="">
-								</p>
+								<div id="slider-days-max"></div>
+								<div class="row loan-widget-row">
+									<div class="col-sm-6">
+										<!-- <label for="inputdefault">ENTER LOAN AMOUNT</label> -->
+										<input name ="defaultInput" class="form-control amount" id="inputdays" type="number" placeholder="Input Duration">
+									</div>
+									<div class="col-sm-6">
+										<p>
+											<input type="text" id="loanDays" readonly style="">
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 
@@ -95,11 +112,23 @@
 
 						<div class="row" id="apply">
 							
-							<div class="col-sm-6 loanValueText">
-								<input type="text" class="form-control servicesloanwidget" id="loanValue" placeholder="Php 5000.00" readonly>		
+							<div class="col-sm-6">
+								<label for="inputdefault">REDEEM AMOUNT</label>
+								<input name ="defaultInput" class="form-control interest-form-control" id="redeemAmount" type="text" min="1" max="5" placeholder="Php 123" readonly>
 							</div>
-							<div class="col-sm-6 applyButton">
-								<a href="" class="btn btn-danger btn-block">LEARN MORE</a>
+							<div class="col-sm-6">
+								<label for="inputdefault">RENEWAL AMOUNT</label>
+								<input name ="defaultInput" class="form-control interest-form-control" id="renewalAmount" type="text" min="1" max="5" placeholder="Php 123" readonly>
+							</div>
+						</div>
+						<div id="row">
+							<div class="col-sm-6">
+							</div>
+							<div class="col-sm-6">
+
+								<div class="applyButton">
+									<a href="" class="btn btn-danger btn-block">LEARN MORE</a>
+								</div>
 							</div>
 						</div>
 					</div>

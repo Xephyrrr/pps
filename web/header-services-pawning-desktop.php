@@ -31,13 +31,13 @@
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
 						    </button>
-
-
-							<a class="navbar-brand" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>">
-								<div class="logoWrap">
-									<img class="logo" src="img/pp-logo.jpg" alt="">
-								</div>
-							</a>
+							
+							
+							    <a class="navbar-brand" href="#">
+							    	<div class="logoWrap">
+							    	<img class="logo" src="img/pp-logo.jpg" alt="">
+							    	 </div>
+							    </a>
 						   
 
 						</div>
@@ -63,7 +63,7 @@
 
 							<ul class="nav navbar-nav nav-pills">
 								<li>
-									<a href="/">HOME</a>
+									<a href="">HOME</a>
 								</li>
 								<li>
 									<a href="">ABOUT US</a>
@@ -105,16 +105,15 @@
 		</div>
 		</div>
 
-		<div class="col-md-12 desktopNav2">
+		<div class="col-md-12 desktopNav3">
 			<nav id="navscroll">
 			<div class="container">
 			
 				<div class="row">
 
 					
-						<ul class="nav nav-pills navbar-right">
+						<ul class="nav nav-pills navbar-right navbar-bg">
 
-							
 							<li class="active" role="presentation">
 								<a href="#scroll1">HOME</a>
 							</li>
