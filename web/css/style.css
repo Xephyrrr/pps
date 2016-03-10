@@ -212,11 +212,11 @@ SERVICES PAWNING
 
 .desktopNav3 {
   height: 54px;
-  background-color: #F79125; }
+  background-color: #036E3A; }
 
 .desktopNav2 {
   height: 54px;
-  background-color: #E11C24; }
+  background-color: #036E3A; }
 
 .nav.nav-pills.navbar-right {
   margin-right: 40px;
@@ -250,7 +250,7 @@ SERVICES PAWNING
 .desktopNav3 li a:hover {
   background-color: #E74F24; }
 .desktopNav3 li a:focus {
-  background-color: #F79125; }
+  background-color: #E74F24; }
 
 .desktopNav2 li a {
   font-family: "Century Gothic Regular";
@@ -296,8 +296,7 @@ SERVICES PAWNING
   padding: 80px 0; }
   .pawning-accepted-items p {
     margin-top: 60px;
-    font-size: 20px;
-    margin-left: 14%; }
+    font-size: 20px; }
   .pawning-accepted-items h2 {
     margin-bottom: 60px; }
 

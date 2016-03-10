@@ -114,7 +114,7 @@
 					
 						<ul class="nav nav-pills navbar-right navbar-bg">
 
-							<li class="active" role="presentation">
+							<li>
 								<a href="#scroll1">HOME</a>
 							</li>
 							<li>

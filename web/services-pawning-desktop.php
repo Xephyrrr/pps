@@ -244,26 +244,23 @@
 
 		<h2>Accepted Items</h2>
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-2">
+			<div class="col-md-10 col-md-offset-1">
 
-				<div class="col-sm-2">
+				<div class="col-md-3">
 					<img class="img-responsive" src="img/jewelry-1.png" alt="">
 				</div>
-				<div class="col-sm-2">
+				<div class="col-md-3">
 					<img class="img-responsive" src="img/jewelry-2.png" alt="">
 				</div>
-				<div class="col-sm-2">
+				<div class="col-md-3">
 					<img class="img-responsive" src="img/jewelry-3.png" alt="">
 				</div>
-				<div class="col-sm-2">
+				<div class="col-md-3">
 					<img class="img-responsive" src="img/jewelry-4.png" alt="">
 				</div>
-				
+				<p class="col-md-8 col-md-offset-3"> Palawan Pawnshop ONLY accepts gold jewelry</p>
 			</div>
-			<div class="col-sm-8 col-sm-offset-2">
-
-				<p class="col-sm-offset-2"> Palawan Pawnshop ONLY accepts gold jewelry</p>
-			</div>
+			
 
 		</div>
 	</div>
