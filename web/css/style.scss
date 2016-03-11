@@ -131,6 +131,11 @@ FOOTER
 	}
 }
 
+.redeemrenew-bg{
+	background-color: $darkYellow;
+	padding: 50px 0;
+}
+
 /*
 SERVICES INTERNATIONAL PARTNERS
 */
@@ -140,7 +145,7 @@ SERVICES INTERNATIONAL PARTNERS
 
 
 	h2 {
-		margin-top: 80px;
+		margin-top: 50px;
 		margin-bottom: 50px;
 	}
 	.carret2{
@@ -265,6 +270,7 @@ SERVICES REMITTANCE
 	}
 	p{
 		font-size: 18px;
+		margin-top: 20px;
 	}
 	#radio-inline{
 		font-family: "Century Gothic Regular";
@@ -307,6 +313,16 @@ SERVICES PAWNING
 .services-interest-calculator {
 	background-color: #fff;
 	padding: 80px 0;
+
+	hr{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.radiolabelremit{
+		font-weight: normal;
+		font-family: "Century Gothic Regular";
+		margin-right: 5px;
+	}
 }
 
 .loan-widget-bg{
@@ -425,7 +441,7 @@ SERVICES PAWNING
 		font-size: 19px;
 	}
 	.loan-widget.loan-widget-bg{
-		height: 500px;
+		height: 480px;
 	}
 
 	
@@ -437,7 +453,7 @@ SERVICES PAWNING
 			margin-top: 10px;
 			font-size: 20px;
 
-			width: 111%;
+			width: 109%;
 
 		}
 	}
@@ -456,6 +472,13 @@ SERVICES PAWNING
 	}
 }
 
+.loanAmount{
+width: 140px;
+}
+
+#loanDays{
+	width: 140px;
+}
 .terms-and-conditions{
 	padding: 80px 0;
 	background-color:	#EBEBEB;
@@ -535,7 +558,7 @@ HOW TO PAWN SECTION
 	float:right;
 	font-size:15px;
 	padding: 10px 25px 10px 25px;
-	margin-top:	30px;
+	margin-top:	10px;
 }
 
 .testimonials h2{
@@ -603,6 +626,7 @@ SUKI & MYWALLET SECTION
 .feeValue.feeholder{
 	color: #E11C24;
 	padding: 5px 10px 5px 10px;
+	width: 120px;
 }
 
 .col-sm-6.loanValueText{
@@ -1474,7 +1498,8 @@ WIDGET
 		border: 0;
 		font-weight: 200;
 		font-size: 20px;
-		padding-top: 10px;
+		margin-top: 5px;
+		
 	}
 
 	.radio-inline {
@@ -1545,7 +1570,7 @@ WIDGET
 		box-shadow: none;
 		height: auto;
 		padding: 5px 10px 5px 10px;
-		margin-top: 10px;
+		margin-top: 5px;
 	}
 	
 	.interest-form-control {
@@ -2434,6 +2459,55 @@ Custom Media Queries
 =================================
 */
 
+@media ( max-width: 793px) {
+
+.services-interest-calculator{
+	.loan-widget{
+		label{
+			font-size: 12px;
+		}
+	}
+}	
+.interest-calculator{
+	.loan-widget{
+
+		label{
+			font-size: 12px;
+		}
+	}
+}
+
+
+.interest-calculator{
+	.loan-widget{
+		height: 350px;
+	}
+}
+.store-locator{
+	.form-control{
+		font-size: 12px;
+	}
+}
+
+.padala-calculator{
+	.feeValue.feeholder{
+		font-size: 15px;
+	}
+	.loan-widget{
+		label{
+			font-size: 12px;
+		}
+		.feelabel{
+			font-size: 12px;
+		}
+	}
+	.padalaValue.remittance{
+		font-size: 15px;
+	}
+}
+}
+
+
 @media ( max-width: 1199px) {
 
 
@@ -2873,9 +2947,7 @@ services
 	}
 
 	.interest-calculator{
-		.loan-widget{
-			height: 300px;
-		}
+		
 		h3{
 			font-size: 35px;
 		}
@@ -2887,13 +2959,17 @@ services
 			font-size: 16px;
 		}
 		.loan-widget{
-			height: 320px;
+			height: 455px;
 		}
 	}
 	.loan-widget{
+		.radiolabelremit{
+			font-size: 14px;
+		}
 
 		label{
 			margin-bottom: 0px;
+			font-size: 13px;
 		}
 		hr{
 			margin-bottom: 5px;
@@ -2942,7 +3018,7 @@ services
 	}
 
 	.container{
-		width: 920px;
+		width: 100%;
 	}
 	.insurance{
 		h2{
@@ -2978,7 +3054,22 @@ services
 			}p{
 				font-size: 16px;
 			}
+			.loan-widget{
+				height: 360px;
+			}
 		}
+			.services-padala-calculator{
+		h3{
+			font-size: 35px;
+			margin-top: 100px;
+			}p{
+				font-size: 16px;
+			}
+			.loan-widget{
+				height: 360px;
+			}
+		}
+
 
 		.accepted-id{
 			h2{
@@ -3124,9 +3215,11 @@ services
 	}
 }
 .services-interest-calculator{
-	.loan-widget{
-		height: 320px;
-		
+	.loan-widget.loan-widget-bg{
+		height: 450px;
+		label{
+			font-size: 12px;
+		}
 	}
 }
 .accepted-items{
@@ -3259,6 +3352,52 @@ services
 		}
 
 	}
+	.padala-calculator{
+		.loan-widget{
+			.col-sm-6.loanValueText{
+				.feelabel{
+					font-size: 12px;
+				}
+				label{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 835px) {
+
+
+	.content-filter-header {
+		h1 {
+			font-size: 22px;
+		}
+
+	}
+	.padala-calculator{
+		
+	}
+
+	.pawning-accepted-items{
+		p{
+			font-size: 17px;
+			margin-left: 19%;
+		}
+	}
+
+.services-padala-calculator{
+	.loan-widget{
+			.col-sm-6.loanValueText{
+				.feelabel{
+					font-size: 12px;
+				}
+				label{
+					font-size: 12px;
+				}
+			}
+		}
+}
 }
 
 @media(max-width: 913px) {
