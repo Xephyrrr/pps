@@ -786,7 +786,7 @@ $(function () {
 
 <!-- Carousel Height Easing -->
 <script>
-	//function bsCarouselAnimHeight() {
+	function bsCarouselAnimHeight() {
 		$('.carousel').carousel({
 			interval: 5000
 		}).on('slide.bs.carousel', function (e) {
@@ -796,7 +796,7 @@ $(function () {
 				height: nextH
 			}, 500);
 		});
-	//}
+	}
 	</script>
 
 

@@ -30,11 +30,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col sm-12">
-				<div class="col-sm-5">
+				<div class="col-sm-6">
 					<h2>INTEREST RATE</h2>
 					<div class="row">
 
-						<div class="col-sm-9 pull-right">
+						<div class="col-sm-12 pull-right">
 					<h3 class="interestdays">Pinakamababa nationwide!</h3>
 					<!-- <div class="col-sm-6">
 					</div> -->
@@ -60,7 +60,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-5 col-sm-offset-1">
+				<div class="col-sm-5">
 					<div class="col-md-5  col-sm-1 loan-widget loan-widget-bg">
 						<div class="row">
 							<div class="col-sm-12">
@@ -246,19 +246,19 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<img class="img-responsive" src="img/jewelry-1.png" alt="">
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<img class="img-responsive" src="img/jewelry-2.png" alt="">
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<img class="img-responsive" src="img/jewelry-3.png" alt="">
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<img class="img-responsive" src="img/jewelry-4.png" alt="">
 				</div>
-				<p class="col-md-8 col-md-offset-3"> Palawan Pawnshop ONLY accepts gold jewelry</p>
+				<p class="col-sm-8 col-sm-offset-3"> Palawan Pawnshop ONLY accepts gold jewelry</p>
 			</div>
 			
 
@@ -299,4 +299,3 @@
 
 
 			<?php include('footer-services-pawning-desktop.php'); ?>
-

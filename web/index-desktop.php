@@ -145,15 +145,15 @@
 							<div class="col-sm-12">
 								
 								<label class="title">DURATION</label>
-								<div id="slider-month-max"></div>
+								<div id="slider-days-max"></div>
 								<div class="row loan-widget-row">
 									<div class="col-sm-6">
 										<!-- <label for="inputdefault">ENTER LOAN AMOUNT</label> -->
-										<input name ="defaultInput" class="form-control amount" id="inputduration" type="number" placeholder="Input Duration">
+										<input name ="defaultInput" class="form-control amount" id="inputdays" type="number" placeholder="Input Duration">
 									</div>
 									<div class="col-sm-6">
 										<p>
-											<input type="text" id="month" readonly style="">
+											<input type="text" id="loanDays" readonly style="">
 										</p>
 									</div>
 								</div>
@@ -176,22 +176,12 @@
 							
 							<div class="col-sm-6">
 								<label for="inputdefault">REDEEM AMOUNT</label>
-								<input name ="defaultInput" class="form-control interest-form-control" id="inputdefault" type="number" min="1" max="5" placeholder="Php 123" readonly>
+								<input name ="defaultInput" class="form-control interest-form-control" id="redeemAmount" type="text" min="1" max="5" placeholder="Php 123" readonly>
 							</div>
 							<div class="col-sm-6">
 								<label for="inputdefault">RENEWAL AMOUNT</label>
-								<input name ="defaultInput" class="form-control interest-form-control" id="inputdefault" type="number" min="1" max="5" placeholder="Php 123" readonly>
+								<input name ="defaultInput" class="form-control interest-form-control" id="renewalAmount" type="text" min="1" max="5" placeholder="Php 123" readonly>
 							</div>
-							<!-- <div class="form-group">
-										<label for="inputdefault">AMOUNT TO SEND</label>
-										<input name ="defaultInput" class="form-control amount" placeholder="Input Amount" id="inputdefault" type="number" min="1" max="5">
-									</div> -->
-									
-							<!-- <div class="col-sm-6 loanValueText">
-								<input type="text" class="form-control" id="loanValue" placeholder="Php 5000.00" readonly>		
-							</div> -->
-							
-
 						</div>
 						<div id="row">
 							<div class="col-sm-6">

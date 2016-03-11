@@ -51,9 +51,7 @@
 	<script src="js/jasny-bootstrap.js"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script src="js/accounting.min.js"></script>
-	
-	<script>
-
+		<script>
 	(function() {
 /*
 CUSTOM CURRENCY DECIMAL
@@ -76,7 +74,6 @@ function decimalAdjust(type, value, exp) {
     value = value.toString().split('e');
     return +(value[0] + 'e' + (value[2] ? (+value[2] + exp) : exp));
 }
-
   // Decimal round
   if (!Math.round10) {
   	Math.round10 = function(value, exp) {
@@ -96,9 +93,6 @@ function decimalAdjust(type, value, exp) {
   	};
   }
 })();
-
-
-
 $(function() {
 	$( "#slider-loan-max" ).slider({
 		range: "max",
@@ -109,31 +103,26 @@ $(function() {
 		slide: function( event, ui ) {
 			$( ".loanAmount" ).val( "Php " + ui.value );
 			$( "#inputamount" ).val(ui.value);
-
 			var days = $( "#slider-days-max" ).slider( "value" );
 			var loan = ui.value;
 			var finalValue = loan;
 			var suki = $('input:radio[name=suki]:checked').val();
 			var serviceCharge = 5;
 			var finalValue2 = loan;
-
 			if (days >= 1 && days <= 11) {
 				finalValue = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ), -2));	
-
 			} else if(days >= 12 && days <= 22) {
 				finalValue = loan * 0.02;
 				finalValue2 = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ),-2));
-
 			} else if(days >= 23 && days <= 33) {
 				finalValue = loan * 0.03;
 				finalValue2 = loan * 0.02;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 				}else if(days >= 34 && days <= 41) {//34-41
 						finalValue = loan * 0.04; //Get initial interest
 						mPrincipal = loan * 0.02; //2% of Principal (Liquidated damages - 2% of principal per 30 days) 
@@ -149,18 +138,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -183,18 +169,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -217,18 +200,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -251,18 +231,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -285,18 +262,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -319,18 +293,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -353,18 +324,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -387,18 +355,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -421,18 +386,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -455,18 +417,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -489,18 +448,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -523,18 +479,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -543,30 +496,20 @@ $(function() {
 						}
 						
 					}
-
-
 					
-
-
-
 					if(suki == 'sukiactive'){
 						discount = finalValue * 0.05;
 						discount2 = finalValue2 * 0.05;
-
 						if(days >= 1 && days <=11){
 							finalValue = finalValue - discount;
 							$( "#redeemAmount" ).val( "Php " + Math.round10(loan, -2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge), -2));
-
 						}else if (days >= 12 && days <= 33){
 							finalValue = finalValue - discount;
 							finalValue2 = finalValue2 - discount2;
 							$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge), -2));
-
-
 						}
-
 					}else if(suki == 'nonsuki'){
 						if(days >= 1 && days <=11){
 							$( "#redeemAmount" ).val( "Php " + Math.round10(loan, -2));
@@ -575,22 +518,13 @@ $(function() {
 						else if(days >= 12 && days <=33){
 							$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge), -2));
-
 						}
 					}
-
 				}
-
-
 			});
-
 $( ".loanAmount" ).val( "Php " + $( "#slider-loan-max" ).slider( 'value' ) );
 $( "#inputamount" ).val($( "#slider-loan-max" ).slider( 'value' ));
-
 });
-
-
-
 $("#inputamount").keyup(function() {
 	if ($("#inputamount").val() > 50000)
 	{
@@ -598,32 +532,26 @@ $("#inputamount").keyup(function() {
 	}
 	$("#slider-loan-max").slider("value" , $("#inputamount").val());
 	$(".loanAmount").val( "Php " + $("#inputamount").val());
-
-
 	var days = $( "#slider-days-max" ).slider( "value" );
 	var loan = $( "#slider-loan-max" ).slider( "value" );
 	var finalValue = loan;
 	var suki = $('input:radio[name=suki]:checked').val();
 	var serviceCharge = 5;
 	var finalValue2 = loan;
-
 	if (days >= 1 && days <= 11) {
 				finalValue = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ), -2));	
-
 			} else if(days >= 12 && days <= 22) {
 				finalValue = loan * 0.02;
 				finalValue2 = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ),-2));
-
 			} else if(days >= 23 && days <= 33) {
 				finalValue = loan * 0.03;
 				finalValue2 = loan * 0.02;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 				}else if(days >= 34 && days <= 41) {//34-41
 						finalValue = loan * 0.04; //Get initial interest
 						mPrincipal = loan * 0.02; //2% of Principal (Liquidated damages - 2% of principal per 30 days) 
@@ -639,18 +567,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -673,18 +598,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -707,18 +629,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -741,18 +660,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -775,18 +691,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -809,18 +722,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -843,18 +753,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -877,18 +784,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -911,18 +815,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -945,18 +846,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -979,18 +877,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1013,18 +908,15 @@ $("#inputamount").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1033,24 +925,18 @@ $("#inputamount").keyup(function() {
 						}
 						
 					}
-
-
 				if(suki == 'sukiactive'){
 					discount = finalValue * 0.05;
 					discount2 = finalValue2 * 0.05;
-
 					if(days >= 1 && days <=11){
 						finalValue = finalValue - discount;
 						$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 					}else if (days >= 12 && days <= 33){
 						finalValue = finalValue - discount;
 						finalValue2 = finalValue2 - discount2;
 						$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
-
 					}
 					
 				}else if(suki == 'nonsuki'){
@@ -1064,12 +950,7 @@ $("#inputamount").keyup(function() {
 						
 					}
 				}
-
-
-
 			});
-
-
 </script>
 
 <script>
@@ -1089,24 +970,20 @@ $(function() {
 			var suki = $('input:radio[name=suki]:checked').val();
 			var serviceCharge = 5;
 			var finalValue2 = loan;
-
 			if (days >= 1 && days <= 11) {
 				finalValue = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ), -2));	
-
 			} else if(days >= 12 && days <= 22) {
 				finalValue = loan * 0.02;
 				finalValue2 = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ),-2));
-
 			} else if(days >= 23 && days <= 33) {
 				finalValue = loan * 0.03;
 				finalValue2 = loan * 0.02;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 				}else if(days >= 34 && days <= 41) {//34-41
 						finalValue = loan * 0.04; //Get initial interest
 						mPrincipal = loan * 0.02; //2% of Principal (Liquidated damages - 2% of principal per 30 days) 
@@ -1122,18 +999,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1156,18 +1030,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1190,18 +1061,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1224,18 +1092,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1258,18 +1123,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1292,18 +1154,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1326,18 +1185,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1360,18 +1216,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1394,18 +1247,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1428,18 +1278,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1462,18 +1309,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1496,18 +1340,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1516,24 +1357,18 @@ $(function() {
 						}
 						
 					}
-
-
 				if(suki == 'sukiactive'){
 					discount = finalValue * 0.05;
 					discount2 = finalValue2 * 0.05;
-
 					if(days >= 1 && days <=11){
 						finalValue = finalValue - discount;
 						$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 					}else if (days >= 12 && days <= 33){
 						finalValue = finalValue - discount;
 						finalValue2 = finalValue2 - discount2;
 						$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
-
 					}
 					
 				}else if(suki == 'nonsuki'){
@@ -1547,14 +1382,11 @@ $(function() {
 						
 					}
 				}
-
-
 			}
 		});
 $( "#loanDays" ).val( $( "#slider-days-max" ).slider( "value" ) + " Day/s" );
 $("#inputdays").val($( "#slider-days-max" ).slider( 'value' ));
 });
-
 $("#inputdays").keyup(function() {
 	if ($("#inputdays").val() > 150)
 	{
@@ -1562,32 +1394,26 @@ $("#inputdays").keyup(function() {
 	}
 	$("#slider-days-max").slider("value" , $("#inputdays").val());
 	$("#loanDays").val($("#inputdays").val() + " Day/s");
-
-
 	var days = $( "#slider-days-max" ).slider( "value" );
 	var loan = $( "#slider-loan-max" ).slider( "value" );
 	var finalValue = loan;
 	var suki = $('input:radio[name=suki]:checked').val();
 	var serviceCharge = 5;
 	var finalValue2 = loan;
-
 	if (days >= 1 && days <= 11) {
 				finalValue = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ), -2));	
-
 			} else if(days >= 12 && days <= 22) {
 				finalValue = loan * 0.02;
 				finalValue2 = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ),-2));
-
 			} else if(days >= 23 && days <= 33) {
 				finalValue = loan * 0.03;
 				finalValue2 = loan * 0.02;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 				}else if(days >= 34 && days <= 41) {//34-41
 						finalValue = loan * 0.04; //Get initial interest
 						mPrincipal = loan * 0.02; //2% of Principal (Liquidated damages - 2% of principal per 30 days) 
@@ -1603,18 +1429,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1637,18 +1460,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1671,18 +1491,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1705,18 +1522,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1739,18 +1553,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1773,18 +1584,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1807,18 +1615,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1841,18 +1646,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1875,18 +1677,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1909,18 +1708,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1943,18 +1739,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1977,18 +1770,15 @@ $("#inputdays").keyup(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -1997,24 +1787,18 @@ $("#inputdays").keyup(function() {
 						}
 						
 					}
-
-
 				if(suki == 'sukiactive'){
 					discount = finalValue * 0.05;
 					discount2 = finalValue2 * 0.05;
-
 					if(days >= 1 && days <=11){
 						finalValue = finalValue - discount;
 						$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 					}else if (days >= 12 && days <= 33){
 						finalValue = finalValue - discount;
 						finalValue2 = finalValue2 - discount2;
 						$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
-
 					}
 					
 				}else if(suki == 'nonsuki'){
@@ -2028,10 +1812,7 @@ $("#inputdays").keyup(function() {
 						
 					}
 				}
-
 			});
-
-
 </script>
 
  <script>
@@ -2044,17 +1825,13 @@ $("#inputdays").keyup(function() {
 // 			$( "#redeemAmount" ).val( "Php " + finalvalue);
 // 		}else if (dayValue >= 12) {	
 // 			var finalvalue = ($("#slider-loan-max").slider( "value" ) * .02);
-
 // 			$( "#redeemAmount" ).val( "Php " + finalvalue);
 // 		}else if (dayValue >= 23) {	
 // 			var finalvalue = ($("#slider-loan-max").slider( "value" ) * .03);
 // 			$( "#redeemAmount" ).val( "Php " + finalvalue);
 // 		}
 // 	};
-
 // })
-
-
 $(function() {
 	var $radios = $('input:radio[name=suki]');
 	if($radios.is(':checked') === false) {
@@ -2065,25 +1842,20 @@ $(function() {
 		var days = $( "#slider-days-max" ).slider( "value" );
 		var finalValue2 = loan;
 		var serviceCharge = 5;
-
-
 		if (days >= 1 && days <= 11) {
 				finalValue = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ), -2));	
-
 			} else if(days >= 12 && days <= 22) {
 				finalValue = loan * 0.02;
 				finalValue2 = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ),-2));
-
 			} else if(days >= 23 && days <= 33) {
 				finalValue = loan * 0.03;
 				finalValue2 = loan * 0.02;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 				}else if(days >= 34 && days <= 41) {//34-41
 						finalValue = loan * 0.04; //Get initial interest
 						mPrincipal = loan * 0.02; //2% of Principal (Liquidated damages - 2% of principal per 30 days) 
@@ -2099,18 +1871,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2133,18 +1902,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2167,18 +1933,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2201,18 +1964,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2235,18 +1995,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2269,18 +2026,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2303,18 +2057,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2337,18 +2088,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2371,18 +2119,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2405,18 +2150,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2439,18 +2181,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2473,18 +2212,15 @@ $(function() {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2493,23 +2229,18 @@ $(function() {
 						}
 						
 					}
-
 				if(suki == 'sukiactive'){
 					discount = finalValue * 0.05;
 					discount2 = finalValue2 * 0.05;
-
 					if(days >= 1 && days <=11){
 						finalValue = finalValue - discount;
 						$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 					}else if (days >= 12 && days <= 33){
 						finalValue = finalValue - discount;
 						finalValue2 = finalValue2 - discount2;
 						$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
-
 					}
 					
 				}else if(suki == 'nonsuki'){
@@ -2525,34 +2256,27 @@ $(function() {
 				}
 			}
 		});
-
 $('#radio-suki1').change(function(){
-
 	var loan = $( "#slider-loan-max" ).slider( "value" );
 	var finalValue = loan;
 	var suki = $('input:radio[name=suki]:checked').val();
 	var days = $( "#slider-days-max" ).slider( "value" );
 	var finalValue2 = loan;
 	var serviceCharge = 5;
-
-
 if (days >= 1 && days <= 11) {
 				finalValue = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ), -2));	
-
 			} else if(days >= 12 && days <= 22) {
 				finalValue = loan * 0.02;
 				finalValue2 = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ),-2));
-
 			} else if(days >= 23 && days <= 33) {
 				finalValue = loan * 0.03;
 				finalValue2 = loan * 0.02;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 				}else if(days >= 34 && days <= 41) {//34-41
 						finalValue = loan * 0.04; //Get initial interest
 						mPrincipal = loan * 0.02; //2% of Principal (Liquidated damages - 2% of principal per 30 days) 
@@ -2568,18 +2292,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2602,18 +2323,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2636,18 +2354,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2670,18 +2385,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2704,18 +2416,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2738,18 +2447,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2772,18 +2478,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2806,18 +2509,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2840,18 +2540,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2874,18 +2571,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2908,18 +2602,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2942,18 +2633,15 @@ if (days >= 1 && days <= 11) {
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -2965,19 +2653,15 @@ if (days >= 1 && days <= 11) {
 				if(suki == 'sukiactive'){
 					discount = finalValue * 0.05;
 					discount2 = finalValue2 * 0.05;
-
 					if(days >= 1 && days <=11){
 						finalValue = finalValue - discount;
 						$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 					}else if (days >= 12 && days <= 33){
 						finalValue = finalValue - discount;
 						finalValue2 = finalValue2 - discount2;
 						$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
-
 					}
 					
 				}else if(suki == 'nonsuki'){
@@ -2992,36 +2676,27 @@ if (days >= 1 && days <= 11) {
 					}
 				}
 			});
-
-
-
-
 $('#radio-suki2').change(function(){
-
 	var loan = $( "#slider-loan-max" ).slider( "value" );
 	var finalValue = loan;
 	var suki = $('input:radio[name=suki]:checked').val();
 	var days = $( "#slider-days-max" ).slider( "value" );
 	var finalValue2 = loan;
 	serviceCharge = 5;
-
 	if (days >= 1 && days <= 11) {
 				finalValue = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ), -2));	
-
 			} else if(days >= 12 && days <= 22) {
 				finalValue = loan * 0.02;
 				finalValue2 = loan * 0.01;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge ),-2));
-
 			} else if(days >= 23 && days <= 33) {
 				finalValue = loan * 0.03;
 				finalValue2 = loan * 0.02;
 				$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 				$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 				}else if(days >= 34 && days <= 41) {//34-41
 						finalValue = loan * 0.04; //Get initial interest
 						mPrincipal = loan * 0.02; //2% of Principal (Liquidated damages - 2% of principal per 30 days) 
@@ -3037,18 +2712,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3071,18 +2743,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3105,18 +2774,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3139,18 +2805,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3173,18 +2836,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3207,18 +2867,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3241,18 +2898,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3275,18 +2929,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3309,18 +2960,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3343,18 +2991,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3377,18 +3022,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3411,18 +3053,15 @@ $('#radio-suki2').change(function(){
 							discount = finalValue * 0.05;
 							finalValue = finalValue - discount;
 							// discounted = combinedinterest - discount;
-
 							// combinedinterest2 = finalValue2 + mPrincipal;
 							discount2 = finalValue2 * 0.05;
 							finalValue2 = finalValue2 - discount2;
 							// discounted2 = combinedinterest2 - discount2;
-
 							console.log('finalvalue2: '+finalValue2);
 							// console.log('combinedinterest2: '+combinedinterest2);
 							// console.log('discount2: '+discount2);
 							// console.log('discounted2: '+discounted2);
 							console.log('mPrincipal : '+mPrincipal);
-
 							$( "#redeemAmount" ).val( "Php " + Math.round10((finalValue2 + mPrincipal + loan),-2));
 							$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + mPrincipal + serviceCharge ),-2));
 						}else if(suki == 'nonsuki'){
@@ -3434,19 +3073,15 @@ $('#radio-suki2').change(function(){
 				if(suki == 'sukiactive'){
 					discount = finalValue * 0.05;
 					discount2 = finalValue2 * 0.05;
-
 					if(days >= 1 && days <=11){
 						finalValue = finalValue - discount;
 						$( "#redeemAmount" ).val( "Php " + Math.round10(loan),-2);
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
 					}else if (days >= 12 && days <= 33){
 						finalValue = finalValue - discount;
 						finalValue2 = finalValue2 - discount2;
 						$( "#redeemAmount" ).val( "Php " + Math.round10((loan + finalValue2),-2));
 						$( "#renewalAmount" ).val( "Php " + Math.round10((finalValue + serviceCharge),-2));
-
-
 					}
 					
 				}else if(suki == 'nonsuki'){
@@ -3460,31 +3095,20 @@ $('#radio-suki2').change(function(){
 						
 					}
 				}
-
 			});
-
-
-
-
-
-
-
-
 </script>
 
 
 
 
+				<script>
+				$(function () {
+					$('[data-toggle="tooltip"]').tooltip()
+				})
+				</script>
 
-
-<script>
-$(function () {
-	$('[data-toggle="tooltip"]').tooltip()
-})
-</script>
-
-<!-- Carousel Height Easing -->
-<script>
+				<!-- Carousel Height Easing -->
+				<script>
 	//function bsCarouselAnimHeight() {
 		$('.carousel').carousel({
 			interval: 5000
