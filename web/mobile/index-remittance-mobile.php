@@ -26,12 +26,12 @@
 				<h3>Claim your remittances from our partners abroad at any of our branches </h3>
 			</div>
 			<div class="col-sm-8 col-sm-offset-2 international">
-				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/tml.jpg" alt="">
-				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/wilmon.jpg" alt="">
-				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/citi.jpg" alt="">
-				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/aub.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/moneygram.jpg" alt="">
 				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/transfast.jpg" alt="">
-				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/myremit.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/xpressmoney.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/lbclogo.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/cashsense.jpg" alt="">
+				<img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/xoom.jpg" alt="">
 			</div>
 
 			<div class="col-sm-8 col-sm-offset-2 international">
@@ -68,10 +68,10 @@
 
 								<label class="title">BRANCH</label>
 
-								<div class="col-sm-6">
+								<div class="col-sm-6 col-xs-6">
 									<label id="radio-inline"><input id="radio-vmsl" type="radio" name="locationradio" value="location1">Visayas, Mindano, Southern Luzon</label>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-6 col-xs-6">
 									<label id="radio-inline"><input id="radio-ncrl" type="radio" name="locationradio" value="location2">NCR and the rest of Luzon</label>
 								</div>
 							</div>
@@ -80,11 +80,11 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<label class="title discountsection" >DISCOUNT</label>
-								<div class="col-sm-6">
+								<div class="col-sm-6 col-xs-6">
 									<label id="suki-radiolabel1" class="radiolabelremit"><input id="radio-suki-remittance1" type="radio" name="remittance" value="sukiremittance"> Suki Card Holder</label>
 									<!-- <label class="radio-inline"><input type="radio" name="optradio">Suki Card Holder</label> -->
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-6 col-xs-6">
 									<label id="suki-radiolabel1" class="radiolabelremit"><input id="radio-suki-remittance2" type="radio" name="remittance" value="nonsukiremittance">None</label>
 									<!-- <label class="radio-inline"><input type="radio" name="optradio">None</label> -->
 								</div>
@@ -124,11 +124,11 @@
 				<div class="col-sm-12">
 					<h3 class="remittanceheader">Branch-to-Branch</h3>
 					<img class="img-responsive" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/branch-to-branch.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>With accessible branches located at almost every cities and towns in the country, customers can send and claim Palawan Express Pera Padala transactions with ease anywhere in the Philippines.</p>
 
 					<h3 class="remittanceheader">Branch-to-Card</h3>
 					<img class="img-responsive" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/branch-to-card.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Send remittance directly to any myWallet card and receive it with convenience anytime, at any BancNet ATM nationwide!</p>
 				</div>
 				<div class="col-sm-12">
 					<a href="" class="btn btn-danger rightbtn">LEARN MORE</a>
@@ -144,9 +144,7 @@
 			<div class="col-sm-12 acceptedidmargin">
 				<h2>Accepted IDs</h2>
 				<img class="ids"src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/available-ids.png" alt="">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Palawan Express Pera Padala ensures that you get your remittance without hassle, fast and secured. Make sure to bring at least one from your passport, Postal ID, Company ID, School ID or any of your government issued ID whenever you send or claim your remittance transaction para Walang Kuskos-balungos!</p>
 				<a href="" class="btn btn-danger btnregular">VIEW ALL</a>
 			</div>
 

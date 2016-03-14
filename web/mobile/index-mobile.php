@@ -169,36 +169,53 @@
 <div class="interest-calculator">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="col-md-6">
+			<div class="col sm-12">
+				<div class="col-sm-6">
 					<h3>Lowest interest rate nationwide!</h3>
 					<h4>Try it with our interest calculator.</h4>
 					<p>The interest rate is being computed at 11-day intervals. Customers shall only pay 1% for a loan of 11 days; 2% for 22 days; and 3% for 33 days.</p>
 				</div>
-				<div class="col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2">
-					<div class="col-md-5  col-md-1 loan-widget">
+				<div class="col-sm-5 col-sm-offset-1">
+					<div class="col-md-5  col-sm-1 loan-widget">
 						<div class="row">
-							<div class="col-md-12">
-								<label class="title">LOAN</label>
+							<div class="col-sm-12">
+								<label class="title">ENTER LOAN AMOUNT</label>
 								<div id="slider-loan-max"></div>
-								<p>
-									<input type="text" id="loanAmount" readonly style="">
-								</p>
+								<div class="row loan-widget-row">
+									<div class="col-xs-6 col-sm-6">
+										<!-- <label for="inputdefault">ENTER LOAN AMOUNT</label> -->
+										<input name ="defaultInput" class="form-control amount" id="inputamount" type="number" placeholder="Input Amount">
+									</div>
+
+									<div class="col-xs-6 col-sm-6">
+										<p>	
+											<input type="text" class="loanAmount" readonly style="">
+										</p>
+									</div>
+								</div>
 							</div>
 
-							<div class="col-md-12">
-
+							<div class="col-sm-12">
+								
 								<label class="title">DURATION</label>
-								<div id="slider-month-max"></div>
-								<p>
-									<input type="text" id="month" readonly style="">
-								</p>
+								<div id="slider-days-max"></div>
+								<div class="row loan-widget-row">
+									<div class="col-xs-6 col-sm-6">
+										<!-- <label for="inputdefault">ENTER LOAN AMOUNT</label> -->
+										<input name ="defaultInput" class="form-control amount" id="inputdays" type="number" placeholder="Input Duration">
+									</div>
+									<div class="col-xs-6 col-sm-6">
+										<p>
+											<input type="text" id="loanDays" readonly style="">
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 
 						<div class="row">
-							<div class="col-md-12">
-
+							<div class="col-sm-12">
+								
 								<label class="title">DISCOUNT</label>
 								<label id="suki-radiolabel1" class="radiolabelremit"><input id="radio-suki1" type="radio" name="suki" value="sukiactive"> Suki Card Holder</label>
 								<label id="suki-radiolabel2" class="radiolabelremit"><input id="radio-suki2" type="radio" name="suki" value="nonsuki"> None</label>
@@ -209,11 +226,24 @@
 						<hr>
 
 						<div class="row" id="apply">
-							<div class="col-sm-6 loanValueText">
-								<input type="text" class="form-control" id="loanValue" placeholder="Php 5000.00" readonly>
+							
+							<div class="col-sm-6 col-xs-6">
+								<label for="inputdefault">REDEEM AMOUNT</label>
+								<input name ="defaultInput" class="form-control interest-form-control" id="redeemAmount" type="text" min="1" max="5" placeholder="Php 123" readonly>
 							</div>
-							<div class="col-sm-6 applyButton">
-								<a href="" class="btn btn-danger">LEARN MORE</a>
+							<div class="col-sm-6 col-xs-6">
+								<label for="inputdefault">RENEWAL AMOUNT</label>
+								<input name ="defaultInput" class="form-control interest-form-control" id="renewalAmount" type="text" min="1" max="5" placeholder="Php 123" readonly>
+							</div>
+						</div>
+						<div id="row">
+							<div class="col-sm-6">
+							</div>
+							<div class="col-sm-6">
+
+								<div class="applyButton">
+									<a href="" class="btn btn-danger btn-block">LEARN MORE</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -241,12 +271,13 @@
 </div>
 <hr class="borderline-yellow">
 <div class="padala-calculator">
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="col-md-6">
 					<h3>Mura Na, Mabilis Pa!</h3>
-					<p>Palawan Express Pera Padala (PEPP) is undeniably the quickest and cheapest way of sending money within the Philippines.</p>
+					<p>Palawan Express Pera Padala is undeniably the quickest and cheapest way of sending money within the Philippines.</p>
 
 
 				</div>
@@ -268,10 +299,10 @@
 
 								<label class="title">BRANCH</label>
 
-								<div class="col-sm-6">
+								<div class="col-sm-6 col-xs-6">
 									<label id="radio-inline"><input id="radio-vmsl" type="radio" name="locationradio" value="location1">Visayas, Mindano, Southern Luzon</label>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-6 col-xs-6">
 									<label id="radio-inline"><input id="radio-ncrl" type="radio" name="locationradio" value="location2">NCR and the rest of Luzon</label>
 								</div>
 							</div>
@@ -280,11 +311,11 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<label class="title discountsection" >DISCOUNT</label>
-								<div class="col-sm-6">
+								<div class="col-sm-6 col-xs-6">
 									<label id="suki-radiolabel1" class="radiolabelremit"><input id="radio-suki-remittance1" type="radio" name="remittance" value="sukiremittance"> Suki Card Holder</label>
 									<!-- <label class="radio-inline"><input type="radio" name="optradio">Suki Card Holder</label> -->
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-6 col-xs-6">
 									<label id="suki-radiolabel1" class="radiolabelremit"><input id="radio-suki-remittance2" type="radio" name="remittance" value="nonsukiremittance">None</label>
 									<!-- <label class="radio-inline"><input type="radio" name="optradio">None</label> -->
 								</div>
@@ -338,10 +369,10 @@
 		<div class="row ">
 			<div class="col-sm-12">
 				<h2>Suki Card & <br> My Wallet</h2>
-				<img class="img-responsive" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/sukicard.png" alt="">
+				<img class="img-responsive" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/sukicard-2.png" alt="">
 			</div>
 			<div class="col-sm-12">
-				<p>Similar to PPS MyWallet card, the PPS PEPP Suki Card will grant the same discounts, special offers and other exciting perks to cardholders. A 5% discount on interest and penalty charges for your pawns and on the corresponding fee for remittance transactions will be accorded to PPS PEPP Suki cardholders.</p>
+				<p>Similar to the Suki Card, myWallet and RCBC Savings cards will grant the same discounts, special offers and other exciting perks to cardholders. A 5% discount on interest and penalty charges for your pawns and on the corresponding fee for remittance transactions will be accorded to all Suki cardholders.</p>
 				<a href="" class="btn btn-danger howtoapplybtn">APPLY NOW</a>
 				<a href="" class="btn btn-danger learnmorebtn">LEARN MORE</a>
 
@@ -418,7 +449,7 @@
 
 			</div>
 			<div class="col-sm 12">
-				<p>PPS PEPP ProtekTODO is an accident insurance plan designed to provide Filipino masses social security and personal protection at an affordable option.</p>
+				<p>Palawan Pawnshop ProtekTODO is an accident insurance plan designed to provide Filipino masses social security and personal protection at an affordable option.</p>
 				<a href="" class="btn btn-danger">VIEW BENEFITS</a>
 			</div>
 		</div>

@@ -58,6 +58,31 @@ hr {
   padding-top: 10px; }
 
 /*
+CARET and hiddendiv
+*/
+.hiddendiv {
+  display: none; }
+
+.carrethide1 {
+  display: none; }
+
+.carrethide2 {
+  display: none; }
+
+.carrethide3 {
+  display: none; }
+
+.carrethide4 {
+  display: none; }
+
+.carret {
+  color: #E11C24;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer; }
+
+/*
 REMITTANCE SECTION
 // */
 .remittancecontiner {
@@ -156,12 +181,14 @@ PADALA SECTION
 .feelabel {
   color: #E11C24;
   max-width: 100%;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 12px; }
 
 .feeValue.feeholder {
   color: #E11C24;
   margin-right: 0px;
-  width: 100px; }
+  width: 100px;
+  padding-top: 5px; }
 
 .col-sm-6.loanValueText {
   padding: 0px; }
@@ -455,6 +482,10 @@ REMITTANCE OPTIONS SECTION
       font-family: "Century Gothic Bold Italic"; }
   .other-list ul li:not(:last-child) {
     border-bottom: 1px solid #E11C24; }
+
+.loan-widget-row {
+  margin-top: 10px;
+  margin-bottom: 20px; }
 
 .e-loading {
   padding: 50px 0;
@@ -753,12 +784,14 @@ WIDGET
     color: #58595B;
     border: 0;
     font-weight: 200;
-    font-size: 20px; }
+    font-size: 20px;
+    width: 100%; }
   .loan-widget .radio-inline {
     font-family: "Century Gothic Regular";
     color: #58595B; }
   .loan-widget label {
-    color: #58595B; }
+    color: #58595B;
+    font-size: 12px; }
   .loan-widget input[type="radio"] + label {
     color: #ffffff;
     font-family: "Century Gothic Bold Italic";
@@ -783,8 +816,9 @@ WIDGET
     background: #fff;
     box-shadow: none;
     height: auto;
-    padding-top: 0;
-    padding-bottom: 10px; }
+    padding: 5px 10px 5px 10px;
+    margin-top: 5px;
+    color: #E11C24; }
   .loan-widget .tips {
     font-size: 10px;
     display: inline-block;
@@ -802,7 +836,9 @@ WIDGET
     position: absolute;
     width: 55px; }
   .loan-widget .applyButton {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px; }
   .loan-widget .loanValueText .btn {
     margin-top: 10px; }
 
@@ -1002,7 +1038,7 @@ SERVICES PAWNING
 
 .services-interest-calculator {
   background-color: #fff;
-  padding: 80px 0; }
+  padding: 50px 0; }
   .services-interest-calculator h2, .services-interest-calculator h3, .services-interest-calculator ul {
     text-align: center; }
   .services-interest-calculator ul {
@@ -1023,7 +1059,7 @@ SERVICES PAWNING
 
 .how-to-renew {
   background-color: #FFF7D6;
-  padding: 80px 0;
+  padding: 50px 0;
   text-align: center; }
   .how-to-renew h2 {
     margin-bottom: 50px; }
@@ -1054,7 +1090,7 @@ SERVICES PAWNING
 
 .how-to-pawn {
   background-color: #EBEBEB;
-  padding: 80px 0;
+  padding: 50px 0;
   text-align: center; }
   .how-to-pawn h2 {
     margin-bottom: 50px; }
@@ -1079,7 +1115,7 @@ SERVICES PAWNING
   font-size: 19px; }
 
 .pawning-accepted-items {
-  padding: 80px 0; }
+  padding: 50px 0; }
   .pawning-accepted-items p {
     margin-top: 60px;
     font-size: 20px;
@@ -1088,7 +1124,7 @@ SERVICES PAWNING
     margin-bottom: 60px; }
 
 .terms-and-conditions {
-  padding: 80px 0;
+  padding: 50px 0;
   background-color: #EBEBEB; }
   .terms-and-conditions h2 {
     text-align: center;
@@ -1164,7 +1200,7 @@ hr.borderline-yellow {
 SERVICES TERMS AND CONDITIONS
 */
 .terms-and-conditions2 {
-  padding: 80px 0;
+  padding: 50px 0;
   background-color: #F9F8E4; }
   .terms-and-conditions2 h2 {
     margin-bottom: 60px; }
@@ -1181,7 +1217,7 @@ SERVICES TERMS AND CONDITIONS
 SERVICES INTERNATIONAL PARTNERS
 */
 .services-international-partners {
-  padding: 80px 0; }
+  padding: 50px 0; }
   .services-international-partners h2 {
     margin-top: 80px;
     margin-bottom: 50px;
@@ -1206,7 +1242,7 @@ SERVICES INTERNATIONAL PARTNERS
 SERVICES AUTHORIZED AGENTS
 */
 .services-authorized-agents {
-  padding: 80px 0;
+  padding: 50px 0;
   background-color: #EBEBEB; }
   .services-authorized-agents h2 {
     margin-bottom: 60px;
@@ -1220,13 +1256,13 @@ SERVICES AUTHORIZED AGENTS
     margin-left: 10px;
     margin-top: 30px; }
   .services-authorized-agents li {
-    font-size: 18px; }
+    font-size: 15px; }
 
 /*
 SERVICES ACCEPTED IDs
 */
 .services-accepted-ids {
-  padding: 80px 0;
+  padding: 50px 0;
   background-color: #fff; }
   .services-accepted-ids h2 {
     margin-bottom: 60px; }
@@ -1266,7 +1302,7 @@ SERVICES REMITTANCE
   background-color: #EBEBEB !important; }
 
 .services-padala-calculator {
-  padding: 80px 0; }
+  padding: 50px 0; }
   .services-padala-calculator h2, .services-padala-calculator p {
     text-align: center; }
   .services-padala-calculator li {

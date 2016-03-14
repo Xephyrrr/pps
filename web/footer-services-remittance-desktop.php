@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-<div class="footerfont">
+				<div class="footerfont">
 					<ul>
 						<li><a href="/">HOME</a></li>
 						<li><a href="#">ABOUT US</a></li>
@@ -50,251 +50,251 @@
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/holder.js"></script>
 	<script src="js/jasny-bootstrap.js"></script>
-	  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	
 
-<script>
+	<script>
 
-$("#inputdefault").bind("change paste keyup", function() {
+	$("#inputdefault").bind("change paste keyup", function() {
 
-	$('.padalaValue').val($('#inputdefault').val());
-});
-
-$(function(){
-	
-	$('#inputdefault input').val({
-
+		$('.padalaValue').val($('#inputdefault').val());
 	});
-	$('.padalaValue').val($('#inputdefault').val());
-});	
+
+	$(function(){
+
+		$('#inputdefault input').val({
+
+		});
+		$('.padalaValue').val($('#inputdefault').val());
+	});	
 
 
-$( "#inputdefault" ).keyup(function() {
+	$( "#inputdefault" ).keyup(function() {
 
 
-	
-	if ($("#inputdefault").val() > 50000 && $('.padalaValue').val() > 50000)
-	{
-		$("#inputdefault").val(50000) && $(".padalaValue").val(50000);
-	}
-	var locationradio = $('input:radio[name=locationradio]:checked').val();
-	var amount = parseInt($('.padalaValue').val());
-	var fee1 = 2;
-	var fee2 = 3;
-	var fee3 = 8;
-	var fee4 = 10;
-	var fee5 = 12;
-	var fee6 = 15;
-	var fee7 = 20;
-	var fee8 = 30;
-	var fee9 = 40;
-	var fee10 = 50;
-	var fee11 = 60;
-	var fee12 = 70;
-	var fee13 = 90;
-	var fee14 = 115;
-	var fee15 = 125;
-	var fee16 = 140;
-	var fee17 = 210;
-	var fee18 = 220;
-	var fee19 = 250;
-	var fee20 = 290;
-	var fee21 = 320;
-	var fee22 = 345;
 
-	var ffee1 = 3;
-	var ffee2 = 6;
-	var ffee3 = 9;
-	var ffee4 = 12;
-	var ffee5 = 15;
-	var ffee6 = 18;
-	var ffee7 = 21;
-	var ffee8 = 24;
-	var ffee9 = 27;
-	var ffee10 = 30;
-	var ffee11 = 45;
-	var ffee12 = 60;
-	var ffee13 = 75;
-	var ffee14 = 90;
-	var ffee15 = 95;
-	var ffee16 = 115;
-	var ffee17 = 125;
-	var ffee18 = 145;
-	var ffee19 = 155;
-	var ffee20 = 165;
-	var ffee21 = 185;
-	var ffee22 = 195;
-	var ffee23 = 210;
-	var ffee24 = 220;
-	var ffee25 = 250;
-	var ffee26 = 290;
-	var ffee27 = 320;
-	var ffee28 = 345;
-
-	console.log(locationradio);
-	console.log(amount);
-	console.log($('.feeValue').val());
-	
-	if(locationradio == 'location1'){
-
-		if (amount >= 1 && amount <= 100){
-			$('.feeValue').val(fee1);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 101 && amount <= 300){
-			$('.feeValue').val(fee2);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 301 && amount <= 500){
-			$('.feeValue').val(fee3);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 501 && amount <= 700){
-			$('.feeValue').val(fee4);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 701 && amount <= 900){
-			$('.feeValue').val(fee5);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 901 && amount <= 1000){
-			$('.feeValue').val(fee6);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 1001 && amount <= 1500){
-			$('.feeValue').val(fee7);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 1501 && amount <= 2000){
-			$('.feeValue').val(fee8);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 2001 && amount <= 2500){
-			$('.feeValue').val(fee9);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 2501 && amount <= 3000){
-			$('.feeValue').val(fee10);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 3001 && amount <= 3500){
-			$('.feeValue').val(fee11);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 3501 && amount <= 4000){
-			$('.feeValue').val(fee12);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 4001 && amount <= 5000){
-			$('.feeValue').val(fee13);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 5001 && amount <= 7000){
-			$('.feeValue').val(fee14);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 7001 && amount <= 9500){
-			$('.feeValue').val(fee15);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 9501 && amount <= 10000){
-			$('.feeValue').val(fee16);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 10001 && amount <= 14000){
-			$('.feeValue').val(fee17);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 14001 && amount <= 15000){
-			$('.feeValue').val(fee18);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 15001 && amount <= 20000){
-			$('.feeValue').val(fee19);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 20001 && amount <= 30000){
-			$('.feeValue').val(fee20);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 30001 && amount <= 40000){
-			$('.feeValue').val(fee21);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 40001 && amount <= 50000){
-			$('.feeValue').val(fee22);
-			$('.padalaValue').val(amount);
+		if ($("#inputdefault").val() > 50000 && $('.padalaValue').val() > 50000)
+		{
+			$("#inputdefault").val(50000) && $(".padalaValue").val(50000);
 		}
-	}else if(locationradio == 'location2'){
-		if (amount >= 1 && amount <= 100){
-			$('.feeValue').val(ffee1);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 101 && amount <= 200){
-			$('.feeValue').val(ffee2);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 201 && amount <= 300){
-			$('.feeValue').val(ffee3);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 301 && amount <= 400){
-			$('.feeValue').val(ffee4);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 401 && amount <= 500){
-			$('.feeValue').val(ffee5);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 501 && amount <= 600){
-			$('.feeValue').val(ffee6);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 601 && amount <= 700){
-			$('.feeValue').val(ffee7);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 701 && amount <= 800){
-			$('.feeValue').val(ffee8);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 801 && amount <= 900){
-			$('.feeValue').val(ffee9);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 901 && amount <= 1000){
-			$('.feeValue').val(ffee10);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 1001 && amount <= 1500){
-			$('.feeValue').val(ffee11);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 1501 && amount <= 2000){
-			$('.feeValue').val(ffee12);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 2001 && amount <= 2500){
-			$('.feeValue').val(ffee13);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 2501 && amount <= 3000){
-			$('.feeValue').val(ffee14);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 3001 && amount <= 3500){
-			$('.feeValue').val(ffee15);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 3501 && amount <= 4000){
-			$('.feeValue').val(ffee16);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 4001 && amount <= 5000){
-			$('.feeValue').val(ffee17);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 5001 && amount <= 6000){
-			$('.feeValue').val(ffee18);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 6001 && amount <= 7000){
-			$('.feeValue').val(ffee19);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 7001 && amount <= 8000){
-			$('.feeValue').val(ffee20);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 8000 && amount <= 9500){
-			$('.feeValue').val(ffee21);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 9501 && amount <= 10000){
-			$('.feeValue').val(ffee22);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 10001 && amount <= 14000){
-			$('.feeValue').val(ffee23);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 14001 && amount <= 15000){
-			$('.feeValue').val(ffee24);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 15001 && amount <= 20000){
-			$('.feeValue').val(ffee25);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 20001 && amount <= 30000){
-			$('.feeValue').val(ffee26);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 30001 && amount <= 40000){
-			$('.feeValue').val(ffee27);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 40001 && amount <= 50000){
-			$('.feeValue').val(ffee28);
-			$('.padalaValue').val(amount);
+		var locationradio = $('input:radio[name=locationradio]:checked').val();
+		var amount = parseInt($('.padalaValue').val());
+		var fee1 = 2;
+		var fee2 = 3;
+		var fee3 = 8;
+		var fee4 = 10;
+		var fee5 = 12;
+		var fee6 = 15;
+		var fee7 = 20;
+		var fee8 = 30;
+		var fee9 = 40;
+		var fee10 = 50;
+		var fee11 = 60;
+		var fee12 = 70;
+		var fee13 = 90;
+		var fee14 = 115;
+		var fee15 = 125;
+		var fee16 = 140;
+		var fee17 = 210;
+		var fee18 = 220;
+		var fee19 = 250;
+		var fee20 = 290;
+		var fee21 = 320;
+		var fee22 = 345;
+
+		var ffee1 = 3;
+		var ffee2 = 6;
+		var ffee3 = 9;
+		var ffee4 = 12;
+		var ffee5 = 15;
+		var ffee6 = 18;
+		var ffee7 = 21;
+		var ffee8 = 24;
+		var ffee9 = 27;
+		var ffee10 = 30;
+		var ffee11 = 45;
+		var ffee12 = 60;
+		var ffee13 = 75;
+		var ffee14 = 90;
+		var ffee15 = 95;
+		var ffee16 = 115;
+		var ffee17 = 125;
+		var ffee18 = 145;
+		var ffee19 = 155;
+		var ffee20 = 165;
+		var ffee21 = 185;
+		var ffee22 = 195;
+		var ffee23 = 210;
+		var ffee24 = 220;
+		var ffee25 = 250;
+		var ffee26 = 290;
+		var ffee27 = 320;
+		var ffee28 = 345;
+
+		console.log(locationradio);
+		console.log(amount);
+		console.log($('.feeValue').val());
+
+		if(locationradio == 'location1'){
+
+			if (amount >= 1 && amount <= 100){
+				$('.feeValue').val(fee1);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 101 && amount <= 300){
+				$('.feeValue').val(fee2);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 301 && amount <= 500){
+				$('.feeValue').val(fee3);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 501 && amount <= 700){
+				$('.feeValue').val(fee4);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 701 && amount <= 900){
+				$('.feeValue').val(fee5);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 901 && amount <= 1000){
+				$('.feeValue').val(fee6);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 1001 && amount <= 1500){
+				$('.feeValue').val(fee7);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 1501 && amount <= 2000){
+				$('.feeValue').val(fee8);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 2001 && amount <= 2500){
+				$('.feeValue').val(fee9);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 2501 && amount <= 3000){
+				$('.feeValue').val(fee10);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 3001 && amount <= 3500){
+				$('.feeValue').val(fee11);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 3501 && amount <= 4000){
+				$('.feeValue').val(fee12);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 4001 && amount <= 5000){
+				$('.feeValue').val(fee13);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 5001 && amount <= 7000){
+				$('.feeValue').val(fee14);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 7001 && amount <= 9500){
+				$('.feeValue').val(fee15);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 9501 && amount <= 10000){
+				$('.feeValue').val(fee16);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 10001 && amount <= 14000){
+				$('.feeValue').val(fee17);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 14001 && amount <= 15000){
+				$('.feeValue').val(fee18);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 15001 && amount <= 20000){
+				$('.feeValue').val(fee19);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 20001 && amount <= 30000){
+				$('.feeValue').val(fee20);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 30001 && amount <= 40000){
+				$('.feeValue').val(fee21);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 40001 && amount <= 50000){
+				$('.feeValue').val(fee22);
+				$('.padalaValue').val(amount);
+			}
+		}else if(locationradio == 'location2'){
+			if (amount >= 1 && amount <= 100){
+				$('.feeValue').val(ffee1);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 101 && amount <= 200){
+				$('.feeValue').val(ffee2);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 201 && amount <= 300){
+				$('.feeValue').val(ffee3);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 301 && amount <= 400){
+				$('.feeValue').val(ffee4);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 401 && amount <= 500){
+				$('.feeValue').val(ffee5);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 501 && amount <= 600){
+				$('.feeValue').val(ffee6);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 601 && amount <= 700){
+				$('.feeValue').val(ffee7);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 701 && amount <= 800){
+				$('.feeValue').val(ffee8);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 801 && amount <= 900){
+				$('.feeValue').val(ffee9);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 901 && amount <= 1000){
+				$('.feeValue').val(ffee10);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 1001 && amount <= 1500){
+				$('.feeValue').val(ffee11);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 1501 && amount <= 2000){
+				$('.feeValue').val(ffee12);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 2001 && amount <= 2500){
+				$('.feeValue').val(ffee13);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 2501 && amount <= 3000){
+				$('.feeValue').val(ffee14);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 3001 && amount <= 3500){
+				$('.feeValue').val(ffee15);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 3501 && amount <= 4000){
+				$('.feeValue').val(ffee16);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 4001 && amount <= 5000){
+				$('.feeValue').val(ffee17);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 5001 && amount <= 6000){
+				$('.feeValue').val(ffee18);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 6001 && amount <= 7000){
+				$('.feeValue').val(ffee19);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 7001 && amount <= 8000){
+				$('.feeValue').val(ffee20);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 8000 && amount <= 9500){
+				$('.feeValue').val(ffee21);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 9501 && amount <= 10000){
+				$('.feeValue').val(ffee22);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 10001 && amount <= 14000){
+				$('.feeValue').val(ffee23);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 14001 && amount <= 15000){
+				$('.feeValue').val(ffee24);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 15001 && amount <= 20000){
+				$('.feeValue').val(ffee25);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 20001 && amount <= 30000){
+				$('.feeValue').val(ffee26);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 30001 && amount <= 40000){
+				$('.feeValue').val(ffee27);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 40001 && amount <= 50000){
+				$('.feeValue').val(ffee28);
+				$('.padalaValue').val(amount);
+			}
 		}
-	}
 
 
 
-}); 
+	}); 
 
 //RADIO ALGO FOR Visayas, Mindano, Southern Luzon 
 
@@ -550,219 +550,219 @@ $('#radio-suki-remittance2').change(function(){
 
 	if(remittance == 'nonsukiremittance'){
 		var locationradio = $('input:radio[name=locationradio]:checked').val();
-	var amount = parseInt($('.padalaValue').val());
-	var fee1 = 2;
-	var fee2 = 3;
-	var fee3 = 8;
-	var fee4 = 10;
-	var fee5 = 12;
-	var fee6 = 15;
-	var fee7 = 20;
-	var fee8 = 30;
-	var fee9 = 40;
-	var fee10 = 50;
-	var fee11 = 60;
-	var fee12 = 70;
-	var fee13 = 90;
-	var fee14 = 115;
-	var fee15 = 125;
-	var fee16 = 140;
-	var fee17 = 210;
-	var fee18 = 220;
-	var fee19 = 250;
-	var fee20 = 290;
-	var fee21 = 320;
-	var fee22 = 345;
+		var amount = parseInt($('.padalaValue').val());
+		var fee1 = 2;
+		var fee2 = 3;
+		var fee3 = 8;
+		var fee4 = 10;
+		var fee5 = 12;
+		var fee6 = 15;
+		var fee7 = 20;
+		var fee8 = 30;
+		var fee9 = 40;
+		var fee10 = 50;
+		var fee11 = 60;
+		var fee12 = 70;
+		var fee13 = 90;
+		var fee14 = 115;
+		var fee15 = 125;
+		var fee16 = 140;
+		var fee17 = 210;
+		var fee18 = 220;
+		var fee19 = 250;
+		var fee20 = 290;
+		var fee21 = 320;
+		var fee22 = 345;
 
-	var ffee1 = 3;
-	var ffee2 = 6;
-	var ffee3 = 9;
-	var ffee4 = 12;
-	var ffee5 = 15;
-	var ffee6 = 18;
-	var ffee7 = 21;
-	var ffee8 = 24;
-	var ffee9 = 27;
-	var ffee10 = 30;
-	var ffee11 = 45;
-	var ffee12 = 60;
-	var ffee13 = 75;
-	var ffee14 = 90;
-	var ffee15 = 95;
-	var ffee16 = 115;
-	var ffee17 = 125;
-	var ffee18 = 145;
-	var ffee19 = 155;
-	var ffee20 = 165;
-	var ffee21 = 185;
-	var ffee22 = 195;
-	var ffee23 = 210;
-	var ffee24 = 220;
-	var ffee25 = 250;
-	var ffee26 = 290;
-	var ffee27 = 320;
-	var ffee28 = 345;
+		var ffee1 = 3;
+		var ffee2 = 6;
+		var ffee3 = 9;
+		var ffee4 = 12;
+		var ffee5 = 15;
+		var ffee6 = 18;
+		var ffee7 = 21;
+		var ffee8 = 24;
+		var ffee9 = 27;
+		var ffee10 = 30;
+		var ffee11 = 45;
+		var ffee12 = 60;
+		var ffee13 = 75;
+		var ffee14 = 90;
+		var ffee15 = 95;
+		var ffee16 = 115;
+		var ffee17 = 125;
+		var ffee18 = 145;
+		var ffee19 = 155;
+		var ffee20 = 165;
+		var ffee21 = 185;
+		var ffee22 = 195;
+		var ffee23 = 210;
+		var ffee24 = 220;
+		var ffee25 = 250;
+		var ffee26 = 290;
+		var ffee27 = 320;
+		var ffee28 = 345;
 
-	console.log(locationradio);
-	console.log(amount);
-	console.log($('.feeValue').val());
-	
-	if(locationradio == 'location1'){
+		console.log(locationradio);
+		console.log(amount);
+		console.log($('.feeValue').val());
 
-		if (amount >= 1 && amount <= 100){
-			$('.feeValue').val(fee1);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 101 && amount <= 300){
-			$('.feeValue').val(fee2);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 301 && amount <= 500){
-			$('.feeValue').val(fee3);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 501 && amount <= 700){
-			$('.feeValue').val(fee4);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 701 && amount <= 900){
-			$('.feeValue').val(fee5);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 901 && amount <= 1000){
-			$('.feeValue').val(fee6);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 1001 && amount <= 1500){
-			$('.feeValue').val(fee7);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 1501 && amount <= 2000){
-			$('.feeValue').val(fee8);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 2001 && amount <= 2500){
-			$('.feeValue').val(fee9);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 2501 && amount <= 3000){
-			$('.feeValue').val(fee10);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 3001 && amount <= 3500){
-			$('.feeValue').val(fee11);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 3501 && amount <= 4000){
-			$('.feeValue').val(fee12);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 4001 && amount <= 5000){
-			$('.feeValue').val(fee13);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 5001 && amount <= 7000){
-			$('.feeValue').val(fee14);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 7001 && amount <= 9500){
-			$('.feeValue').val(fee15);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 9501 && amount <= 10000){
-			$('.feeValue').val(fee16);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 10001 && amount <= 14000){
-			$('.feeValue').val(fee17);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 14001 && amount <= 15000){
-			$('.feeValue').val(fee18);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 15001 && amount <= 20000){
-			$('.feeValue').val(fee19);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 20001 && amount <= 30000){
-			$('.feeValue').val(fee20);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 30001 && amount <= 40000){
-			$('.feeValue').val(fee21);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 40001 && amount <= 50000){
-			$('.feeValue').val(fee22);
-			$('.padalaValue').val(amount);
+		if(locationradio == 'location1'){
+
+			if (amount >= 1 && amount <= 100){
+				$('.feeValue').val(fee1);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 101 && amount <= 300){
+				$('.feeValue').val(fee2);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 301 && amount <= 500){
+				$('.feeValue').val(fee3);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 501 && amount <= 700){
+				$('.feeValue').val(fee4);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 701 && amount <= 900){
+				$('.feeValue').val(fee5);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 901 && amount <= 1000){
+				$('.feeValue').val(fee6);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 1001 && amount <= 1500){
+				$('.feeValue').val(fee7);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 1501 && amount <= 2000){
+				$('.feeValue').val(fee8);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 2001 && amount <= 2500){
+				$('.feeValue').val(fee9);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 2501 && amount <= 3000){
+				$('.feeValue').val(fee10);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 3001 && amount <= 3500){
+				$('.feeValue').val(fee11);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 3501 && amount <= 4000){
+				$('.feeValue').val(fee12);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 4001 && amount <= 5000){
+				$('.feeValue').val(fee13);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 5001 && amount <= 7000){
+				$('.feeValue').val(fee14);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 7001 && amount <= 9500){
+				$('.feeValue').val(fee15);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 9501 && amount <= 10000){
+				$('.feeValue').val(fee16);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 10001 && amount <= 14000){
+				$('.feeValue').val(fee17);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 14001 && amount <= 15000){
+				$('.feeValue').val(fee18);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 15001 && amount <= 20000){
+				$('.feeValue').val(fee19);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 20001 && amount <= 30000){
+				$('.feeValue').val(fee20);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 30001 && amount <= 40000){
+				$('.feeValue').val(fee21);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 40001 && amount <= 50000){
+				$('.feeValue').val(fee22);
+				$('.padalaValue').val(amount);
+			}
+		}else if(locationradio == 'location2'){
+			if (amount >= 1 && amount <= 100){
+				$('.feeValue').val(ffee1);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 101 && amount <= 200){
+				$('.feeValue').val(ffee2);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 201 && amount <= 300){
+				$('.feeValue').val(ffee3);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 301 && amount <= 400){
+				$('.feeValue').val(ffee4);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 401 && amount <= 500){
+				$('.feeValue').val(ffee5);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 501 && amount <= 600){
+				$('.feeValue').val(ffee6);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 601 && amount <= 700){
+				$('.feeValue').val(ffee7);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 701 && amount <= 800){
+				$('.feeValue').val(ffee8);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 801 && amount <= 900){
+				$('.feeValue').val(ffee9);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 901 && amount <= 1000){
+				$('.feeValue').val(ffee10);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 1001 && amount <= 1500){
+				$('.feeValue').val(ffee11);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 1501 && amount <= 2000){
+				$('.feeValue').val(ffee12);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 2001 && amount <= 2500){
+				$('.feeValue').val(ffee13);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 2501 && amount <= 3000){
+				$('.feeValue').val(ffee14);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 3001 && amount <= 3500){
+				$('.feeValue').val(ffee15);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 3501 && amount <= 4000){
+				$('.feeValue').val(ffee16);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 4001 && amount <= 5000){
+				$('.feeValue').val(ffee17);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 5001 && amount <= 6000){
+				$('.feeValue').val(ffee18);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 6001 && amount <= 7000){
+				$('.feeValue').val(ffee19);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 7001 && amount <= 8000){
+				$('.feeValue').val(ffee20);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 8000 && amount <= 9500){
+				$('.feeValue').val(ffee21);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 9501 && amount <= 10000){
+				$('.feeValue').val(ffee22);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 10001 && amount <= 14000){
+				$('.feeValue').val(ffee23);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 14001 && amount <= 15000){
+				$('.feeValue').val(ffee24);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 15001 && amount <= 20000){
+				$('.feeValue').val(ffee25);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 20001 && amount <= 30000){
+				$('.feeValue').val(ffee26);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 30001 && amount <= 40000){
+				$('.feeValue').val(ffee27);
+				$('.padalaValue').val(amount);
+			}else if (amount >= 40001 && amount <= 50000){
+				$('.feeValue').val(ffee28);
+				$('.padalaValue').val(amount);
+			}
 		}
-	}else if(locationradio == 'location2'){
-		if (amount >= 1 && amount <= 100){
-			$('.feeValue').val(ffee1);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 101 && amount <= 200){
-			$('.feeValue').val(ffee2);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 201 && amount <= 300){
-			$('.feeValue').val(ffee3);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 301 && amount <= 400){
-			$('.feeValue').val(ffee4);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 401 && amount <= 500){
-			$('.feeValue').val(ffee5);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 501 && amount <= 600){
-			$('.feeValue').val(ffee6);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 601 && amount <= 700){
-			$('.feeValue').val(ffee7);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 701 && amount <= 800){
-			$('.feeValue').val(ffee8);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 801 && amount <= 900){
-			$('.feeValue').val(ffee9);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 901 && amount <= 1000){
-			$('.feeValue').val(ffee10);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 1001 && amount <= 1500){
-			$('.feeValue').val(ffee11);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 1501 && amount <= 2000){
-			$('.feeValue').val(ffee12);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 2001 && amount <= 2500){
-			$('.feeValue').val(ffee13);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 2501 && amount <= 3000){
-			$('.feeValue').val(ffee14);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 3001 && amount <= 3500){
-			$('.feeValue').val(ffee15);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 3501 && amount <= 4000){
-			$('.feeValue').val(ffee16);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 4001 && amount <= 5000){
-			$('.feeValue').val(ffee17);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 5001 && amount <= 6000){
-			$('.feeValue').val(ffee18);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 6001 && amount <= 7000){
-			$('.feeValue').val(ffee19);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 7001 && amount <= 8000){
-			$('.feeValue').val(ffee20);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 8000 && amount <= 9500){
-			$('.feeValue').val(ffee21);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 9501 && amount <= 10000){
-			$('.feeValue').val(ffee22);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 10001 && amount <= 14000){
-			$('.feeValue').val(ffee23);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 14001 && amount <= 15000){
-			$('.feeValue').val(ffee24);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 15001 && amount <= 20000){
-			$('.feeValue').val(ffee25);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 20001 && amount <= 30000){
-			$('.feeValue').val(ffee26);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 30001 && amount <= 40000){
-			$('.feeValue').val(ffee27);
-			$('.padalaValue').val(amount);
-		}else if (amount >= 40001 && amount <= 50000){
-			$('.feeValue').val(ffee28);
-			$('.padalaValue').val(amount);
-		}
-	}
 	}
 
 	console.log("fee " + feeholder);
@@ -876,21 +876,21 @@ $('body').scrollspy({offset: 130});
 
 
 
-   	$("#navscroll2 ul li a[href^='#']").on('click', function(e) {
+$("#navscroll2 ul li a[href^='#']").on('click', function(e) {
 
       // prevent default anchor click behavior
       e.preventDefault();
 
       // animate
       $('html, body').animate({
-          scrollTop: $(this.hash).offset().top - 125
-        }, 1000, function(){
-  
+      	scrollTop: $(this.hash).offset().top - 125
+      }, 1000, function(){
+
           // when done, add hash to url
           // (default click behaviour)
           window.location.hash = this.hash;
-        });
-   });
+      });
+  });
 
 
 
@@ -910,6 +910,75 @@ $("#navscroll2 a").on('click', function(event){
 
 </script>
 
+<script>
+
+
+$(".carret1").click(function(){
+	$(".hiddendiv1").show(800);
+	$(".carret1").hide(800);
+	$(".carrethide1").show(800);
+
+});
+
+
+$(".carrethide1").click(function(){
+	$(".hiddendiv1").hide(800);
+	$(".carret1").show(800);
+	$(".carrethide1").hide(800);
+
+});
+
+$(".carret2").click(function(){
+	$(".hiddendiv2").show(800);
+	$(".carret2").hide(800);
+	$(".carrethide2").show(800);
+
+});
+
+
+$(".carrethide2").click(function(){
+	$(".hiddendiv2").hide(800);
+	$(".carret2").show(800);
+	$(".carrethide2").hide(800);
+
+});
+
+
+$(".carret3").click(function(){
+	$(".hiddendiv3").show(800);
+	$(".carret3").hide(800);
+	$(".carrethide3").show(800);
+
+});
+
+
+$(".carrethide3").click(function(){
+	$(".hiddendiv3").hide(800);
+	$(".carret3").show(800);
+	$(".carrethide3").hide(800);
+
+});
+
+$(".carret4").click(function(){
+	$(".hiddendiv4").show(800);
+	$(".carret4").hide(800);
+	$(".carrethide4").show(800);
+
+});
+
+
+$(".carrethide4").click(function(){
+	$(".hiddendiv4").hide(800);
+	$(".carret4").show(800);
+	$(".carrethide4").hide(800);
+
+});
+
+
+
+
+
+</script>
 
 
 

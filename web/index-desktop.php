@@ -222,7 +222,7 @@
 			<div class="col-sm-12">
 				<div class="col-sm-6">
 					<h3>Mura Na, Mabilis Pa!</h3>
-					<p>Palawan Express Pera Padala (PEPP) is undeniably the quickest and cheapest way of sending money within the Philippines.</p>
+					<p>Palawan Express Pera Padala is undeniably the quickest and cheapest way of sending money within the Philippines.</p>
 					<a href="" class="btn btn-danger rightbtn">LEARN MORE</a>
 				</div>
 				<div class="col-sm-5 col-sm-offset-1">
@@ -292,10 +292,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<h2>CASH CARD WITHDRAWAL</h2>
+				<h2>Cash Card Withdrawal</h2>
 				<div class="col-sm-6">
 					
-					<p>Palawan Pawnshop Palawan Express Pera Padala’s branches offer BALANCE INQUIRY & WITHDRAWAL transactions thru BDO POS terminals.</p>
+					<p>Selected Palawan Pawnshop Palawan Express Pera Padala branches offer BALANCE INQUIRY & WITHDRAWAL transactions thru BDO POS terminals.</p>
 					<a href="" class="btn btn-danger">VIEW BRANCHES</a>
 				</div>
 				<div class="col-sm-6">
@@ -303,7 +303,7 @@
 				</div>
 			</div>
 			<div class="col-sm-6">
-				<h2>MONEY CHANGER</h2>
+				<h2>Money Changer</h2>
 				<div class="col-sm-6">
 					
 					<p>All Palawan Pawnshop branches accept foreign currencies for exchange to Philippine Peso.</p>
@@ -334,14 +334,14 @@
 <div class="suki-card">
 	<div class="container">
 		<div class="row ">
-			<div class="col-sm-7">
+			<div class="col-sm-6">
 				<h2>Suki Card & My Wallet</h2>
 				<p>Similar to PPS MyWallet card, the PPS PEPP Suki Card will grant the same discounts, special offers and other exciting perks to cardholders. A 5% discount on interest and penalty charges for your pawns and on the corresponding fee for remittance transactions will be accorded to PPS PEPP Suki cardholders.</p>
 				<a href="" class="btn btn-danger howtoapplybtn">APPLY NOW</a>
 				<a href="" class="btn btn-danger learnmorebtn">LEARN MORE</a>
 			</div>
-			<div class="col-sm-5">
-				<img class="img-responsive" src="img/sukicard.png" alt="">
+			<div class="col-sm-6">
+				<img class="img-responsive" src="img/sukicard-2.png" alt="">
 			</div>
 		</div>
 	</div>
@@ -367,7 +367,7 @@
 		<div class="row">
 			<div class="col-sm-5">
 				<h2>Insurance</h2>
-				<p>PPS PEPP ProtekTODO is an accident insurance plan designed to provide Filipino masses social security and personal protection at an affordable option.</p>
+				<p>Palawan Pawnshop ProtekTODO is an accident insurance plan designed to provide Filipino masses social security and personal protection at an affordable option.</p>
 				<a href="" class="btn btn-danger rightbtn">VIEW BENEFITS</a>
 			</div>
 			<div class="col-sm-7">
