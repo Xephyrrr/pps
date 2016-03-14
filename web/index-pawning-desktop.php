@@ -3,7 +3,7 @@
 <div class="top-margin"></div>
 
 <div class="pawning-hero">
-	<img class="img-responsive" src="img/pawning-hero-511.jpg" alt="">
+	<!-- <img class="img-responsive" src="img/pawning-hero-511.jpg" alt=""> -->
 </div>
 
 <div class="store-locator pawning">
@@ -160,7 +160,7 @@
 					</div>
 					<div class="col-sm-5 col-sm-offset-1 accepteditems-header">
 						<h2>Accepted Items</h2>
-						<p> Palawan Pawnshop ONLY accepts gold jewelry</p>
+						<p>Palawan Pawnshop ONLY accepts gold jewelry items.</p>
 					</div>
 				</div>
 			</div>
@@ -177,11 +177,11 @@
 			<div class="col-sm-12">
 				<div class="row ">
 					<div class="col-sm-6">
-						<h2>REDEEMING OR RENEWING YOUR PAWN</h2>
+						<h2>Redeeming or Renewing Your Pawn</h2>
 						<p>Similar to PPS MyWallet card, the PPS PEPP Suki Card will grant the same discounts, special offers and other exciting perks to cardholders. A 5% discount on interest and penalty charges for your pawns and on the corresponding fee for remittance transactions will be accorded to PPS PEPP Suki cardholders.</p>
 						<a href="" class="btn btn-danger rightbtn">LEARN MORE</a>
 					</div>
-					<div class="col-sm-4 col-sm-offset-1">
+					<div class="col-sm-4 col-sm-offset-2">
 						<img class="img-responsive"src="img/money-changer.png" class="img-responsive"  alt="">
 					</div>
 					</div>

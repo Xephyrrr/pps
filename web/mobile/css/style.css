@@ -103,7 +103,8 @@ SERVICES AUTHORIZED AGENTS
   .services-authorized-agents .carret {
     color: #E11C24;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center; }
   .services-authorized-agents .chevron {
     margin-left: 10px;
     margin-top: 30px; }
@@ -183,6 +184,8 @@ SERVICES PAWNING
 
 .loan-widget-bg {
   background-color: #EBEBEB !important; }
+  .loan-widget-bg input {
+    background: #fff; }
 
 .desktopNav2 {
   height: 54px;

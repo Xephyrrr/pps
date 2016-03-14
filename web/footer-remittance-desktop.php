@@ -44,7 +44,7 @@
 	</footer>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-ui.js"></script>
@@ -868,6 +868,77 @@ $(window).on('scroll',function(){
     }
 
 });
+</script>
+
+
+<script>
+
+
+$(".carret1").click(function(){
+	$(".hiddendiv1").show(800);
+	$(".carret1").hide(800);
+	$(".carrethide1").show(800);
+
+});
+
+
+$(".carrethide1").click(function(){
+	$(".hiddendiv1").hide(800);
+	$(".carret1").show(800);
+	$(".carrethide1").hide(800);
+
+});
+
+$(".carret2").click(function(){
+	$(".hiddendiv2").show(800);
+	$(".carret2").hide(800);
+	$(".carrethide2").show(800);
+
+});
+
+
+$(".carrethide2").click(function(){
+	$(".hiddendiv2").hide(800);
+	$(".carret2").show(800);
+	$(".carrethide2").hide(800);
+
+});
+
+
+$(".carret3").click(function(){
+	$(".hiddendiv3").show(800);
+	$(".carret3").hide(800);
+	$(".carrethide3").show(800);
+
+});
+
+
+$(".carrethide3").click(function(){
+	$(".hiddendiv3").hide(800);
+	$(".carret3").show(800);
+	$(".carrethide3").hide(800);
+
+});
+
+$(".carret4").click(function(){
+	$(".hiddendiv4").show(800);
+	$(".carret4").hide(800);
+	$(".carrethide4").show(800);
+
+});
+
+
+$(".carrethide4").click(function(){
+	$(".hiddendiv4").hide(800);
+	$(".carret4").show(800);
+	$(".carrethide4").hide(800);
+
+});
+
+
+
+
+
 </script>
 
 

@@ -3,7 +3,7 @@
 <div class="top-margin"></div>
 
 <div class="remittance-hero">
-<img class="img-responsive" src="img/remittance-hero-513.jpg" alt="">
+	<!-- <img class="img-responsive" src="img/remittance-hero-513.jpg" alt=""> -->
 </div>
 
 <div class="store-locator remittance">
@@ -49,20 +49,20 @@
 				<h3>Claim your remittances from our partners abroad at any of our branches </h3>
 			</div>
 			<div class="col-sm-8 col-sm-offset-2 international">
-				<img src="img/tml.jpg" alt="">
-				<img src="img/wilmon.jpg" alt="">
-				<img src="img/citi.jpg" alt="">
-				<img src="img/aub.jpg" alt="">
+				<img src="img/moneygram.jpg" alt="">
 				<img src="img/transfast.jpg" alt="">
-				<img src="img/myremit.jpg" alt="">
+				<img src="img/xpressmoney.jpg" alt="">
+				<img src="img/lbclogo.jpg" alt="">
+				<img src="img/cashsense.jpg" alt="">
+				
 			</div>
 			<div class="col-sm-8 col-sm-offset-2 international">
-				<img src="img/bdo.jpg" alt="">
-				<img src="img/moneygram.jpg" alt="">
 				<img src="img/xoom.jpg" alt="">
-				<img src="img/aub.jpg" alt="">
-				<img src="img/transfast.jpg" alt="">
+				<img src="img/bdo.jpg" alt="">
+				<img src="img/citi.jpg" alt="">
 				<img src="img/myremit.jpg" alt="">
+				<img src="img/aub.jpg" alt="">
+				
 			</div>
 			<div class="col-sm-8 col-sm-offset-2 international">
 				<a href="" class="btn btn-danger">VIEW ALL PARTNERS</a>
@@ -146,46 +146,74 @@
 
 <div class="remittance-options">
 	<div class="container-fluid">
-		<div class="row">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+				<div class="col-sm-7 remittancecontiner">
 
-			<div class="col-sm-6 remittancecontiner">
 
-				<h2>Remittance Options:</h2>
+					<div class="row">
+						<!-- <div class="col-sm-12">
+						</div>
+					-->
 
-				<div class="col-sm-6">
-					<h3 class="remittanceheader">Branch-to-Branch</h3>
-					<img class="img-responsive" src="img/branch-to-branch.png" alt="">
-					
-					<h3 class="remittanceheader">Branch-to-Card</h3>
-					<img class="img-responsive" src="img/branch-to-card.png" alt="">
+
+					<div class="col-sm-12 remittancedesc2">
+						<h2>Remittance Options:</h2>
+						<div class="row">
+
+							<div class="col-sm-12">
+								<h3 class="remittanceheader">Branch-to-Branch</h3>
+								<div class="col-sm-5">
+									<img class="img-responsive" src="img/branch-to-branch.png" alt="">
+
+								</div>
+								<div class="col-sm-7">
+									<p>With accessible branches located at almost every cities and towns in the country, customers can send and claim Palawan Express Pera Padala transactions with ease anywhere in the Philippines.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="row">
+
+							<div class="col-sm-12">
+								<h3 class="remittanceheader">Branch-to-Card</h3>
+								<div class="col-sm-5">
+									<img class="img-responsive" src="img/branch-to-card.png" alt="">
+
+								</div>
+								<div class="col-sm-7">
+									<p>Send remittance directly to any myWallet card and receive it with convenience anytime, at any BancNet ATM nationwide!</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
 				</div>
-				
-				<div class="col-sm-6 remittancedesc1">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-				</div>
-				
-				<div class="col-sm-6 remittancedesc2">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				
+
 			</div>
-			<div class="col-sm-6 remittancebg">
-				
+			<div class="col-sm-5 remittancebg">
+
 				<img class="doptions img-responsive" src="img/d-options2.png" alt="">
 			</div>
+
+			
 		</div>
+
 	</div>
+	</div>
+
 </div>
+</div>
+
 
 <div class="accepted-id">
 	<div class="container">
 		<div class="row ">
 			<div class="col-sm-6 acceptedidmargin">
 				<h2>Accepted IDs</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Palawan Express Pera Padala ensures that you get your remittance without hassle, fast and secured. Make sure to bring at least one from your passport, Postal ID, Company ID, School ID or any of your government issued ID whenever you send or claim your remittance transaction para Walang Kuskos-balungos!</p>
 					<a href="" class="btn btn-danger btnregular">VIEW ALL</a>
 				</div>
 				<div class="col-sm-6">

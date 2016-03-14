@@ -54,9 +54,9 @@ hr {
 .discountsection {
   padding-top: 10px; }
 
-/**
-NAVBAR2 BG
-*/
+.hiddendiv {
+  display: none; }
+
 /*
 SERVICES TERMS AND CONDITIONS
 */
@@ -68,7 +68,9 @@ SERVICES TERMS AND CONDITIONS
   .terms-and-conditions2 .carret {
     color: #E11C24;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer; }
   .terms-and-conditions2 .chevron {
     margin-left: 10px;
     margin-top: 30px; }
@@ -85,7 +87,9 @@ FOOTER
 
 .redeemrenew-bg {
   background-color: #ECCB00;
-  padding: 50px 0; }
+  padding: 80px 0; }
+  .redeemrenew-bg p {
+    font-size: 18px; }
 
 /*
 SERVICES INTERNATIONAL PARTNERS
@@ -98,7 +102,9 @@ SERVICES INTERNATIONAL PARTNERS
   .services-international-partners .carret2 {
     color: #E11C24;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center; }
   .services-international-partners .international2 {
     text-align: center; }
     .services-international-partners .international2 img {
@@ -120,7 +126,9 @@ SERVICES AUTHORIZED AGENTS
   .services-authorized-agents .carret {
     color: #E11C24;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer; }
   .services-authorized-agents .chevron {
     margin-left: 10px;
     margin-top: 30px; }
@@ -130,15 +138,36 @@ SERVICES AUTHORIZED AGENTS
 /*
 SERVICES ACCEPTED IDs
 */
+.carrethide1 {
+  display: none; }
+
+.carrethide2 {
+  display: none; }
+
+.carrethide3 {
+  display: none; }
+
+.carrethide4 {
+  display: none; }
+
+.carret {
+  color: #E11C24;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer; }
+
 .services-accepted-ids {
   padding: 80px 0;
   background-color: #fff; }
   .services-accepted-ids h2 {
-    margin-bottom: 60px; }
+    margin-bottom: 30px; }
   .services-accepted-ids .carret {
     color: #E11C24;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer; }
   .services-accepted-ids .chevron {
     margin-left: 10px;
     margin-top: 30px; }
@@ -162,6 +191,10 @@ SERVICES REMITTANCE
   .services-remittance p {
     color: #FFF;
     font-size: 18px; }
+
+.ppjelwelry {
+  text-align: center;
+  margin-top: 20px; }
 
 .remittance-loan-widget-bg {
   background-color: #EBEBEB !important; }
@@ -293,7 +326,8 @@ SERVICES PAWNING
 .services-interest-calculator .interestdays {
   padding-left: 0px;
   margin-top: 40px;
-  margin-left: 20%; }
+  margin-left: 20%;
+  font-family: "Century Gothic Regular"; }
 .services-interest-calculator h3 {
   font-size: 19px; }
 .services-interest-calculator .loan-widget.loan-widget-bg {
@@ -318,6 +352,10 @@ SERVICES PAWNING
 #loanDays {
   width: 140px; }
 
+.services-accepted-ids .carret {
+  text-align: center;
+  cursor: pointer; }
+
 .terms-and-conditions {
   padding: 80px 0;
   background-color: #EBEBEB; }
@@ -326,7 +364,9 @@ SERVICES PAWNING
   .terms-and-conditions .carret {
     color: #E11C24;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer; }
   .terms-and-conditions .chevron {
     margin-left: 10px;
     margin-top: 30px; }
@@ -336,14 +376,8 @@ SERVICES PAWNING
 /*
 REMITTANCE SECTION
 */
-.remittancecontiner {
-  padding: 10px 10px 10px 75px; }
-
 .ids {
   width: 100%; }
-
-.remittancebg {
-  background-color: #F8DD02; }
 
 .remittanceheader {
   font-size: 28px; }
@@ -351,11 +385,9 @@ REMITTANCE SECTION
 .remittancedesc1 {
   margin-top: 70px; }
 
-.remittancedesc2 {
-  margin-top: 145px; }
-
 .accepted-id {
-  background-color: #39A14A; }
+  background-color: #39A14A;
+  padding: 80px 0; }
   .accepted-id h2 {
     color: #FFFFFF;
     margin-top: 100px; }
@@ -468,14 +500,17 @@ HEADER FILTER
 /*
 REMITTANCE OPTIONS SECTION
 */
+.remittance-options h2 {
+  margin-top: 80px; }
 .remittance-options h3 {
   color: #E11C24;
-  margin-bottom: 20px;
   margin-top: 35px; }
-.remittance-options .col-sm-7 img {
-  float: right; }
 .remittance-options p {
-  font-size: 18px; }
+  font-size: 18px;
+  margin-top: 30px; }
+
+.remittance-options .remittancebg img {
+  margin-top: 135px; }
 
 .content-filter {
   text-align: center;
@@ -502,21 +537,34 @@ REMITTANCE OPTIONS SECTION
     margin: 0; }
 
 .pawning-hero {
+  background: url(../img/pawning-hero-470.png) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  height: 72vh;
+  width: 100%;
   min-height: 90%;
-  display: block; }
+  display: block;
+  padding: 100px 0;
+  text-align: center;
+  background-position: center; }
 
 .remittance-hero {
+  background: url(../img/remittance-hero-470.png) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  min-height: 90%; }
+  height: 72vh;
+  width: 100%;
+  min-height: 90%;
+  display: block;
+  padding: 100px 0;
+  text-align: center;
+  background-position: center; }
 
 .store-locator {
   background-color: #39A14A;
@@ -579,10 +627,9 @@ REMITTANCE OPTIONS SECTION
   resize: vertical; }
 
 .pawning {
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding: 80px 0; }
   .pawning h2 {
-    margin-top: 80px; }
+    margin-top: 110px; }
   .pawning h3 {
     color: #E11C24;
     text-align: center;
@@ -1798,6 +1845,9 @@ Custom Media Queries
   .padala-calculator .padalaValue.remittance {
     font-size: 15px; } }
 @media (max-width: 1199px) {
+  .remittance-options .remittancebg img {
+    margin-top: 135px; }
+
   .pawning-accepted-items {
     padding: 50px; }
     .pawning-accepted-items p {
@@ -1873,9 +1923,6 @@ Custom Media Queries
 
   .remittanceheader {
     font-size: 20px; }
-
-  .remittancedesc2 {
-    margin-top: 65px; }
 
   .acceptedidmargin {
     margin-bottom: 40px; }

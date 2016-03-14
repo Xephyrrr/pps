@@ -3101,8 +3101,6 @@ $('#radio-suki2').change(function(){
 
 
 
-
-
 <script>
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip()
@@ -3116,6 +3114,7 @@ $(function () {
 			interval: 5000
 		}).on('slide.bs.carousel', function (e) {
 			var nextH = $(e.relatedTarget).height();
+
 			$(this).find('.active.item').parent().animate({
 				height: nextH
 			}, 500);
@@ -3127,14 +3126,18 @@ $(function () {
 
 
 	<script>
+
 	function addMarker(feature) {
 		var marker = new google.maps.Marker({
 			position: feature.position,
+
 			map: map
 		});
 	}
+
 	function initialize() {
 		var myLatlng = new google.maps.LatLng(14.5757335,120.9947509);
+
 		var mapOptions = {
 			zoom: 16,
 			scaleControl: false,
@@ -3153,6 +3156,7 @@ $(function () {
 			
 		});
 	}
+
 	google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
 
@@ -3170,10 +3174,14 @@ $(function () {
 
 
 	<script>
+
     // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-    var mainbottom = $('.services-pawning').offset().top + $('.services-pawning').height();
+    var mainbottom = $('.store-locator').offset().top + $('.store-locator').height();
+
+
 // on scroll, 
 $(window).on('scroll',function(){
+
     // we round here to reduce a little workload
     stop = Math.round($(window).scrollTop());
     if (stop > mainbottom) {
@@ -3181,29 +3189,80 @@ $(window).on('scroll',function(){
     } else {
     	$('.nav-wrap').removeClass('past-hero');
     }
-});
-// Add scrollspy to <body>
-$('body').scrollspy({offset: 130}); 
-$("#navscroll ul li a[href^='#']").on('click', function(e) {
-      // prevent default anchor click behavior
-      e.preventDefault();
-      // animate
-      $('html, body').animate({
-      	scrollTop: $(this.hash).offset().top - 125
-      }, 1000, function(){
-          // when done, add hash to url
-          // (default click behaviour)
-          window.location.hash = this.hash;
-      });
-  });
-// Add smooth scrolling to all links inside a navbar
-$("#navscroll a").on('click', function(event){
-  // Prevent default anchor click behavior
-  event.preventDefault();
-  // Store hash (#)
-  var hash = this.hash;
+
 });
 </script>
+
+<script>
+
+
+$(".carret1").click(function(){
+	$(".hiddendiv1").show(800);
+	$(".carret1").hide(800);
+	$(".carrethide1").show(800);
+
+});
+
+
+$(".carrethide1").click(function(){
+	$(".hiddendiv1").hide(800);
+	$(".carret1").show(800);
+	$(".carrethide1").hide(800);
+
+});
+
+$(".carret2").click(function(){
+	$(".hiddendiv2").show(800);
+	$(".carret2").hide(800);
+	$(".carrethide2").show(800);
+
+});
+
+
+$(".carrethide2").click(function(){
+	$(".hiddendiv2").hide(800);
+	$(".carret2").show(800);
+	$(".carrethide2").hide(800);
+
+});
+
+
+$(".carret3").click(function(){
+	$(".hiddendiv3").show(800);
+	$(".carret3").hide(800);
+	$(".carrethide3").show(800);
+
+});
+
+
+$(".carrethide3").click(function(){
+	$(".hiddendiv3").hide(800);
+	$(".carret3").show(800);
+	$(".carrethide3").hide(800);
+
+});
+
+$(".carret4").click(function(){
+	$(".hiddendiv4").show(800);
+	$(".carret4").hide(800);
+	$(".carrethide4").show(800);
+
+});
+
+
+$(".carrethide4").click(function(){
+	$(".hiddendiv4").hide(800);
+	$(".carret4").show(800);
+	$(".carrethide4").hide(800);
+
+});
+
+
+
+
+
+</script>
+
 
 
 
