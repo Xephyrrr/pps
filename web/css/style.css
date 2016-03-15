@@ -124,7 +124,8 @@ SERVICES AUTHORIZED AGENTS
     margin-left: 10px;
     margin-top: 30px; }
   .services-authorized-agents li {
-    font-size: 18px; }
+    font-size: 18px;
+    font-family: "Century Gothic Regular"; }
 
 /*
 SERVICES ACCEPTED IDs
@@ -202,14 +203,15 @@ SERVICES REMITTANCE
   background-color: #39A14A; }
   .services-remittance h2 {
     color: #FFF;
-    font-size: 70px;
-    margin-left: 10%; }
+    font-size: 70px; }
   .services-remittance h3 {
     color: #FFF;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    font-size: 20px; }
   .services-remittance p {
     color: #FFF;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-left: 10px; }
 
 .ppjelwelry {
   text-align: center;
@@ -249,10 +251,10 @@ SERVICES PAWNING
   background-color: #E11C24; }
   .services-pawning h2 {
     color: #FFF;
-    font-size: 70px;
-    margin-left: 10%; }
+    font-size: 70px; }
   .services-pawning h3 {
-    color: #FFF; }
+    color: #FFF;
+    font-size: 20px; }
   .services-pawning p {
     color: #FFF;
     font-size: 18px; }
@@ -335,6 +337,9 @@ SERVICES PAWNING
 
 .howtoredeempawn {
   margin-left: 5%; }
+
+.terms-and-conditions2 .howtoredeempawn {
+  margin-left: 0px; }
 
 .services-interest-calculator li {
   display: inline;
@@ -2306,6 +2311,18 @@ Custom Media Queries
 
   .accepteditems-header {
     margin-top: 50px; } }
+@media (max-width: 928px) {
+  .services-padala-calculator h3 {
+    font-size: 35px;
+    margin-top: 100px; }
+  .services-padala-calculator p {
+    font-size: 16px; }
+  .services-padala-calculator .loan-widget {
+    height: 350px; }
+  .services-padala-calculator .feelabel {
+    font-size: 12px; }
+  .services-padala-calculator label {
+    font-size: 12px; } }
 @media (max-width: 976px) {
   .remittanceheader {
     font-size: 17px; }
@@ -2403,6 +2420,27 @@ Custom Media Queries
   .services-padala-calculator h2 {
     font-size: 43px; } }
 @media (max-width: 930px) {
+  .services-interest-calculator .loan-widget.loan-widget-bg label {
+    font-size: 10px; }
+  .services-interest-calculator .loan-widget.loan-widget-bg .applyButton .btn.btn-danger.btn-block {
+    font-size: 10px; }
+
+  .pawning-accepted-items p {
+    margin-left: 6%;
+    font-size: 15px; }
+
+  .terms-and-conditions2 p {
+    font-size: 15px; }
+
+  .services-accepted-ids p {
+    font-size: 15px; }
+
+  .services-authorized-agents li {
+    font-size: 15px; }
+
+  .services-padala-calculator p {
+    font-size: 15px; }
+
   .store-locator.remittance h3 {
     font-size: 18px; }
 
@@ -2429,11 +2467,11 @@ Custom Media Queries
     margin-bottom: 30px; }
 
   .services-remittance p {
-    margin-left: 130px;
+    margin-left: 110px;
     font-size: 15px; }
   .services-remittance h3 {
-    font-size: 17px;
-    margin-left: 130px; }
+    font-size: 16px;
+    margin-left: 110px; }
   .services-remittance h2 {
     font-size: 60px;
     margin-bottom: 30px; }

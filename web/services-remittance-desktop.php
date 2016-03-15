@@ -7,31 +7,35 @@
 <div class="services-remittance">
 	<div class="container">
 		<div class="row">
-			<h2>Pera Padala</h2>
-			<div class="col-sm-5 description">
-				
-				<img src="img/service-remittance-1.png" alt="">
-			</div>
-			<div class="col-sm-6">
-				<h3>Mura. Mabilis. Walang Kuskos-balungos</h3>
-				<p>Palawan Express Pera Padala is Palawan Pawnshop’s fast and simple domestic remittance service at cheapest rate for only a minimum of P2.00. With efficient system, reliable and happy-to-serve frontliners, customer satisfaction is guaranteed. </p>
-				<br>
-				<p>In addition to the growing number of branches and remittance outlets, it partners with LBC and SM Malls to add more accessible locations and make remittance transactions more convenient to the remitting public. It is now one of the largest money transfer businesses in the Philippines.</p>
-				<br>
-				<p>Palawan Express pioneered text notifications to sender when remittance is ready for claim and after it was claimed and to receiver to inform them of the transaction to ready to claim, free to claim anywhere. </p>
-				
-				
+			<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+				<h2>Pera Padala</h2>
+				<div class="col-sm-6 description">
 
+					<img src="img/service-remittance-1.png" alt="">
+				</div>
+				<div class="col-sm-6">
+					<h3>Mura. Mabilis. Walang Kuskos-balungos</h3>
+					<p>Palawan Express Pera Padala is Palawan Pawnshop’s fast and simple domestic remittance service at cheapest rate for only a minimum of P2.00. With efficient system, reliable and happy-to-serve frontliners, customer satisfaction is guaranteed. </p>
+					<br>
+					<p>In addition to the growing number of branches and remittance outlets, it partners with LBC and SM Malls to add more accessible locations and make remittance transactions more convenient to the remitting public. It is now one of the largest money transfer businesses in the Philippines.</p>
+					<br>
+					<p>Palawan Express pioneered text notifications to sender when remittance is ready for claim and after it was claimed and to receiver to inform them of the transaction to ready to claim, free to claim anywhere. </p>
+
+
+
+				</div>
 			</div>
 		</div>
 	</div>
+
 </div>
 <div id="sscroll1" class="services-padala-calculator">
 	<div class="container">
 		<div class="row">
-			<div class="col sm-12">
+			<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+				<h2>Padala Rates</h2>
 				<div class="col-sm-5">
-					<h2>Padala Rates</h2>
+					
 					<div class="row">
 						<div class="col-sm-6">
 						</div>
@@ -45,64 +49,65 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-5 col-sm-offset-1">
-				<di<div class="col-md-5  col-sm-1 loan-widget remittance-loan-widget-bg">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="col-sm-6 amountwrap">
-							<div class="form-group">
-								<label for="inputdefault">AMOUNT TO SEND</label>
-								<input name ="defaultInput" class="form-control amount" placeholder="Input Amount" id="inputdefault" type="number" min="1" max="5">
+				<div class="col-sm-5 col-sm-offset-1">
+					<di<div class="col-md-5  col-sm-1 loan-widget remittance-loan-widget-bg">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="col-sm-6 amountwrap">
+								<div class="form-group">
+									<label for="inputdefault">AMOUNT TO SEND</label>
+									<input name ="defaultInput" class="form-control amount" placeholder="Input Amount" id="inputdefault" type="number" min="1" max="5">
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+
+							<label class="title">BRANCH</label>
+
+							<div class="col-sm-6">
+								<label id="radio-inline"><input id="radio-vmsl" type="radio" name="locationradio" value="location1">Visayas, Mindano, Southern Luzon</label>
+							</div>
+							<div class="col-sm-6">
+								<label id="radio-inline"><input id="radio-ncrl" type="radio" name="locationradio" value="location2">NCR and the rest of Luzon</label>
+							</div>
+
+
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="title discountsection" >DISCOUNT</label>
+							<div class="col-sm-6">
+								<label id="suki-radiolabel1" class="radiolabelremit"><input id="radio-suki-remittance1" type="radio" name="remittance" value="sukiremittance"> Suki Card Holder</label>
+								<!-- <label class="radio-inline"><input type="radio" name="optradio">Suki Card Holder</label> -->
+							</div>
+							<div class="col-sm-6">
+								<label id="suki-radiolabel1" class="radiolabelremit"><input id="radio-suki-remittance2" type="radio" name="remittance" value="nonsukiremittance">None</label>
+								<!-- <label class="radio-inline"><input type="radio" name="optradio">None</label> -->
 							</div>
 						</div>
-
-
 					</div>
-				</div>
 
-				<div class="row">
+					<hr>
 					<div class="col-sm-12">
-
-						<label class="title">BRANCH</label>
-
-						<div class="col-sm-6">
-							<label id="radio-inline"><input id="radio-vmsl" type="radio" name="locationradio" value="location1">Visayas, Mindano, Southern Luzon</label>
+						<div class="col-sm-6 loanValueText"><label>REMITTANCE</label>
+							<input class="padalaValue remittance" placeholder="50000" type ="number" readonly>		
 						</div>
-						<div class="col-sm-6">
-							<label id="radio-inline"><input id="radio-ncrl" type="radio" name="locationradio" value="location2">NCR and the rest of Luzon</label>
-						</div>
-
-
-
+						<div class="col-sm-6 loanValueText"><div class="feelabel">REMITTANCE FEE</div>
+						<input class="feeValue feeholder" placeholder="345" type ="number" readonly>		
 					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-12">
-						<label class="title discountsection" >DISCOUNT</label>
-						<div class="col-sm-6">
-							<label id="suki-radiolabel1" class="radiolabelremit"><input id="radio-suki-remittance1" type="radio" name="remittance" value="sukiremittance"> Suki Card Holder</label>
-							<!-- <label class="radio-inline"><input type="radio" name="optradio">Suki Card Holder</label> -->
-						</div>
-						<div class="col-sm-6">
-							<label id="suki-radiolabel1" class="radiolabelremit"><input id="radio-suki-remittance2" type="radio" name="remittance" value="nonsukiremittance">None</label>
-							<!-- <label class="radio-inline"><input type="radio" name="optradio">None</label> -->
-						</div>
-					</div>
-				</div>
-
-				<hr>
-				<div class="col-sm-12">
-					<div class="col-sm-6 loanValueText"><label>REMITTANCE</label>
-						<input class="padalaValue remittance" placeholder="50000" type ="number" readonly>		
-					</div>
-					<div class="col-sm-6 loanValueText"><div class="feelabel">REMITTANCE FEE</div>
-					<input class="feeValue feeholder" placeholder="345" type ="number" readonly>		
 				</div>
 			</div>
 		</div>
 	</div>
+
 </div>
 </div>
 
@@ -115,7 +120,7 @@
 <div id="sscroll2" class="how-to-renew">
 	<div class="container">
 		<div class="row ">
-			<div class="col-sm-12">
+			<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 				<h2>How to Send</h2>
 				<div class="col-sm-8">
 					<p>1) Go to any Palawan Pawnshop branch or Palawan Express Pera Padala outlet.</p>
@@ -142,7 +147,7 @@
 <div id="sscroll3" class="how-to-redeem">
 	<div class="container">
 		<div class="row ">
-			<div class="col-sm-12">
+			<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 				<h2>How to Receive</h2>
 				
 				<div class="col-sm-4">
@@ -173,14 +178,14 @@
 <div id="sscroll4" class="services-accepted-ids">
 	<div class="container">
 		<div class="row ">
-			<div class="col-sm-12">
+			<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 				<h2>Accepted IDs</h2>
 
 
 				<div class="col-sm-12">
 					<h3>The following shall be considered valid IDs:</h3>
 					<br>
-					<div class="col-sm-7">
+					<div class="col-sm-6 col-md-6 col-lg-6">
 						<div class="col-sm-12">
 							<p>1.1    Passport issued by local and foreign governments </p>
 							<p>(Note: For new passports issued by the Department of Foreign Affairs (DFA), the qualification of a valid ID bearing the signature of the individual owner shall no longer be applicable.) </p>
@@ -221,15 +226,17 @@
 								</div>
 
 							</div>
-							<p class="carret carret1" data-toggle="collapse" data-target=".hiddendiv1">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
-							<p class="carret carrethide1" data-toggle="collapse" data-target=".hiddendiv1">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
 							
 						</div>
 
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-6 col-md-6 col-lg-6">
 						<img class="ids"src="img/available-ids.png" alt="">
 					</div>
+						<div class="col-sm-10 col-md-10col-lg-10">
+				<p class="carret carret1" data-toggle="collapse" data-target=".hiddendiv1">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
+							<p class="carret carrethide1" data-toggle="collapse" data-target=".hiddendiv1">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+							</div>
 				</div>
 
 
@@ -242,11 +249,11 @@
 <div id="sscroll5" class="services-authorized-agents">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 				<h2>Authorized Agents</h2>
 
 
-				<div class="col-sm-10 col-sm-offset-2">
+				<div class="col-sm-12">
 					<div class="col-sm-6">
 						<ul>
 							<li>Tambunting Pawnshop</li>
@@ -341,11 +348,13 @@
 							</div>
 
 						</div>
-						<p class="carret carret2" data-toggle="collapse" data-target=".hiddendiv2">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
-							<p class="carret carrethide2" data-toggle="collapse" data-target=".hiddendiv2">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
-							
+						
 					</div>
 				</div>
+
+				<p class="carret carret2" data-toggle="collapse" data-target=".hiddendiv2">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
+				<p class="carret carrethide2" data-toggle="collapse" data-target=".hiddendiv2">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+
 			</div>
 		</div>
 	</div>
@@ -354,63 +363,66 @@
 <div id="sscroll6" class="services-international-partners">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
-				<h2>International Partners</h2>
-			</div>
-			<div class="col-sm-12">
-				<div class="col-sm-12 international2">
-					<img src="img/moneygram.jpg" alt="">
-					<img src="img/wilmon.jpg" alt="">
-					<img src="img/tml.jpg" alt="">
-					<img src="img/transfast.jpg" alt="">
-					<img src="img/maybank.jpg" alt="">
-					
+			<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+				<div class="col-sm-12">
+					<h2>International Partners</h2>
 				</div>
-				<div class="col-sm-12 international2">
-					<img src="img/myremit.jpg" alt="">
-					<img src="img/aub.jpg" alt="">
-					<img src="img/bdo.jpg" alt="">
-					<img src="img/xoom.jpg" alt="">
-					<img src="img/citi.jpg" alt="">
-					
+				<div class="col-sm-12">
+					<div class="col-sm-12 international2">
+						<img src="img/moneygram.jpg" alt="">
+						<img src="img/wilmon.jpg" alt="">
+						<img src="img/tml.jpg" alt="">
+						<img src="img/transfast.jpg" alt="">
+						<img src="img/maybank.jpg" alt="">
+
+					</div>
+					<div class="col-sm-12 international2">
+						<img src="img/myremit.jpg" alt="">
+						<img src="img/aub.jpg" alt="">
+						<img src="img/bdo.jpg" alt="">
+						<img src="img/xoom.jpg" alt="">
+						<img src="img/citi.jpg" alt="">
+
+					</div>
+					<div class="collapse hiddendiv3">
+						<div class="col-sm-12 international2">
+							<img src="img/iremit.jpg" alt="">
+							<img src="img/speedsend.jpg" alt="">
+							<img src="img/cashsense.jpg" alt="">
+							<img src="img/lbclogo.jpg" alt="">
+							<img src="img/metrobank.jpg" alt="">
+						</div>
+						<div class="col-sm-12 international2">
+							<img src="img/chinabank.jpg" alt="">
+							<img src="img/chinabank.jpg" alt="">
+							<img src="img/xpressmoney.jpg" alt="">
+							<img src="img/lucky.jpg" alt="">
+							<img src="img/franki.jpg" alt="">
+						</div>
+						<div class="col-sm-12 international2">
+							<img src="img/kabayan.jpg" alt="">
+							<img src="img/sigue.jpg" alt="">
+							<img src="img/bmexpress.jpg" alt="">
+							<img src="img/landbank.jpg" alt="">
+							<img src="img/instantcash.jpg" alt="">
+
+
+						</div>
+						<div class="col-sm-12 international2">
+							<img src="img/filremit.jpg" alt="">
+							<img src="img/familyexpress.jpg" alt="">
+							<img src="img/bpi.jpg" alt="">
+							<img src="img/czarina.jpg" alt="">
+							<img src="img/rcbc.jpg" alt="">
+
+						</div>
+					</div>
+
 				</div>
-				<div class="collapse hiddendiv3">
-				<div class="col-sm-12 international2">
-					<img src="img/iremit.jpg" alt="">
-					<img src="img/speedsend.jpg" alt="">
-					<img src="img/cashsense.jpg" alt="">
-					<img src="img/lbclogo.jpg" alt="">
-					<img src="img/metrobank.jpg" alt="">
-				</div>
-				<div class="col-sm-12 international2">
-					<img src="img/chinabank.jpg" alt="">
-					<img src="img/chinabank.jpg" alt="">
-					<img src="img/xpressmoney.jpg" alt="">
-					<img src="img/lucky.jpg" alt="">
-					<img src="img/franki.jpg" alt="">
-				</div>
-				<div class="col-sm-12 international2">
-					<img src="img/kabayan.jpg" alt="">
-					<img src="img/sigue.jpg" alt="">
-					<img src="img/bmexpress.jpg" alt="">
-					<img src="img/landbank.jpg" alt="">
-					<img src="img/instantcash.jpg" alt="">
-					
-					
-				</div>
-				<div class="col-sm-12 international2">
-					<img src="img/filremit.jpg" alt="">
-					<img src="img/familyexpress.jpg" alt="">
-					<img src="img/bpi.jpg" alt="">
-					<img src="img/czarina.jpg" alt="">
-					<img src="img/rcbc.jpg" alt="">
-					
-				</div>
-				</div>
+				
 				<p class="carret carret3" data-toggle="collapse" data-target=".hiddendiv3">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
-							<p class="carret carrethide3" data-toggle="collapse" data-target=".hiddendiv3">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
-							
-			</div>
+				<p class="carret carrethide3" data-toggle="collapse" data-target=".hiddendiv3">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+		</div>
 
 
 		</div>
@@ -420,6 +432,7 @@
 <div class="terms-and-conditions2">
 	<div class="container">
 		<div class="row ">
+			<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 			<div class="col-sm-12">
 				<h2>Terms and Conditions</h2>
 
@@ -436,7 +449,7 @@
 					<p>5) Remittances may be placed in any denomination at a maximum of 50,000 per transaction. Amounts in excess of 50,000 shall cover another transaction.</p>
 
 					
-				<div class="collapse hiddendiv4">
+					<div class="collapse hiddendiv4">
 						<br>
 						<p>6) The Sender shall pay the fees for remittance, at rates which are published in the sending PEPP location. Such rates may change without prior notice. No fees shall be collected from the Receiver.</p>
 						<br>
@@ -466,13 +479,16 @@
 						<br>
 						<p>19) All claims or suits regarding this transaction shall be filed in the courts of Puerto Princesa City, Palawan only, to the exclusion of all other courts.
 						</div>
+						<div class="col-sm-10 col-md-10col-lg-10">
+						
 						<p class="carret carret4" data-toggle="collapse" data-target=".hiddendiv4">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
-							<p class="carret carrethide4" data-toggle="collapse" data-target=".hiddendiv4">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
-							
+						<p class="carret carrethide4" data-toggle="collapse" data-target=".hiddendiv4">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+						</div>
 					</div>
 
 				</div>
 			</div>
+</div>
 		</div>
 	</div>
 
