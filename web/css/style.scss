@@ -193,6 +193,7 @@ SERVICES AUTHORIZED AGENTS
 	}
 	li{
 		font-size: 18px;
+		font-family: "Century Gothic Regular";
 	}
 } 
 
@@ -288,16 +289,18 @@ SERVICES REMITTANCE
 	h2 {
 		color: #FFF;
 		font-size: 70px;
-		margin-left: 10%;
+		// margin-left: 10%;
 	}
 	h3 {
 		color: #FFF;
 		padding-bottom: 20px;
+		font-size: 20px;
 
 	}
 	p {
 		color: #FFF;
 		font-size: 18px;
+		margin-left: 10px;
 
 	}
 }
@@ -357,11 +360,11 @@ SERVICES PAWNING
 	h2 {
 		color: #FFF;
 		font-size: 70px;
-		margin-left: 10%;
+		// margin-left: 10%;
 	}
 	h3 {
 		color: #FFF;
-
+		font-size: 20px;
 	}
 	p {
 		color: #FFF;
@@ -485,6 +488,14 @@ SERVICES PAWNING
 .howtoredeempawn{
 	margin-left: 5%;
 
+}
+
+
+.terms-and-conditions2{
+	.howtoredeempawn{
+	margin-left: 0px;
+
+}
 }
 
 .services-interest-calculator{
@@ -3326,344 +3337,205 @@ services
 
 
 }
+@media(max-width: 928px) {
 
-
-@media(max-width: 976px) {
-
-	.remittanceheader{
-		font-size: 17px;
-	}
-	.remittancecontiner{
-		h2{
+	.services-padala-calculator{
+		h3{
 			font-size: 35px;
-		}
-	}
-	.remittance-options{
-		p{
-			font-size: 14px;
-		}
-
-	}
-}
-
-@media(max-width: 807px) {
-	.remittancecontiner h2 {
-		margin-top: 5px;
-	}
-}
-
-
-@media(max-width: 857px) {
-	.remittancecontiner{
-		h2{
-			font-size: 30px;
-		}
-	}
-	.remittanceheader{
-		font-size: 16px;
-	}
-	.remittancedesc1{
-		margin-top:25px;
-	}
-	.remittancedesc2{
-		margin-top:30px;
-	}
-
-	.remittance-options{
-		p{
-			font-size: 13px;
-		}
-		
-	}
-}
-
-@media(max-width: 800px) {
-
-	.loan-widget{
-		margin-left: 0px;
-	}
-
-	.services-pawning{
-		p{
-			margin-left: 150px;
-			font-size: 15px;
-		}
-		h3{
-			font-size: 17px;
-			margin-left: 150px;
-		}
-		h2{
-			font-size: 60px;
-			margin-bottom: 30px;
-		}
-	}
-	.services-remittance{
-		p{
-			margin-left: 150px;
-			font-size: 15px;
-		}
-		h3{
-			font-size: 17px;
-			margin-left: 150px;
-		}
-		h2{
-			font-size: 60px;
-			margin-bottom: 30px;
-		}
-	}
-	.desktopNav3{
-		li{
-			a{
-				font-size: 9px;
-				font-weight: bold;
+			margin-top: 100px;
+			}p{
+				font-size: 16px;
+			}
+			.loan-widget{
+				height: 350px;
+			}
+			.feelabel{
+				font-size: 12px;
+			}
+			label{
+				font-size: 12px;
 			}
 		}
-	}
-	.desktopNav2{
-		li{
-			a{
-				font-size: 9px;
-				font-weight: bold;
-			}
-		}
-	}
-
-
-
-
-}
-
-
-@media(max-width: 771px) {
-
-
-	.content-filter-header {
-		h1 {
-			font-size: 22px;
-		}
 
 	}
-	.padala-calculator{
-		.loan-widget{
-			.col-sm-6.loanValueText{
-				.feelabel{
-					font-size: 12px;
-				}
-				label{
-					font-size: 12px;
-				}
-			}
-		}
-	}
-}
-
-@media(max-width: 835px) {
-
-
-	.content-filter-header {
-		h1 {
-			font-size: 22px;
-		}
-
-	}
-	.padala-calculator{
-		
-	}
-
-	.pawning-accepted-items{
-		p{
-			font-size: 17px;
-			margin-left: 19%;
-		}
-	}
-
-	.services-padala-calculator{
-		.loan-widget{
-			.col-sm-6.loanValueText{
-				.feelabel{
-					font-size: 12px;
-				}
-				label{
-					font-size: 12px;
-				}
-			}
-		}
-	}
-}
-
-@media(max-width: 913px) {
-
-	.terms-and-conditions2{
-
-		h2{
-			font-size: 46px;
-		}
-	}
-	.terms-and-conditions{
-
-		h2{
-			font-size: 46px;
-		}
-	}
-}
 
 
 
+	@media(max-width: 976px) {
 
-
-@media(max-width: 860px) {
-	.services-interest-calculator{
-		li{
-
+		.remittanceheader{
 			font-size: 17px;
 		}
-	} 
-	.terms-and-conditions2{
-
-		h2{
-			font-size: 43px;
-		}
-	}
-	.terms-and-conditions{
-
-		h2{
-			font-size: 43px;
-		}
-	}
-
-}
-
-@media(max-width: 909px) {
-	.services-padala-calculator{
-		h2{
-			font-size: 43px;
-		}
-	}
-
-}
-
-@media(max-width: 930px) {
-
-	.store-locator.remittance{
-		h3{
-			font-size: 18px;
-		}
-	}
-	.store-locator.pawning{
-		h3{
-			font-size: 18px;
-		}
-	}
-
-	.pawning{
-		h3{
-			font-size: 17px;
-		}
-	}
-
-	.container{
-		width:100%;
-	}
-	.feeValue.feeholder{
-		width:100%;
-	}
-
-
-	.services-pawning{
-		p{
-			margin-left: 130px;
-			font-size: 15px;
-		}
-		h3{
-			font-size: 18px;
-			margin-left: 130px;
-		}
-		h2{
-			font-size: 60px;
-			margin-bottom: 30px;
-		}
-	}
-
-	.services-remittance{
-		p{
-			margin-left: 130px;
-			font-size: 15px;
-		}
-		h3{
-			font-size: 17px;
-			margin-left: 130px;
-		}
-		h2{
-			font-size: 60px;
-			margin-bottom: 30px;
-		}
-	}
-	.desktopNav3{
-		li{
-			a{
-				font-size: 10px;
-				font-weight: bold;
+		.remittancecontiner{
+			h2{
+				font-size: 35px;
 			}
 		}
-	}
-	.desktopNav2{
-		li{
-			a{
-				font-size: 10px;
-				font-weight: bold;
+		.remittance-options{
+			p{
+				font-size: 14px;
 			}
+
 		}
 	}
 
-	.nav{
-		li{
-			a{
-				padding: 5px 7px;
-			}
+	@media(max-width: 807px) {
+		.remittancecontiner h2 {
+			margin-top: 5px;
 		}
 	}
 
-}
 
-
-
-@media(max-width: 880px) {
-
-	.nav{
-		li{
-			a{
-				padding: 5px 6px;
+	@media(max-width: 857px) {
+		.remittancecontiner{
+			h2{
+				font-size: 30px;
 			}
 		}
-	}
-
-}
-
-@media(max-width: 867px) {
-
-	.nav{
-		li{
-			a{
-				padding: 5px 4px;
-			}
-		}
-	}
-
-}
-
-@media(max-width: 838px) {
-
-	.services-interest-calculator{
-		li {
+		.remittanceheader{
 			font-size: 16px;
 		}
+		.remittancedesc1{
+			margin-top:25px;
+		}
+		.remittancedesc2{
+			margin-top:30px;
+		}
 
-	} 
-	.desktopNav3{
-		li{
-			a{
-				font-size: 9px;
-				font-weight: bold;
+		.remittance-options{
+			p{
+				font-size: 13px;
+			}
+
+		}
+	}
+
+	@media(max-width: 800px) {
+
+		.loan-widget{
+			margin-left: 0px;
+		}
+
+		.services-pawning{
+			p{
+				margin-left: 150px;
+				font-size: 15px;
+			}
+			h3{
+				font-size: 17px;
+				margin-left: 150px;
+			}
+			h2{
+				font-size: 60px;
+				margin-bottom: 30px;
+			}
+		}
+		.services-remittance{
+			p{
+				margin-left: 150px;
+				font-size: 15px;
+			}
+			h3{
+				font-size: 17px;
+				margin-left: 150px;
+			}
+			h2{
+				font-size: 60px;
+				margin-bottom: 30px;
+			}
+		}
+		.desktopNav3{
+			li{
+				a{
+					font-size: 9px;
+					font-weight: bold;
+				}
+			}
+		}
+		.desktopNav2{
+			li{
+				a{
+					font-size: 9px;
+					font-weight: bold;
+				}
+			}
+		}
+
+
+
+
+	}
+
+
+	@media(max-width: 771px) {
+
+
+		.content-filter-header {
+			h1 {
+				font-size: 22px;
+			}
+
+		}
+		.padala-calculator{
+			.loan-widget{
+				.col-sm-6.loanValueText{
+					.feelabel{
+						font-size: 12px;
+					}
+					label{
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	@media(max-width: 835px) {
+
+
+		.content-filter-header {
+			h1 {
+				font-size: 22px;
+			}
+
+		}
+		.padala-calculator{
+
+		}
+
+		.pawning-accepted-items{
+			p{
+				font-size: 17px;
+				margin-left: 19%;
+			}
+		}
+
+		.services-padala-calculator{
+			.loan-widget{
+				.col-sm-6.loanValueText{
+					.feelabel{
+						font-size: 12px;
+					}
+					label{
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	@media(max-width: 913px) {
+
+		.terms-and-conditions2{
+
+			h2{
+				font-size: 46px;
+			}
+		}
+		.terms-and-conditions{
+
+			h2{
+				font-size: 46px;
 			}
 		}
 	}
@@ -3671,34 +3543,243 @@ services
 
 
 
-	.desktopNav2{
-		li{
-			a{
-				font-size: 9px;
-				font-weight: bold;
+
+	@media(max-width: 860px) {
+		.services-interest-calculator{
+			li{
+
+				font-size: 17px;
+			}
+		} 
+		.terms-and-conditions2{
+
+			h2{
+				font-size: 43px;
 			}
 		}
-	}
+		.terms-and-conditions{
 
-}
-
-
-
-
-
-
-
-
-
-@media(max-width: 949px) {
-
-	.container.content-filter{
-		.content-filter-header{
-			width:	75%;
+			h2{
+				font-size: 43px;
+			}
 		}
+
 	}
 
-}
+	@media(max-width: 909px) {
+		.services-padala-calculator{
+			h2{
+				font-size: 43px;
+			}
+		}
+
+	}
+
+	@media(max-width: 930px) {
+
+
+		.services-interest-calculator{
+			.loan-widget.loan-widget-bg{
+				label {
+					font-size: 10px;
+				}
+				.applyButton{
+					.btn.btn-danger.btn-block{
+						font-size: 10px;
+					}
+				}
+			}
+
+		}
+
+
+
+
+		.pawning-accepted-items{
+			p {
+				margin-left: 6%;
+
+				font-size: 15px;
+			}
+		} 
+
+		.terms-and-conditions2 {
+			p {
+				font-size: 15px;
+			}
+		}
+
+		.services-accepted-ids{
+			p {
+				font-size: 15px;
+			}
+		} 
+		.services-authorized-agents {
+			li {
+				font-size: 15px;
+			}
+		}
+
+		.services-padala-calculator{
+			p{
+				font-size: 15px;;
+			}
+		}
+		.store-locator.remittance{
+			h3{
+				font-size: 18px;
+			}
+		}
+		.store-locator.pawning{
+			h3{
+				font-size: 18px;
+			}
+		}
+
+		.pawning{
+			h3{
+				font-size: 17px;
+			}
+		}
+
+		.container{
+			width:100%;
+		}
+		.feeValue.feeholder{
+			width:100%;
+		}
+
+
+		.services-pawning{
+			p{
+				margin-left: 130px;
+				font-size: 15px;
+			}
+			h3{
+				font-size: 18px;
+				margin-left: 130px;
+			}
+			h2{
+				font-size: 60px;
+				margin-bottom: 30px;
+			}
+		}
+
+		.services-remittance{
+			p{
+				margin-left: 110px;
+				font-size: 15px;
+			}
+			h3{
+				font-size: 16px;
+				margin-left: 110px;
+			}
+			h2{
+				font-size: 60px;
+				margin-bottom: 30px;
+			}
+		}
+		.desktopNav3{
+			li{
+				a{
+					font-size: 10px;
+					font-weight: bold;
+				}
+			}
+		}
+		.desktopNav2{
+			li{
+				a{
+					font-size: 10px;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.nav{
+			li{
+				a{
+					padding: 5px 7px;
+				}
+			}
+		}
+
+	}
+
+
+
+	@media(max-width: 880px) {
+
+		.nav{
+			li{
+				a{
+					padding: 5px 6px;
+				}
+			}
+		}
+
+	}
+
+	@media(max-width: 867px) {
+
+		.nav{
+			li{
+				a{
+					padding: 5px 4px;
+				}
+			}
+		}
+
+	}
+
+	@media(max-width: 838px) {
+
+		.services-interest-calculator{
+			li {
+				font-size: 16px;
+			}
+
+		} 
+		.desktopNav3{
+			li{
+				a{
+					font-size: 9px;
+					font-weight: bold;
+				}
+			}
+		}
+
+
+
+
+		.desktopNav2{
+			li{
+				a{
+					font-size: 9px;
+					font-weight: bold;
+				}
+			}
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+	@media(max-width: 949px) {
+
+		.container.content-filter{
+			.content-filter-header{
+				width:	75%;
+			}
+		}
+
+	}
 
 
 

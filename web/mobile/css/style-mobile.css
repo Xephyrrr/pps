@@ -1256,7 +1256,8 @@ SERVICES AUTHORIZED AGENTS
     margin-left: 10px;
     margin-top: 30px; }
   .services-authorized-agents li {
-    font-size: 15px; }
+    font-size: 15px;
+    font-family: "Century Gothic Regular"; }
 
 /*
 SERVICES ACCEPTED IDs
