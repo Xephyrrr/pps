@@ -54,9 +54,6 @@ hr {
 .discountsection {
   padding-top: 10px; }
 
-.hiddendiv {
-  display: none; }
-
 /*
 SERVICES TERMS AND CONDITIONS
 */
@@ -99,12 +96,6 @@ SERVICES INTERNATIONAL PARTNERS
   .services-international-partners h2 {
     margin-top: 50px;
     margin-bottom: 50px; }
-  .services-international-partners .carret2 {
-    color: #E11C24;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center; }
   .services-international-partners .international2 {
     text-align: center; }
     .services-international-partners .international2 img {
@@ -149,6 +140,34 @@ SERVICES ACCEPTED IDs
 
 .carrethide4 {
   display: none; }
+
+.carret1 {
+  color: #E11C24;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer; }
+
+.carret2 {
+  color: #E11C24;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer; }
+
+.carret3 {
+  color: #E11C24;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer; }
+
+.carret4 {
+  color: #E11C24;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer; }
 
 .carret {
   color: #E11C24;

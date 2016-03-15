@@ -132,6 +132,7 @@
 									<div class="col-sm-6">
 										<!-- <label for="inputdefault">ENTER LOAN AMOUNT</label> -->
 										<input name ="defaultInput" class="form-control amount" id="inputamount" type="number" placeholder="Input Amount">
+									
 									</div>
 
 									<div class="col-sm-6">

@@ -239,7 +239,7 @@
 				<div class="col-sm-3">
 					<img class="img-responsive" src="img/jewelry-4.png" alt="">
 				</div>
-				<p class="ppjelwelry"> Palawan Pawnshop ONLY accepts gold jewelry</p>
+				<p class="ppjelwelry"> Palawan Pawnshop ONLY accepts gold jewelry items.</p>
 			</div>
 			
 
@@ -256,7 +256,6 @@
 
 					<div class="col-sm-12">
 
-
 						<p>1) The pawner hereby accepts the pawnshop’s appraisal as proper.</p>
 						<br>
 						<p>2) The pawnshop agrees on the interest rates imposed in this contract of pledge. In case of dispute, the regular courts of law have the vested power to determine the reasonableness and legality of interest rates. The pawnshop hereby agrees not to collect advance interest for a period of more than one (1) year.</p>
@@ -266,7 +265,7 @@
 						<p>4) This load is renewable for such amount and period as may be agree upon between the pawnshop and the pawner subject to the same requirements for a new loan.</p>
 						<br>
 						<p>5) Upon maturity of this loan, as indicated above, the pawner still has ninety (90) days from maturity date within which to redeem the pawn by paying the principal loan plus the interest that shall have accrued thereon.</p>
-						<div class="hiddendiv hiddendiv1">
+						<div class="collapse hiddendiv1">
 							<br>
 							<p>6) The amount of interest due and payable after the maturity date of the loan up to the redemption period shall be computed upon redemption at the rate of interest provided above based on the sum of the principal loan and interest earned as of the date of maturity. Any additional penalty and/or interest shall also be computed in the same manner.</p>
 							<br>
@@ -299,8 +298,9 @@
 								<br>
 								<p>20) Member: Chamber of Pawnbrokers of the Philippines</p>
 							</div>
-							<p class="carret carret1">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
-							<p class="carret carrethide1">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+							<p class="carret carret1" data-toggle="collapse" data-target=".hiddendiv1">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
+							<p class="carret carrethide1" data-toggle="collapse" data-target=".hiddendiv1">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+							
 						</div>
 					</div>
 				</div>

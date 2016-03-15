@@ -115,7 +115,7 @@
 						<ul class="nav nav-pills navbar-right navbar-bg">
 
 							<li>
-								<a href="#scroll1">HOME</a>
+								<a href="#scroll1">PAWNING</a>
 							</li>
 							<li>
 								<a href="#scroll2">INTEREST RATE</a>

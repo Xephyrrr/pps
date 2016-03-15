@@ -52,6 +52,28 @@
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script src="js/accounting.min.js"></script>
 		<script>
+
+ $("#inputamount").keypress(function (e) {
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        // //display error message
+        // $("#errmsg").html("Digits Only").show().fadeOut("slow");
+               return false;
+    }
+   });
+  $("#inputdays").keypress(function (e) {
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        // //display error message
+        // $("#errmsg").html("Digits Only").show().fadeOut("slow");
+               return false;
+    }
+   });
+
+
+
+
+
 	(function() {
 /*
 CUSTOM CURRENCY DECIMAL
@@ -93,6 +115,8 @@ function decimalAdjust(type, value, exp) {
   	};
   }
 })();
+
+
 $(function() {
 	$( "#slider-loan-max" ).slider({
 		range: "max",
@@ -3245,68 +3269,56 @@ $("#navscroll a").on('click', function(event){
 
 
 $(".carret1").click(function(){
-	$(".hiddendiv1").show(800);
-	$(".carret1").hide(800);
-	$(".carrethide1").show(800);
+	$(".carrethide1").show(200);
+	$(".carret1").hide(200);
+
 
 });
-
-
 $(".carrethide1").click(function(){
-	$(".hiddendiv1").hide(800);
-	$(".carret1").show(800);
-	$(".carrethide1").hide(800);
+	$(".carrethide1").hide(200);
+	$(".carret1").show(200);
+
 
 });
 
 $(".carret2").click(function(){
-	$(".hiddendiv2").show(800);
-	$(".carret2").hide(800);
-	$(".carrethide2").show(800);
+	$(".carrethide2").show(200);
+	$(".carret2").hide(200);
+
 
 });
-
-
 $(".carrethide2").click(function(){
-	$(".hiddendiv2").hide(800);
-	$(".carret2").show(800);
-	$(".carrethide2").hide(800);
+	$(".carrethide2").hide(200);
+	$(".carret2").show(200);
+
 
 });
 
 
 $(".carret3").click(function(){
-	$(".hiddendiv3").show(800);
-	$(".carret3").hide(800);
-	$(".carrethide3").show(800);
+	$(".carrethide3").show(200);
+	$(".carret3").hide(200);
+
 
 });
-
-
 $(".carrethide3").click(function(){
-	$(".hiddendiv3").hide(800);
-	$(".carret3").show(800);
-	$(".carrethide3").hide(800);
+	$(".carrethide3").hide(200);
+	$(".carret3").show(200);
+
 
 });
-
 $(".carret4").click(function(){
-	$(".hiddendiv4").show(800);
-	$(".carret4").hide(800);
-	$(".carrethide4").show(800);
+	$(".carrethide4").show(200);
+	$(".carret4").hide(200);
+
 
 });
-
-
 $(".carrethide4").click(function(){
-	$(".hiddendiv4").hide(800);
-	$(".carret4").show(800);
-	$(".carrethide4").hide(800);
+	$(".carrethide4").hide(200);
+	$(".carret4").show(200);
+
 
 });
-
-
-
 
 
 </script>
