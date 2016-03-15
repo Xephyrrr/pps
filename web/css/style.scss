@@ -88,9 +88,9 @@ hr {
 	padding-top: 10px;
 }
 
-.hiddendiv{
-	display:none;
-}
+// .hiddendiv{
+// 	display:none;
+// }
 /*
 SERVICES TERMS AND CONDITIONS
 */
@@ -151,13 +151,7 @@ SERVICES INTERNATIONAL PARTNERS
 		margin-top: 50px;
 		margin-bottom: 50px;
 	}
-	.carret2{
-		color: $red;
-		font-weight: bold;
-		font-size: 20px;
-		cursor:pointer;
-		text-align: center;
-	}
+
 
 	.international2 {
 		text-align: center;
@@ -206,28 +200,60 @@ SERVICES AUTHORIZED AGENTS
 /*
 SERVICES ACCEPTED IDs
 */
-	.carrethide1{
+.carrethide1{
 	display:none;
 }
 
-	.carrethide2{
+.carrethide2{
 	display:none;
 }
 
-	.carrethide3{
+.carrethide3{
 	display:none;
 }
 
-	.carrethide4{
+.carrethide4{
 	display:none;
+}
+.carret1{
+
+	color: $red;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	cursor:pointer;
+}
+.carret2{
+
+	color: $red;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	cursor:pointer;
+}
+.carret3{
+
+	color: $red;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	cursor:pointer;
+}
+.carret4{
+
+	color: $red;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	cursor:pointer;
 }
 .carret{
-		color: $red;
-		font-weight: bold;
-		font-size: 20px;
-		text-align: center;
-		cursor:pointer;
-	}
+	color: $red;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	cursor:pointer;
+}
 
 .services-accepted-ids{
 	padding: 80px 0;
@@ -573,7 +599,7 @@ REMITTANCE SECTION
 .accepted-id{
 	background-color: $green;
 	padding: 80px 0;
-    
+
 	h2{
 		color:#FFFFFF;
 		margin-top: 100px;
@@ -2572,9 +2598,9 @@ Custom Media Queries
 
 @media ( max-width: 1199px) {
 
-.remittance-options .remittancebg img {
-    margin-top: 135px;
-}
+	.remittance-options .remittancebg img {
+		margin-top: 135px;
+	}
 	.pawning-accepted-items{
 		padding: 50px;
 		p{

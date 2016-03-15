@@ -250,7 +250,7 @@
 	</div>
 </div>
 
-<div class="pawning accepted-items">
+<div id="scroll6" class="pawning accepted-items">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1">

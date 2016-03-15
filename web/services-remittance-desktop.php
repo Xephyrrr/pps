@@ -192,7 +192,7 @@
 							<p>1.7    Voter’s ID</p>
 							<p>1.8    Barangay Certification</p>
 							
-							<div class="hiddendiv hiddendiv1">
+							<div class="collapse hiddendiv1">
 								<p>1.9    Government Services and Insurance System (GSIS) e-Card</p>
 								<p>1.10  Social Security System (SSS) Card</p>
 								<p>1.11  Senior Citizen Card</p>
@@ -221,8 +221,9 @@
 								</div>
 
 							</div>
-							<p class="carret carrethide1">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
-							<p class="carret carret1">VIEW ALL<i class="fa fa-chevron-down chevron"></i></p>
+							<p class="carret carret1" data-toggle="collapse" data-target=".hiddendiv1">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
+							<p class="carret carrethide1" data-toggle="collapse" data-target=".hiddendiv1">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+							
 						</div>
 
 					</div>
@@ -294,7 +295,7 @@
 					</div>
 
 					
-					<div class="hiddendiv hiddendiv2">
+					<div class="collapse hiddendiv2">
 						<div class="row">
 							<div class="col-sm-6">
 								<h3>Banks</h3>
@@ -340,9 +341,9 @@
 							</div>
 
 						</div>
-						<p class="carret carret2">VIEW ALL<i class="fa fa-chevron-down chevron"></i></p>
-						<p class="carret carrethide2">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
-
+						<p class="carret carret2" data-toggle="collapse" data-target=".hiddendiv2">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
+							<p class="carret carrethide2" data-toggle="collapse" data-target=".hiddendiv2">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+							
 					</div>
 				</div>
 			</div>
@@ -373,12 +374,12 @@
 					<img src="img/citi.jpg" alt="">
 					
 				</div>
-				<div class="hiddendiv hiddendiv3">
+				<div class="collapse hiddendiv3">
 				<div class="col-sm-12 international2">
 					<img src="img/iremit.jpg" alt="">
 					<img src="img/speedsend.jpg" alt="">
 					<img src="img/cashsense.jpg" alt="">
-					<img src="img/lbc.jpg" alt="">
+					<img src="img/lbclogo.jpg" alt="">
 					<img src="img/metrobank.jpg" alt="">
 				</div>
 				<div class="col-sm-12 international2">
@@ -406,8 +407,9 @@
 					
 				</div>
 				</div>
-				<p class="carret carret3">VIEW ALL<i class="fa fa-chevron-down chevron"></i></p>
-				<p class="carret carrethide3">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+				<p class="carret carret3" data-toggle="collapse" data-target=".hiddendiv3">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
+							<p class="carret carrethide3" data-toggle="collapse" data-target=".hiddendiv3">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+							
 			</div>
 
 
@@ -434,7 +436,7 @@
 					<p>5) Remittances may be placed in any denomination at a maximum of 50,000 per transaction. Amounts in excess of 50,000 shall cover another transaction.</p>
 
 					
-					<div class="hiddendiv hiddendiv4">
+				<div class="collapse hiddendiv4">
 						<br>
 						<p>6) The Sender shall pay the fees for remittance, at rates which are published in the sending PEPP location. Such rates may change without prior notice. No fees shall be collected from the Receiver.</p>
 						<br>
@@ -464,9 +466,9 @@
 						<br>
 						<p>19) All claims or suits regarding this transaction shall be filed in the courts of Puerto Princesa City, Palawan only, to the exclusion of all other courts.
 						</div>
-						<p class="carret carret4">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
-						<p class="carret carrethide4">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
-
+						<p class="carret carret4" data-toggle="collapse" data-target=".hiddendiv4">READ MORE<i class="fa fa-chevron-down chevron"></i></p>
+							<p class="carret carrethide4" data-toggle="collapse" data-target=".hiddendiv4">SHOW LESS<i class="fa fa-chevron-up chevron"></i></p>
+							
 					</div>
 
 				</div>
