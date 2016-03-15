@@ -195,7 +195,7 @@
 			</div>
 			<div class="col-sm-5 remittancebg">
 
-				<img class="doptions img-responsive" src="img/d-options2.png" alt="">
+				<img class="doptions img-responsive" src="img/d-options.png" alt="">
 			</div>
 
 			
