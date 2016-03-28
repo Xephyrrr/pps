@@ -126,44 +126,44 @@
 							<h3>Fun Run - Takbo Palaweno</h3>
 							<div class='list-group gallery'>
 					            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-					                <a class="thumbnail fancybox" rel="ligthbox" href="img/funrun-1.jpg">
-					                    <img class="img-responsive" alt="" src="img/funrun-1.jpg" />
+					                <a class="thumbnail fancybox" rel="ligthbox" href="img/fun-run-1.jpg">
+					                    <img class="img-responsive" alt="" src="img/fun-run-1.jpg" />
 					                    
 					                </a>
 					            </div> <!-- col-6 / end -->
 					            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-					                <a class="thumbnail fancybox" rel="ligthbox" href="img/funrun-2.jpg">
-					                    <img class="img-responsive" alt="" src="img/funrun-2.jpg" />
+					                <a class="thumbnail fancybox" rel="ligthbox" href="img/fun-run-2.jpg">
+					                    <img class="img-responsive" alt="" src="img/fun-run-2.jpg" />
 					                </a>
 					            </div> <!-- col-6 / end -->
 					            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-					                <a class="thumbnail fancybox" rel="ligthbox" href="img/funrun-3.jpg">
-					                    <img class="img-responsive" alt="" src="img/funrun-3.jpg" />
+					                <a class="thumbnail fancybox" rel="ligthbox" href="img/fun-run-3.jpg">
+					                    <img class="img-responsive" alt="" src="img/fun-run-3.jpg" />
 					                </a>
 					            </div> <!-- col-6 / end -->
 					            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-					                <a class="thumbnail fancybox" rel="ligthbox" href="img/funrun-4.jpg">
-					                    <img class="img-responsive" alt="" src="img/funrun-4.jpg" />
+					                <a class="thumbnail fancybox" rel="ligthbox" href="img/fun-run-4.jpg">
+					                    <img class="img-responsive" alt="" src="img/fun-run-4.jpg" />
 					                </a>
 					            </div> <!-- col-6 / end -->
 					           <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-					                <a class="thumbnail fancybox" rel="ligthbox" href="img/funrun-5.jpg">
-					                    <img class="img-responsive" alt="" src="img/funrun-5.jpg" />
+					                <a class="thumbnail fancybox" rel="ligthbox" href="img/fun-run-5.jpg">
+					                    <img class="img-responsive" alt="" src="img/fun-run-5.jpg" />
 					                </a>
 					            </div> <!-- col-6 / end -->
 					            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-					                <a class="thumbnail fancybox" rel="ligthbox" href="img/funrun-6.jpg">
-					                    <img class="img-responsive" alt="" src="img/funrun-6.jpg" />
+					                <a class="thumbnail fancybox" rel="ligthbox" href="img/fun-run-6.jpg">
+					                    <img class="img-responsive" alt="" src="img/fun-run-6.jpg" />
 					                </a>
 					            </div> <!-- col-6 / end -->
 					            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-					                <a class="thumbnail fancybox" rel="ligthbox" href="img/funrun-7.jpg">
-					                    <img class="img-responsive" alt="" src="img/funrun-7.jpg" />
+					                <a class="thumbnail fancybox" rel="ligthbox" href="img/fun-run-7.jpg">
+					                    <img class="img-responsive" alt="" src="img/fun-run-7.jpg" />
 					                </a>
 					            </div> <!-- col-6 / end -->
 					            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-					                <a class="thumbnail fancybox" rel="ligthbox" href="img/funrun-8.jpg">
-					                    <img class="img-responsive" alt="" src="img/funrun-8.jpg" />
+					                <a class="thumbnail fancybox" rel="ligthbox" href="img/fun-run-8.jpg">
+					                    <img class="img-responsive" alt="" src="img/fun-run-8.jpg" />
 					                </a>
 					            </div> <!-- col-6 / end -->
 					        </div> <!-- list-group / end -->
