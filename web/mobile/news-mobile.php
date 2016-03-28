@@ -13,7 +13,7 @@
 			<div class='col-sm-10 col-sm-offset-1'>
 				<div class="carousel slide media-carousel tablet" id="media">
 					<div class="carousel-inner">
-						<div class="item  active">
+						<div class="item active">
 							<div class="row">
 								<div class="col-xs-4">
 									<a class="thumbnail" href="#"><img alt="" src="img/featured-news-1.jpg">
@@ -64,9 +64,9 @@
 					<a data-slide="next" href="#media" class="right carousel-control">›</a> 
 				</div>
 
-				<div class="carousel slide media-carousel mobile" id="media">
+				<div class="carousel slide media-carousel mobile" id="media2">
 					<div class="carousel-inner">
-						<div class="item  active">
+						<div class="item active">
 							<div class="row">
 								<div class="col-md-4">
 									<a class="thumbnail" href="#"><img alt="" src="img/featured-news-1.jpg">
@@ -95,8 +95,8 @@
 							</div>
 						</div>
 					</div>
-					<a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-					<a data-slide="next" href="#media" class="right carousel-control">›</a> 
+					<a data-slide="prev" href="#media2" class="left carousel-control">‹</a>
+					<a data-slide="next" href="#media2" class="right carousel-control">›</a> 
 				</div>
 			</div>
 			<div class="col-sm-10 col-sm-offset-1">

@@ -1817,6 +1817,12 @@ News
   .media-carousel .col-md-4, .media-carousel .col-xs-4 {
     padding-left: 0;
     padding-right: 0; }
+  .media-carousel a {
+    color: #ffffff; }
+  .media-carousel .carousel-control {
+    opacity: 1; }
+  .media-carousel .carousel-control:hover {
+    opacity: 0.8; }
 
 /* Previous button  */
 .media-carousel .carousel-control.left {

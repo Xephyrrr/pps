@@ -2458,6 +2458,15 @@ News
   	padding-left: 0;
     padding-right: 0;
   }
+  a {
+ 	color: #ffffff;
+ }
+ .carousel-control {
+ 	opacity: 1;
+ }
+ .carousel-control:hover {
+ 	opacity: 0.8;
+ }
 }
 /* Previous button  */
 .media-carousel .carousel-control.left 
