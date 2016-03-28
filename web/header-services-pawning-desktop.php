@@ -33,7 +33,7 @@
 						    </button>
 							
 							
-							    <a class="navbar-brand" href="#">
+							    <a class="navbar-brand" href="/">
 							    	<div class="logoWrap">
 							    	<img class="logo" src="img/pp-logo.jpg" alt="">
 							    	 </div>
@@ -63,10 +63,10 @@
 
 							<ul class="nav navbar-nav nav-pills">
 								<li>
-									<a href="">HOME</a>
+									<a href="/">HOME</a>
 								</li>
 								<li>
-									<a href="">ABOUT US</a>
+									<a href="/about.php">ABOUT US</a>
 								</li>
 																<li class="dropdown">
 <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
@@ -83,10 +83,10 @@
 </ul>
 </li>
 								<li>
-									<a href="">NEWS/EVENTS</a>
+									<a href="/news.php">NEWS/EVENTS</a>
 								</li>
 								<li>
-									<a href="">MEDIA</a>
+									<a href="/media.php">MEDIA</a>
 								</li>
 								<li>
 									<a href="#">FAQ</a>

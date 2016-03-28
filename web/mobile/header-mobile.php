@@ -59,7 +59,7 @@
 										<a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>">HOME</a>
 									</li>
 									<li>
-										<a href="">ABOUT US</a>
+										<a href="/about.php">ABOUT US</a>
 									</li>
 									<li class="dropdown">
 										<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
@@ -76,10 +76,10 @@
 										</ul>
 									</li>
 									<li>
-										<a href="">NEWS/EVENTS</a>
+										<a href="/news.php">NEWS/EVENTS</a>
 									</li>
 									<li>
-										<a href="">MEDIA</a>
+										<a href="/media.php">MEDIA</a>
 									</li>
 									<li>
 										<a href="#">FAQ</a>
@@ -108,10 +108,10 @@
 										<hr>
 
 										<li class="" role="presentation">
-											<a href="">HOME</a>
+											<a href="/">HOME</a>
 										</li>
 										<li>
-											<a href="about-mobile.php">ABOUT US</a>
+											<a href="/about.php">ABOUT US</a>
 										</li>
 										<li>
 											<a class="" role="button" data-toggle="collapse" href="#nav1" aria-expanded="false" aria-controls="nav1">SERVICES<span class="caret"></span></a>
@@ -133,10 +133,10 @@
 
 										</li>
 										<li>
-											<a href="news-mobile.php">NEWS</a>
+											<a href="/news.php">NEWS</a>
 										</li>
 										<li>
-											<a href="media-mobile.php">MEDIA</a>
+											<a href="/media.php">MEDIA</a>
 										</li>
 										<li>
 											<a href="">FAQ</a>

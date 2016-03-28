@@ -4051,12 +4051,23 @@ $(".carrethide4").click(function(){
 </script>
 
 <script>
-	$(document).ready(function() {
+	
   $('#media').carousel({
     pause: true,
     interval: false,
   });
-});
+
+    $('#media2').carousel({
+    pause: true,
+    interval: false,
+  });
+
+</script>
+
+<script>
+
+
+
 </script>
 
 
