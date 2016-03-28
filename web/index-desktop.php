@@ -132,7 +132,7 @@
 									<div class="col-sm-6">
 										<!-- <label for="inputdefault">ENTER LOAN AMOUNT</label> -->
 										<input name ="defaultInput" class="form-control amount" id="inputamount" type="number" placeholder="Input Amount">
-									
+
 									</div>
 
 									<div class="col-sm-6">
@@ -337,7 +337,7 @@
 		<div class="row ">
 			<div class="col-sm-6">
 				<h2>Suki Card & My Wallet</h2>
-				<p>Similar to PPS MyWallet card, the PPS PEPP Suki Card will grant the same discounts, special offers and other exciting perks to cardholders. A 5% discount on interest and penalty charges for your pawns and on the corresponding fee for remittance transactions will be accorded to PPS PEPP Suki cardholders.</p>
+				<p>Similar to Palawan Pawnshop MyWallet card, the Suki Card will grant the same discounts, special offers and other exciting perks to cardholders. A 5% discount on interest and penalty charges for your pawns and on the corresponding fee for remittance transactions will be accorded to Palawan Pawnshop Suki cardholders.</p>
 				<a href="" class="btn btn-danger howtoapplybtn">APPLY NOW</a>
 				<a href="" class="btn btn-danger learnmorebtn">LEARN MORE</a>
 			</div>
@@ -388,70 +388,96 @@
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1"></li>
 				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
 			</ol>
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner testimonials">
 				<div class="item active">
 					<div class="col-sm-6">
-						<img class="img-responsive" src="img/testimonial-girl.png" alt="">
+						<img src="img/testimonial-2.png" alt="">
 					</div>
 					<div class="col-sm-6">
 						<h2>Testimonials</h2>
-						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
-							<p>-Lorem Ipsum</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="col-sm-6">
-							<img src="img/testimonial-girl.png" alt="">
-						</div>
-						<div class="col-sm-6">
-							<h2>Testimonials</h2>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
-								<p>-Lorem Ipsum</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-sm-6">
-								<img src="img/testimonial-girl.png" alt="">
-							</div>
-							<div class="col-sm-6">
-								<h2>Testimonials</h2>
-								<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et unde, quis pariatur iure blanditiis beatae
-									<p>-Lorem Ipsum</p>
-								</div>
-							</div>
+						<p>"Mabait ang mga employees, friendly and suave ang service. Always smiling and saying "Thank you". Salamat Palawan Pawnshop! God bless!"</p>
+						<p>-Elsa Suarez Galacio</p>
 
-						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="news">
-				<div class="container">
-					<div class="row">
-						<h2>Industry Related News</h2>
-						<div class="col-sm-4">
-							<img class="img-responsive" src="img/news-1.jpg" alt="">
-							<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
-						</div>
-						<div class="col-sm-4">
-							<img class="img-responsive" src="img/news-1.jpg" alt="">
-							<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
-						</div>
-						<div class="col-sm-4">
-							<img class="img-responsive" src="img/news-1.jpg" alt="">
-							<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
-							<a href="" class="btn btn-danger pull-right rightbtn">VIEW ALL NEWS</a>
-						</div>
+				<div class="item">
+					<div class="col-sm-6">
+						<img src="img/testimonial-5.png" alt="">
+					</div>
+					<div class="col-sm-6">
+						<h2>Testimonials</h2>
+						<p>"Dito po ako palaging kumuha kasi mabilis at mura lang po ang binabayad ng nagpapadala sa akin."</p>
+						<p>-Ehlord Win Molina Rabec</p>
 					</div>
 				</div>
+
+				<div class="item">
+					<div class="col-sm-6">
+						<img src="img/testimonial-3.png" alt="">
+					</div>
+					<div class="col-sm-6">
+						<h2>Testimonials</h2>
+						<p>"Thank you Palawan Pawnshop for answering our needs! Lowest interest para sa aming sangla at sa maayos na pakikitungo ng mga empleyado, treating us family is big deal para sa amin tiwala at saludo ako sa inyo Palawan Pawnshop!"</p>
+						<p>-Arlyn Alayon</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-sm-6">
+						<img src="img/testimonial-4.png" alt="">
+					</div>
+					<div class="col-sm-6">
+						<h2>Testimonials</h2>
+						<p>"Dito na ako sa Palawan Pawnshop nagpapadala dahil dito walang pila madaling kunin ang perang padala sa probinsiya. Nakakaaliw pa ang T.V. sa mga branches nila."</p>
+						<p>-Leonila E. Cobillas</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-sm-6">
+						<img src="img/testimonial-1.png" alt="">
+					</div>
+					<div class="col-sm-6">
+						<h2>Testimonials</h2>
+						<p>"Salamat Palawan Pawnshop at sa pagpalipat ko ng aking mga sangla, sobrang laki na ang matitipid ko dahil sa mababang interest at may discount pa na 5% sa interest gamit ang sukicard ko."</p>
+						<p>-Felix Rivadeniera</p>
+
+					</div>
+				</div>
+
 			</div>
+		</div>
+	</div>
+</div>
+
+<div class="news">
+	<div class="container">
+		<div class="row">
+			<h2>Industry Related News</h2>
+			<div class="col-sm-4">
+				<img class="img-responsive" src="img/news-1.jpg" alt="">
+				<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
+			</div>
+			<div class="col-sm-4">
+				<img class="img-responsive" src="img/news-1.jpg" alt="">
+				<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
+			</div>
+			<div class="col-sm-4">
+				<img class="img-responsive" src="img/news-1.jpg" alt="">
+				<a href=""><h3>Lorem ipsum dolor sit amet.</h3></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magnam officiis, quo tenetur, eius dolorum autem blanditiis doloribus quas et.</p>
+				<a href="" class="btn btn-danger pull-right rightbtn">VIEW ALL NEWS</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 
-			<?php include('footer-desktop.php'); ?>
+<?php include('footer-desktop.php'); ?>
 

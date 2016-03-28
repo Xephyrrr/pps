@@ -178,7 +178,7 @@
 				<div class="row ">
 					<div class="col-sm-6">
 						<h2>Redeeming or Renewing Your Pawn</h2>
-						<p>Similar to PPS MyWallet card, the PPS PEPP Suki Card will grant the same discounts, special offers and other exciting perks to cardholders. A 5% discount on interest and penalty charges for your pawns and on the corresponding fee for remittance transactions will be accorded to PPS PEPP Suki cardholders.</p>
+						<p>Paying for the interest of your pawn is always easy and convenient for both your money and time! With lowest and bracketed interest rate, 5% discount for Suki cardholders, you can renew your item from any of our branches, any day you want!</p>
 						<a href="" class="btn btn-danger rightbtn">LEARN MORE</a>
 					</div>
 					<div class="col-sm-4 col-sm-offset-2">

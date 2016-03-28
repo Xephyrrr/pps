@@ -42,7 +42,7 @@ class VendorsTest extends PHPUnit_Framework_TestCase
     {
         //this method could be called multiple times
         if (!self::$items) {
-            self::$items = include dirname(__FILE__) . '/UA_List.inc.php';
+            self::$items = include dirname(__FILE__).'/UA_List.inc.php';
         }
     }
 
