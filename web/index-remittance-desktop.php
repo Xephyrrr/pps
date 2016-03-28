@@ -145,11 +145,11 @@
 </div>
 
 <div class="remittance-options">
-	<div class="container-fluid">
+
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-				<div class="col-sm-7 remittancecontiner">
+				<div class="col-sm-6 remittancecontiner">
 
 
 					<div class="row">
@@ -193,9 +193,9 @@
 
 
 			</div>
-			<div class="col-sm-5 remittancebg">
+			<div class="col-sm-6 remittancebg">
 
-				<img class="doptions img-responsive" src="img/d-options.png" alt="">
+				<img class="doptions img-responsive" src="img/d-options2.png" alt="">
 			</div>
 
 			
@@ -205,7 +205,6 @@
 	</div>
 
 </div>
-</div>
 
 
 <div class="accepted-id">
@@ -213,7 +212,7 @@
 		<div class="row ">
 			<div class="col-sm-6 acceptedidmargin">
 				<h2>Accepted IDs</h2>
-				<p>Palawan Express Pera Padala ensures that you get your remittance without hassle, fast and secured. Make sure to bring at least one from your passport, Postal ID, Company ID, School ID or any of your government issued ID whenever you send or claim your remittance transaction para Walang Kuskos-balungos!</p>
+				<p>Palawan Express Pera Padala ensures that you get your remittance without hassle, fast and secured. Make sure to bring at least one from your passport, Postal ID, Company ID, School ID or any of your government issued ID whenever you send or claim remittance transaction para Walang Kuskos-balungos!</p>
 					<a href="" class="btn btn-danger btnregular">VIEW ALL</a>
 				</div>
 				<div class="col-sm-6">

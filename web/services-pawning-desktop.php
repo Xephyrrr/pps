@@ -166,7 +166,7 @@
 						<br>
 						<p>5) Sign the printed pawn ticket. You will receive the original copy of the duplicate pawn ticket. </p>
 						<br>
-						<p>6) Count and check the money received from your pawn </p>
+						<p>6) Count and check the money received from your pawn before leaving the branch. </p>
 						<br>
 
 					</div>
@@ -194,7 +194,7 @@
 						<br>
 						<p>4) Sign the new pawn ticket. You will receive the original copy of the duplicate pawn ticket. </p>
 						<br>
-						<p>5) You may opt to renew your item at any branch within the province where your item was pawned, for a fee amounting to P15.00.  </p>
+						<p>5) You may opt to renew your item at any Palawan Pawnshop branch for a P15.00 fee. </p>
 					</div>
 					<div class="col-sm-4">
 						<img src="img/service-pawning-renew-pawn.png" class="img-responsive how-to-redeem-img"  alt="">

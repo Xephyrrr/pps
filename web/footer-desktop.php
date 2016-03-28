@@ -52,6 +52,9 @@
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/holder.js"></script>
 	<script src="js/jasny-bootstrap.js"></script>
+	<script src="js/milestone.js"></script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	
 		<script>
@@ -3957,7 +3960,234 @@ $(window).on('scroll',function(){
 });
 </script>
 
+	<script>
 
+    // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+    var aboutbottom = $('.history').offset().top + $('.history').height();
+
+
+// on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > aboutbottom) {
+    	$('.nav-wrap').addClass('past-hero');
+    } else {
+    	$('.nav-wrap').removeClass('past-hero');
+    }
+
+});
+
+
+</script>
+
+	<script>
+
+    // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+    var newsbottom = $('.featurednews').offset().top + $('.featurednews').height();
+
+
+// on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > newsbottom) {
+    	$('.nav-wrap').addClass('past-hero');
+    } else {
+    	$('.nav-wrap').removeClass('past-hero');
+    }
+
+});
+
+
+</script>
+<script>
+
+// Add scrollspy to <body>
+$('body').scrollspy({offset: 130}); 
+
+
+
+$("#navscroll ul li a[href^='#']").on('click', function(e) {
+
+      // prevent default anchor click behavior
+      e.preventDefault();
+
+      // animate
+      $('html, body').animate({
+      	scrollTop: $(this.hash).offset().top - 125
+      }, 1000, function(){
+
+          // when done, add hash to url
+          // (default click behaviour)
+          // window.location.hash = this.hash;
+      });
+  });
+
+
+
+// Add smooth scrolling to all links inside a navbar
+$("#navscroll a").on('click', function(event){
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash (#)
+  var hash = this.hash;
+
+
+});
+
+</script>
+<script>
+
+// Add scrollspy to <body>
+$('body').scrollspy({offset: 150}); 
+
+
+
+$("#navscroll-media ul li a[href^='#']").on('click', function(e) {
+
+      // prevent default anchor click behavior
+      e.preventDefault();
+
+      // animate
+      $('html, body').animate({
+      	scrollTop: $(this.hash).offset().top - 145
+      }, 1000, function(){
+
+          // when done, add hash to url
+          // (default click behaviour)
+          // window.location.hash = this.hash;
+      });
+  });
+
+
+
+// Add smooth scrolling to all links inside a navbar
+$("#navscroll-media a").on('click', function(event){
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash (#)
+  var hash = this.hash;
+
+
+});
+
+</script>
+ <script>
+    // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+    var mediabottom = $('.past-media').offset().top + $('.past-media').height();
+
+
+// on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > mediabottom) {
+    	$('.nav-wrap').addClass('past-hero');
+    } else {
+    	$('.nav-wrap').removeClass('past-hero');
+    }
+
+});
+</script>
+
+
+<script>
+	$(document).ready(function(){
+    //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+});
+   
+  
+</script>
+
+<script>
+    jQuery(document).ready(function() {
+
+    $(".video").click(function() {
+        $.fancybox({
+            'padding'       : 0,
+            'autoScale'     : false,
+            'transitionIn'  : 'none',
+            'transitionOut' : 'none',
+            'title'         : this.title,
+            'width'         : 640,
+            'height'        : 385,
+            'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+            'type'          : 'swf',
+            'swf'           : {
+            'wmode'             : 'transparent',
+            'allowfullscreen'   : 'true'
+            }
+        });
+
+        return false;
+    });
+});
+</script>
+
+<script>
+	$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+});
+</script>
+
+<script>
+	$(document).ready(function(){
+    //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+    $(".fancybox-1").fancybox({
+        openEffect: "elastic",
+        closeEffect: "elastic"
+    });
+
+     $(".fancybox-2").fancybox({
+        openEffect: "elastic",
+        closeEffect: "elastic"
+    });
+});
+
+
+  
+</script>
+<script>
+   jQuery(document).ready(function() {
+
+   $(".video").click(function() {
+       $.fancybox({
+           'padding'       : 0,
+           'autoScale'     : false,
+           'transitionIn'  : 'none',
+           'transitionOut' : 'none',
+           'title'         : this.title,
+           'width'         : 640,
+           'height'        : 385,
+           'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+           'type'          : 'swf',
+           'swf'           : {
+           'wmode'             : 'transparent',
+           'allowfullscreen'   : 'true'
+           }
+       });
+
+       return false;
+   });
+});
+</script>
 
 </body>
 </html>

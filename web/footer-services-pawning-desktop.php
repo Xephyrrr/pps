@@ -3236,7 +3236,7 @@ $("#navscroll ul li a[href^='#']").on('click', function(e) {
 
           // when done, add hash to url
           // (default click behaviour)
-          window.location.hash = this.hash;
+          // window.location.hash = this.hash;
       });
   });
 

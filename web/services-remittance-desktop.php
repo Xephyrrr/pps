@@ -154,17 +154,15 @@
 					<img src="img/service-remittance-howtoreceive.png" class="img-responsive"  alt="">
 				</div>
 				<div class="col-sm-7 howtoredeempawn">
-					<p>1) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. </p>
+					<p>1) Go to any Palawan Pawnshop branch or Palawan Express Pera Padala outlet. </p>
 						<br>
-						<p>2) Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in </p>
+						<p>2) Fill-out the Receive Money Form that will require you to provide complete Sender’s Name, complete Receiver’s Name, PEPP Transaction Code and Amount of remittance. </p>
 							<br>
-							<p>3) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. </p>
+							<p>3) lace the accomplished Receive Money Form and valid ID on the tray provided at the branch counters before handing it to the branch associate. </p>
 								<br>
-								<p>4) Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in </p>
+								<p>4) Sign and receive your copy of the computer-generated Receive Money Form. </p>
+								<br>
+								<p>5) Check and count your money before leaving the branch. </p>
 
 								</div>
 							</div>

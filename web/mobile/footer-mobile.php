@@ -43,14 +43,23 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+<?php /*
 <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/bootstrap.min.js"></script>
 <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/jquery-ui.js"></script>
 <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/holder.js"></script>
 <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/jasny-bootstrap.js"></script>
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/jquery.ui.touch-punch.min.js"></script>
+*/ ?>
 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/holder.js"></script>
+<script src="js/jasny-bootstrap.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+	<script src="js/milestone.js"></script>
 <script>
 	$('#slider-loan-max .ui-slider-handle').draggable();
 </script>
@@ -4000,11 +4009,56 @@ $(".carrethide4").click(function(){
 
 });
 
-
-
-
-
 </script>
+
+
+<script>
+	$(document).ready(function(){
+    //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+});
+   
+  
+</script>
+
+<script>
+    jQuery(document).ready(function() {
+
+    $(".video").click(function() {
+        $.fancybox({
+            'padding'       : 0,
+            'autoScale'     : false,
+            'transitionIn'  : 'none',
+            'transitionOut' : 'none',
+            'title'         : this.title,
+            'width'         : 640,
+            'height'        : 385,
+            'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+            'type'          : 'swf',
+            'swf'           : {
+            'wmode'             : 'transparent',
+            'allowfullscreen'   : 'true'
+            }
+        });
+
+        return false;
+    });
+});
+</script>
+
+<script>
+	$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+});
+</script>
+
 
 
 
