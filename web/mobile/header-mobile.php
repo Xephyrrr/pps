@@ -7,7 +7,7 @@
 	<meta name="robots" content="noindex">
 	<meta name="robots" content="noindex,nofollow"/>
 	<title>Palawan Pawnshop</title>
-	<?php /*
+	 
 	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/bootstrap.css" rel="stylesheet">
 	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/jqueryui.css" rel="stylesheet">
 
@@ -16,14 +16,14 @@
 	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/style-mobile.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-*/ ?>
-<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/jqueryui.css" rel="stylesheet">
 
 <link href="css/jasny-bootstrap.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 
-<link href="css/style-mobile.css" rel="stylesheet">
+<link href="css/style-mobile.css" rel="stylesheet"> -->
 </head>
 
 <body data-spy="scroll" data-target="#navscroll">
