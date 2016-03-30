@@ -4079,9 +4079,67 @@ $("#navscroll-media a").on('click', function(event){
 });
 
 </script>
+
+<script>
+
+// Add scrollspy to <body>
+$('body').scrollspy({offset: 150}); 
+
+
+
+$("#navscroll-faq ul li a[href^='#']").on('click', function(e) {
+
+      // prevent default anchor click behavior
+      e.preventDefault();
+
+      // animate
+      $('html, body').animate({
+      	scrollTop: $(this.hash).offset().top - 200
+      }, 1000, function(){
+
+          // when done, add hash to url
+          // (default click behaviour)
+          // window.location.hash = this.hash;
+      });
+  });
+
+
+
+// Add smooth scrolling to all links inside a navbar
+$("#navscroll-faq a").on('click', function(event){
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash (#)
+  var hash = this.hash;
+
+
+});
+
+</script>
  <script>
     // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
     var mediabottom = $('.past-media').offset().top + $('.past-media').height();
+
+
+// on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > mediabottom) {
+    	$('.nav-wrap').addClass('past-hero');
+    } else {
+    	$('.nav-wrap').removeClass('past-hero');
+    }
+
+});
+</script>
+
+ <script>
+    // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+    var mediabottom = $('.past-faq').offset().top + $('.past-faq').height();
 
 
 // on scroll, 

@@ -59,7 +59,9 @@
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-	<script src="js/milestone.js"></script>
+<script src="js/milestone.js"></script>
+
+
 <script>
 	$('#slider-loan-max .ui-slider-handle').draggable();
 </script>
@@ -3936,6 +3938,46 @@ $('#radio-suki-remittance2').change(function(){
 	});
 </script>
 
+
+<script>
+
+// Add scrollspy to <body>
+$('body').scrollspy({offset: 150}); 
+
+
+
+$("#navscroll-faq ul li a[href^='#']").on('click', function(e) {
+
+      // prevent default anchor click behavior
+      e.preventDefault();
+
+      // animate
+      $('html, body').animate({
+      	scrollTop: $(this.hash).offset().top - 140
+      }, 1000, function(){
+
+          // when done, add hash to url
+          // (default click behaviour)
+          // window.location.hash = this.hash;
+      });
+  });
+
+
+
+// Add smooth scrolling to all links inside a navbar
+$("#navscroll-faq a").on('click', function(event){
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash (#)
+  var hash = this.hash;
+
+
+});
+
+</script>
+
 <script>
 	$("#pawning-nav a").click(function(){
 		$("#pawning-nav").toggleClass("in");
@@ -4065,12 +4107,52 @@ $(".carrethide4").click(function(){
 </script>
 
 <script>
+	
+	;(function(){
+	
+	'use strict';
+
+	var expandSearch = {
+		init: function(){
+
+			var _this = this,
+			_searchContainers = document.querySelectorAll('.expandSearch');
+
+			for( var _index in _searchContainers ){
+				if( typeof _searchContainers[ _index ] === 'object' ){
+					_this.searchFunctions( _searchContainers[ _index ] );
+				}
+			}
+
+		},
+
+		searchFunctions: function( _thisSearch ){
+				
+			var _nodes = _thisSearch.childNodes;
+
+			//a click
+			_nodes[3].addEventListener('click',function(e){
+
+				if( _thisSearch.attributes.class.value.indexOf("showSearch") > -1 ){
+					_thisSearch.attributes.class.value = 'expandSearch';
+				}
+				else{
+					_thisSearch.attributes.class.value = 'expandSearch showSearch';
+				}
+
+				if( !e.preventDefault() ){ e.returnValue = false; }
+			});
+
+		}
+
+	};
 
 
+	//execute
+	expandSearch.init();
 
+}());
 </script>
-
-
 
 
 

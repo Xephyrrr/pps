@@ -40,7 +40,7 @@
 </div>
 </div>
 
-<div class="container content-filter">
+<div class="container content-filter animated flipInX">
 
 	<div class="row">
 
