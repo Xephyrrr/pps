@@ -7,6 +7,7 @@
 	<meta name="robots" content="noindex">
 	<meta name="robots" content="noindex,nofollow"/>
 	<title>Palawan Pawnshop</title>
+	<?php /*
 	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/bootstrap.css" rel="stylesheet">
 	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/jqueryui.css" rel="stylesheet">
 
@@ -15,14 +16,14 @@
 	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/style-mobile.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-
-<!-- <link href="css/bootstrap.css" rel="stylesheet">
+*/ ?>
+<link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/jqueryui.css" rel="stylesheet">
 
 <link href="css/jasny-bootstrap.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 
-<link href="css/style-mobile.css" rel="stylesheet"> -->
+<link href="css/style-mobile.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navscroll">
@@ -101,11 +102,13 @@
 						<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 
 							<div id="sideMenu" class="navbar-default sidebar" role="navigation">
+
 								<div class="sidebar-nav">
-
+									
+									
 									<ul class="nav nav-pills" id="side-menu">
-
-										<hr>
+										
+										<li><a href=""><img src="img/pp-logo.jpg" class="logo-sidebar" alt=""></a></li>
 
 										<li class="" role="presentation">
 											<a href="/">HOME</a>
@@ -116,6 +119,7 @@
 										<li>
 											<a class="" role="button" data-toggle="collapse" href="#nav1" aria-expanded="false" aria-controls="nav1">SERVICES<span class="caret"></span></a>
 											<div class="collapse" id="nav1">
+												
 
 												<ul>
 													<li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/services-pawning-mobile.php">Pawning</a></li>
@@ -142,7 +146,7 @@
 											<a href="">FAQ</a>
 										</li>
 
-										<hr>
+										
 									</ul>
 
 								</div>
@@ -151,12 +155,31 @@
 					</div>
 
 					<div class="navbar navbar-default navbar-fixed-top">
-					
-					<a href=""><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/pp-logo.jpg" class="logo" alt=""></a>
-					
-					 <!-- <a href=""><img src="img/pp-logo.jpg" class="logo" alt=""></a> -->
+						<?php /*
 
-					<a href=""><i class="fa fa-search fa-lg"></i></a>
+						<a href=""><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/pp-logo.jpg" class="logo" alt=""></a>
+							*/ ?>
+
+							<a href=""><img src="img/pp-logo.jpg" class="logo" alt=""></a>
+<!--
+						<div id="search" class="collapsed show">
+							<input type="search" data-placeholder="Reference or Email Address" />
+							<span><img src="http://test.fhmp.net/budicon_search.svg"/></span>
+						</div>
+					-->
+					<form class="search-form">
+						<label>
+							<input type="search" 
+							class="search-field" 
+							placeholder="Search"  
+							value="" name="s" 
+							title="Sök efter:">
+						</label>
+						<input type="submit" class="search-submit" value="Search">
+					</form>
+
+
+					<!--		<a href=""><i class="fa fa-search fa-lg"></i></a> -->
 
 
 					<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">

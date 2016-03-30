@@ -965,8 +965,10 @@ li a {
 
 .navbar-nav > li > a:hover {
   text-decoration: none;
-  background-color: #F79125;
-  padding: -100px; }
+  background-color: #F8DD02;
+  padding: -100px;
+  color: #333;
+  border-radius: 0; }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   background-color: #F79125; }
@@ -1344,6 +1346,8 @@ About Page
   background-color: #E11C24; }
   .mission h2, .mission p, .mission ul {
     color: #ffffff; }
+  .mission p {
+    font-size: 20px; }
 
 .principles {
   padding-top: 50px;
@@ -2413,7 +2417,7 @@ News
 .news {
   padding-top: 50px;
   padding-bottom: 80px;
-  background-color: #F4F4F4; }
+  background-color: #F9F8E4; }
   .news .thumbnail {
     background-color: transparent;
     border: 0;
@@ -2506,6 +2510,140 @@ News
   width: 100%;
   height: 150px; }
 
+/*
+=================================
+FAQ Page 
+=================================
+*/
+.faq-page {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.transition, p, ul li i:before, ul li i:after {
+  transition: all 0.25s ease-in-out; }
+
+/*
+@media (max-width: 550px) {
+  body {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+*/
+.faq-page {
+  background-color: #FFF7D6; }
+  .faq-page .flipIn, .faq-page ul li {
+    animation: flipdown 0.5s ease both; }
+  .faq-page h3 {
+    color: #E11C24;
+    font-family: "Century Gothic Bold Italic"; }
+  .faq-page h4 {
+    font-family: "Century Gothic Bold";
+    font-size: 24px; }
+  .faq-page .no-select, .faq-page h2 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .faq-page h3 {
+    font-size: 36px;
+    line-height: 34px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    margin-bottom: 22px; }
+  .faq-page p {
+    font-size: 17px;
+    line-height: 26px;
+    position: relative;
+    overflow: hidden;
+    max-height: 800px;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    z-index: 2; }
+  .faq-page ul {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0; }
+  .faq-page ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-top: 1px solid #A7A7A7; }
+  .faq-page ul li {
+    animation-delay: 0.5s; }
+  .faq-page ul li:last-of-type {
+    padding-bottom: 0; }
+  .faq-page ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 0; }
+  .faq-page ul li i:before, .faq-page ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: #E11C24;
+    width: 3px;
+    height: 9px; }
+  .faq-page ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg); }
+  .faq-page ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg); }
+  .faq-page ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0; }
+  .faq-page ul li input[type=checkbox]:checked ~ p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%); }
+  .faq-page ul li input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg); }
+  .faq-page ul li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg); }
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg); }
+  5% {
+    opacity: 1; }
+  80% {
+    transform: rotateX(8deg); }
+  83% {
+    transform: rotateX(6deg); }
+  92% {
+    transform: rotateX(-3deg); }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg); } }
+.faq-section {
+  margin-top: 50px; }
+
+/*
+.content-filter {
+	animation: flipdown 0.5s ease both;
+	animation-delay: 0.5s;
+}
+*/
 /*
 =================================
 Custom Media Queries

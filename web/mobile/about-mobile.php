@@ -51,25 +51,25 @@
 		<div id="pawning-nav" class="collapse">
 			<nav id="navscroll">
 				<ul class="nav nav-pills navbar-right">
-					<li>
+					<li class="col-xs-12">
 						<a href="#scroll1">ABOUT US</a>
 					</li>
-					<li>
+					<li class="col-xs-12">
 						<a href="#scroll2">VISION</a>
 					</li>
-					<li>
+					<li class="col-xs-12">
 						<a href="#scroll3">MISSION</a>
 					</li>
-					<li>
+					<li class="col-xs-12">
 						<a href="#scroll4">GUIDING PRINCIPLES</a>
 					</li>
-					<li>
+					<li class="col-xs-12">
 						<a href="#scroll5">MILESTONES</a>
 					</li>
-					<li>
+					<li class="col-xs-12">
 						<a href="#scroll6">OFFICE DIRECTORY</a>
 					</li>
-					<li>
+					<li class="col-xs-12">
 						<a href="#scroll7">CONTACT US</a>
 					</li>
 				</ul>

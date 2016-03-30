@@ -8,7 +8,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-				<h2>Pawning</h2>
+				<h2 class="animated flipInX">Pawning</h2>
 				<div class="col-sm-6 description">
 
 					<img src="img/service-pawning-1.png" alt="">
