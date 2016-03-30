@@ -92,7 +92,7 @@
 										<a href="/media.php">MEDIA</a>
 									</li>
 									<li>
-										<a href="#">FAQ</a>
+										<a href="/faq.php">FAQ</a>
 									</li>
 									<li>
 

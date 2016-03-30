@@ -83,7 +83,7 @@
 										<a href="/media.php">MEDIA</a>
 									</li>
 									<li>
-										<a href="#">FAQ</a>
+										<a href="/faq.php">FAQ</a>
 									</li>
 									<li>
 										<a href=""><i class="fa fa-search fa-lg"></i></a>
@@ -143,7 +143,7 @@
 											<a href="/media.php">MEDIA</a>
 										</li>
 										<li>
-											<a href="">FAQ</a>
+											<a href="/faq.php">FAQ</a>
 										</li>
 
 										
