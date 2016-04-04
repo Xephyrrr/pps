@@ -5,7 +5,19 @@
 <!-- <div class="remittance-hero"></div> -->
 <img class="hero-image desktop"src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/remittance-hero.jpg" alt="">
 <img class="hero-image mobile" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/img/remittance-hero-mobile.jpg" alt="">
-
+<div class="call-mobile-home">
+  <div class="container pull-right mdl-js-button" id="demo-menu-lower-right">
+  <p class="fa fa-phone fa-3x fa-flip-horizontal"></p>
+  </div>
+  <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect menuposition"
+    for="demo-menu-lower-right">
+  <li class="mdl-menu__item"><a href="tel:0917-301-3868">(Globe) 0917-301-3868</a></li>
+  <hr>
+  <li class="mdl-menu__item"><a href="tel:0932-850-8613">(Sun) 0932-850-8613</a></li>
+  <hr>
+  <li class="mdl-menu__item"><a href="tel:0998-962-1869">(Smart) 0998-962-1869</a></li>
+</ul>
+</div>
 
 
 

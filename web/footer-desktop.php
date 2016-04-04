@@ -4094,7 +4094,7 @@ $("#navscroll-faq ul li a[href^='#']").on('click', function(e) {
 
       // animate
       $('html, body').animate({
-      	scrollTop: $(this.hash).offset().top - 200
+      	scrollTop: $(this.hash).offset().top - 120
       }, 1000, function(){
 
           // when done, add hash to url

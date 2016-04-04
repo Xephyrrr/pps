@@ -927,12 +927,14 @@ input:focus {
   font-size: 18px; }
 
 .navbar p {
+  font-size: 10px;
+  margin-left: 61px;
   font-family: "Century Gothic Bold";
   color: #58595B;
   text-align: right;
   margin-top: 21px;
-  margin-bottom: 0px;
-  margin-right: 0;
+  margin-bottom: 5px;
+  margin-right: -70px;
   height: 10px; }
 .navbar .fa-search {
   border-left: 1px solid #58595B;
@@ -945,7 +947,7 @@ input:focus {
   padding-right: 37px;
   position: relative;
   left: 110px;
-  top: 4px; }
+  top: 10px; }
 .navbar .form-control {
   height: 30px;
   border-radius: 15px;
