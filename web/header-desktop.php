@@ -48,7 +48,7 @@
 							<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 								<div class"row">
 									
-									<div class="col-sm-7 searcharea">
+									<div class="col-sm-6 searcharea">
 										<form action="" class="search-form">
 											<div class="has-feedback">
 												<label for="search" class="sr-only">Search</label>
@@ -57,14 +57,14 @@
 											</div>
 										</form>
 									</div>
-									<div class="col-sm-5 pull-left">
-										<p>CALL:123-4567</p>
+									<div class="col-sm-5">
+										<p>CALL: (Globe) 0917-301-3868 / (Sun) 0932-850-8613 / (Smart) 0998-962-1869</p>
 									</div>
 
 								</div>	
 
 
-								<ul class="nav navbar-nav nav-pills">
+								<ul class="nav navbar-nav nav-pills pull-right">
 									<li>
 										<a href="/">HOME</a>
 									</li>

@@ -57,6 +57,41 @@ hr {
 .discountsection {
   padding-top: 10px; }
 
+.menuposition {
+  background: #18A15F; }
+  .menuposition li a {
+    color: #fff; }
+
+.call-mobile-home {
+  /* margin-top: 90px; */
+  bottom: 12px;
+  z-index: 98;
+  position: fixed;
+  right: 0; }
+  .call-mobile-home p {
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 5px 10px 4px 8px;
+    background: #18A15F;
+    width: 39px;
+    color: #FFF;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+
+.call-mobile {
+  /* margin-top: 90px; */
+  margin-top: 50px;
+  z-index: 98;
+  position: fixed;
+  right: 0; }
+  .call-mobile p {
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 5px 10px 4px 8px;
+    background: #18A15F;
+    width: 39px;
+    color: #FFF;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+
 /*
 CARET and hiddendiv
 */
@@ -1185,7 +1220,8 @@ hr.borderline-yellow {
   background-color: #036E3A;
   width: 100%;
   padding: 10px 2px;
-  color: #fff; }
+  color: #fff;
+  height: auto; }
   .pawning-mobile-nav a {
     color: #fff;
     font-family: "Century Gothic Regular"; }

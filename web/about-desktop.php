@@ -46,7 +46,7 @@
 						<img class="img-responsive" src="img/history.png" alt="">
 					</div>
 					<div class="col-sm-7">
-						<p>Palawan Pawnshop is now considered to be one of the most reliable, fastest-growing and leading pawnshop in the owned and operated by spouses Mr. and Mrs. Bobby and Angelita Castro, formally opened in Puerto Princesa City.</p>
+						<p>Palawan Pawnshop is now considered to be one of the most reliable, fastest-growing and leading pawnshop in the Philippines since it was established on August 17, 1985, when its first branch, owned and operated by spouses Mr. and Mrs. Bobby and Angelita Castro, formally opened in Puerto Princesa City.</p>
 						<br>
 						<p>Originally established as a business offering only pawn brokering, we have expanded our services to include money remittance known as Palawan Express Pera Padala. Today, after more than 30 years in the industry, we made available other products and services to offer our loyal customers such as international money remittance, foreign currencies exchange, e-loading, bills payment and accident insurance in all our branches in cities, municipalities and remote towns nationwide.</p>
 						<br>
@@ -292,12 +292,15 @@
 								<p>	
 									A new Palawan Express Pera Padala program was launched to address the increasing volume of remittance transactions.	
 									<br>
-									<p>
-										Budding on the staunch belief that its workforce are part of its big family and partners in the company’s continuing growth and success, employees are addresses as associates.
-									</p>
 									<br>
 									<p>
-										Making a big and bold move, branches began to operate 7 days a week.
+										Budding on the staunch belief that its workforce are part of its big family and partners in the company’s continuing growth and success, employees are addressed as associates.
+									
+									<br>
+									<br>
+									<p>
+										Making a big and bold move, branches began to operate 7 days a week
+									</p>
 									</li>
 
 									<li data-date="04/05/2017">
@@ -343,13 +346,14 @@
 												</p>
 												<br>
 												<p>
-													We forged to tip-up with the prestigious SM Group of Companies to make PEPP money remittances available in its malls nationwide.
+													We forged to tie-up with the prestigious SM Group of Companies to make Palawan Express Pera Padala money remittances available in its malls nationwide.
 												</p>
 											</li>
 											<li data-date="01/08/2017">
 												<h3>2015</h3>
 												<p>	
 													As with the previous years, we joined Cebu’s Sinulog Grand Festival. Palawan Pawnshop Palawan Express Pera Padala placed 3rd in the Float Category Contest among 45 other float registered contingents. The Sinulog Float was graced by our endorser, Mommy Dionisia Pacquiao.
+													<br>
 													<br>
 													<p>
 														We successfully established Bicol Region expansion.
@@ -368,7 +372,7 @@
 													</p>
 													<br>
 													<p>
-														The company acquired Kuwartagram Visayas, Capital Pawnshop and VG Star Pawnshop operating in various parts in the Philippines. All branches has been integrated Palawan Pawnshop management.
+														The company acquired Kuwartagram Visayas, Capital Pawnshop and VG Star Pawnshop operating in various parts in the Philippines. All branches has been integrated under Palawan Pawnshop management.
 													</p>
 												</li>
 											</ol>
@@ -417,8 +421,8 @@
 					<div class="flex-center">
 						<h3>Palawan Pawnshop Head Office</h3>
 						<p>Palawan Pawnshop Buiding, 170 Rizal Avenue, Brgy. Masikap, Puerto Princesa City, 5300</p>
-						<p>Tel. No. : (048)4 34-8377 / (048)433-4110</p>
-						<p>Customer Service Hotline : 09197050540 / 09179281381</p>
+						<p>Tel. No. : (048) 434-8377 / (048)433-4110</p>
+						<p>Customer Service Hotline : (Globe) 0917-301-3868 / (Sun) 0932-850-8613 / (Smart) 0998-962-1869</p>
 					</div>
 					
 					<center>
@@ -430,6 +434,7 @@
 					<div class="flex-center">
 						<h3>Manila Regional Center</h3>
 						<p>7263 J. Victor Street, Pio del Pilar, Makati City 1230</p>
+						<p>Tel. No. : (02) 729-6388</p>
 					</div>
 					<center>
 						<a href="" class="btn btn-danger">VIEW MAP</a>
@@ -439,6 +444,7 @@
 					<div class="flex-center">
 						<h3>Cebu Regional Center</h3>
 						<p>Palawan Pawnshop Building, S. B. Cabahug Street, Estancia Ibabao, Mandaue City 6014</p>
+						<p>Tel. No. : (032) 505-8927</p>
 					</div>
 					<center>
 						<a href="" class="btn btn-danger">VIEW MAP</a>
@@ -456,16 +462,16 @@
 				<h2>Contact Us</h2>
 				<div class="col-sm-6">
 					<div class="form-group">
-						<label>First Name:</label>
+						<label>Name:</label>
 						<input type="text" class="form-control">
 					</div>
 				</div>
-				<div class="col-sm-6">
+				<!-- <div class="col-sm-6">
 					<div class="form-group">
 						<label>Last Name:</label>
 						<input type="text" class="form-control">
 					</div>
-				</div>
+				</div> -->
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label>Email:</label>

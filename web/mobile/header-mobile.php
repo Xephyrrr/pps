@@ -14,6 +14,8 @@
 	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/jasny-bootstrap.css" rel="stylesheet">
 	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/font-awesome.min.css" rel="stylesheet">
 	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/style-mobile.css" rel="stylesheet">
+	<link href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/css/material.min.css" rel="stylesheet">
+
 
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 

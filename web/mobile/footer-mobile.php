@@ -52,6 +52,7 @@
 <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/jquery.ui.touch-punch.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/milestone.js"></script>
+<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/mobile/js/material.min.js"></script>
 
 <!-- <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-ui.js"></script>
